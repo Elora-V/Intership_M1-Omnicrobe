@@ -1,0 +1,128 @@
+<!--
+# Copyright 2022 Sandra Dérozier (INRAE)
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+#    Unless required by applicable law or agreed to in writing, software
+#    distributed under the License is distributed on an "AS IS" BASIS,
+#    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#    See the License for the specific language governing permissions and
+#    limitations under the License.
+-->
+
+{% extends 'main' %}
+{% block content %}
+<section>
+
+  <script type=text/javascript>
+    $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+  </script>
+
+  <script>
+    var taxon   = JSON.parse('{{ taxon | tojson | safe }}');
+    var habitat = JSON.parse('{{ habitat | tojson | safe }}');
+    var qps     = JSON.parse('{{ qps | tojson | safe }}');
+    var sources = JSON.parse('{{ sources | tojson | safe }}');
+    var version = JSON.parse('{{ version | tojson | safe }}');
+    var alvisir = JSON.parse('{{ alvisir | tojson | safe }}');
+    var score = JSON.parse('{{ score | tojson | safe }}');
+  </script>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/selectize.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/selectize.boostrap3.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/additional.css') }}" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.1/js/standalone/selectize.js"></script>
+  <script type="module" src="{{ url_for('static', filename='js/searchByTaxon.js') }}"></script>
+
+
+  <div style="margin:30px 0;"></div>
+
+  <div style="margin-left: 5%;margin-right: 5%;">
+    <h3><span style="color: #21517A;">Taxon lives in Habitat</span></h3>
+    <div class="d-flex justify-content-center text-info">
+      <div id="spinner_taxon_habitat" class="spinner-border" role="status" style="display: none;">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div id="spinner_taxon_habitat2" style="display: none;"><strong>&nbsp;&nbsp;Loading...</strong></div>
+    </div>
+
+    <div style="margin:40px 0;">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-8">
+            <div class="input-group mb-3">
+              <label class="button-select input-group-text" for="relationHabitatByTaxon">Search relations by taxon</label>
+              <select class="form-select" id="search"></select>
+              <button id="filter_taxon_habitat" type="button" class="btn btn-info button-select-filter" data-toggle="collapse" data-target="#demo" disabled>Filter selection</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="demo" class="collapse" style="margin-top: 1%;" align="center">
+        <table align="center">
+          <tr >
+            <td id="filter_col6" data-column="5">
+              <div style="float:left;">Filter by sources&nbsp;</div>
+              <div style="float:left;" title="Available sources: PubMed, GenBank, DSMZ, CIRM-BIA, CIRM-CFBP, CIRM-Levures">
+                <svg width='1em' height='1em' viewBox='0 0 16 16' class='bi bi-info-circle-fill' fill='currentColor' xmlns='http://www.w3.org/2000/svg'> \
+                  <path fill-rule='evenodd' d='M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z'/> \
+                </svg>&nbsp;
+              </div>
+            </td>
+            <td id="filter_col6_input" data-column="5" align="center"><input type="text" class="column_source" id="sources_th"></td>
+
+            <td id="filter_col4" data-column="3">&nbsp;&nbsp;&nbsp;Filter by Habitat&nbsp;</td>
+            <td id="filter_col4_input" data-column="3" align="center">
+              <input type="text" class="column_filter" id="habitat_th">
+            </td>
+
+            <td id="filter_col7" data-column="6">&nbsp;&nbsp;&nbsp;Reliability &ge; &nbsp;</td>
+            <td id="filter_col7_input" data-column="6" align="center">
+              <input type="number" step="0.05" min="0" max="1" class="column_filter_short" id="score_th">
+            </td>
+
+            <td id="filter_col5" data-column="4">&nbsp;&nbsp;&nbsp;QPS only&nbsp;</td>
+            <td id="filter_col5_input" data-column="4">
+              <input type="checkbox" name="qps_th" id="qps_th" value="yes">
+            </td>
+
+          </tr>
+        </table>
+        <small id="help" class="form-text text-muted"><b>Note:</b> to filter by sources and to filter by habitat, you can use ";" for "or" (example: "genbank;dsmz" for sources and "cow;horse" for habitat).</small><br/>
+      </div>
+
+      <div id="hide" style="display:none">
+        <table id="results_taxon_habitat" class="display responsive nowrap collapsed" style="width:100%"> <!--width="100%" visibility="none"-->
+          <thead>
+            <tr>
+              <th>Source text</th>
+              <th>Scientific name of taxon</th>
+              <th>Relation type</th>
+              <th>OntoBiotope class</th>
+              <th>QPS</th>
+              <th>Source</th>
+              <th>Reliability</th>
+              <th>Occurrence in text (taxon)</th>
+              <th>Occurrence in text (habitat)</th>
+              <th>Full source text</th>
+              <th>TaxonID</th>
+              <th>Taxonomy hierarchical path</th>
+              <th>ID OntoBiotope</th>
+              <th>OntoBiotope hierarchical path</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin:80px 0;"></div>
+
+</section>
+{% endblock %}

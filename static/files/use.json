@@ -1,0 +1,510 @@
+[{"extid" : "OBT:004185", 
+"value" : "OBT:004185", 
+"label" : "microbial use",
+"expanded" : true,
+"children" :[
+	
+	{"extid" : "OBT:004191", 
+	"value" : "OBT:004191", 
+	"label" : "antimicrobial activity", 
+	"children" :[
+		
+		{"extid" : "OBT:004203", 
+		"value" : "OBT:004203", 
+		"label" : "antibacterial activity", 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+		, 
+		{"extid" : "OBT:004204", 
+		"value" : "OBT:004204", 
+		"label" : "antifungal activity", 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+		, 
+		{"extid" : "OBT:004205", 
+		"value" : "OBT:004205", 
+		"label" : "antiviral activity", 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+		, 
+		{"extid" : "OBT:004206", 
+		"value" : "OBT:004206", 
+		"label" : "antiyeast activity", 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+	] , 
+	"descendantnb" : 4, 
+	"sublevelnb" : 1
+	}
+	, 
+	{"extid" : "OBT:004192", 
+	"value" : "OBT:004192", 
+	"label" : "food product quality", 
+	"descendantnb" : 0, 
+	"sublevelnb" : 0
+	}
+	, 
+	{"extid" : "OBT:004193", 
+	"value" : "OBT:004193", 
+	"label" : "health property", 
+	"children" :[
+		
+		{"extid" : "OBT:004199", 
+		"value" : "OBT:004199", 
+		"label" : "GRAS", 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+		, 
+		{"extid" : "OBT:004200", 
+		"value" : "OBT:004200", 
+		"label" : "QPS", 
+		"syns" : ["qualified presumption of safety"], 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+		, 
+		{"extid" : "OBT:004209", 
+		"value" : "OBT:004209", 
+		"label" : "beneficial properties for health", 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+		, 
+		{"extid" : "OBT:004214", 
+		"value" : "OBT:004214", 
+		"label" : "food grade", 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+		, 
+		{"extid" : "OBT:004215", 
+		"value" : "OBT:004215", 
+		"label" : "health risk", 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+		, 
+		{"extid" : "OBT:004222", 
+		"value" : "OBT:004222", 
+		"label" : "probiotic capacity", 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+	] , 
+	"descendantnb" : 6, 
+	"sublevelnb" : 1
+	}
+	, 
+	{"extid" : "OBT:004194", 
+	"value" : "OBT:004194", 
+	"label" : "metabolic activity", 
+	"children" :[
+		
+		{"extid" : "OBT:001105", 
+		"value" : "OBT:001105", 
+		"label" : "fermentative", 
+		"syns" : ["fermentation ability", "fermentation capacity"], 
+		"children" :[
+			
+			{"extid" : "OBT:004216", 
+			"value" : "OBT:004216", 
+			"label" : "heterofermentative", 
+			"syns" : ["heterolactic"], 
+			"children" :[
+				
+				{"extid" : "OBT:004236", 
+				"value" : "OBT:004236", 
+				"label" : "facultative heterofermentative", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:004239", 
+				"value" : "OBT:004239", 
+				"label" : "obligate heterofermentative", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 2, 
+			"sublevelnb" : 1
+			}
+			, 
+			{"extid" : "OBT:004217", 
+			"value" : "OBT:004217", 
+			"label" : "homofermentative", 
+			"syns" : ["homolactic"], 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+		] , 
+		"descendantnb" : 4, 
+		"sublevelnb" : 2
+		}
+		, 
+		{"extid" : "OBT:004201", 
+		"value" : "OBT:004201", 
+		"label" : "acidification activity", 
+		"children" :[
+			
+			{"extid" : "OBT:004230", 
+			"value" : "OBT:004230", 
+			"label" : "acidification", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:004234", 
+			"value" : "OBT:004234", 
+			"label" : "deacidification", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+		] , 
+		"descendantnb" : 2, 
+		"sublevelnb" : 1
+		}
+		, 
+		{"extid" : "OBT:004202", 
+		"value" : "OBT:004202", 
+		"label" : "amination activity", 
+		"children" :[
+			
+			{"extid" : "OBT:004235", 
+			"value" : "OBT:004235", 
+			"label" : "deamination activity", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:004248", 
+			"value" : "OBT:004248", 
+			"label" : "transamination activity", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+		] , 
+		"descendantnb" : 2, 
+		"sublevelnb" : 1
+		}
+		, 
+		{"extid" : "OBT:004208", 
+		"value" : "OBT:004208", 
+		"label" : "autolysis", 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+		, 
+		{"extid" : "OBT:004218", 
+		"value" : "OBT:004218", 
+		"label" : "lipolytic activity", 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+		, 
+		{"extid" : "OBT:004223", 
+		"value" : "OBT:004223", 
+		"label" : "proteolytic activity", 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+	] , 
+	"descendantnb" : 14, 
+	"sublevelnb" : 3
+	}
+	, 
+	{"extid" : "OBT:004195", 
+	"value" : "OBT:004195", 
+	"label" : "mixture transformation", 
+	"children" :[
+		
+		{"extid" : "OBT:004210", 
+		"value" : "OBT:004210", 
+		"label" : "cheese making", 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+		, 
+		{"extid" : "OBT:004211", 
+		"value" : "OBT:004211", 
+		"label" : "coagulation process", 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+		, 
+		{"extid" : "OBT:004219", 
+		"value" : "OBT:004219", 
+		"label" : "maturation process", 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+		, 
+		{"extid" : "OBT:004220", 
+		"value" : "OBT:004220", 
+		"label" : "milk acidification", 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+		, 
+		{"extid" : "OBT:004224", 
+		"value" : "OBT:004224", 
+		"label" : "ripening process", 
+		"children" :[
+			
+			{"extid" : "OBT:004232", 
+			"value" : "OBT:004232", 
+			"label" : "cheese aging", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:004233", 
+			"value" : "OBT:004233", 
+			"label" : "cheese ripening", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+		] , 
+		"descendantnb" : 2, 
+		"sublevelnb" : 1
+		}
+		, 
+		{"extid" : "OBT:004226", 
+		"value" : "OBT:004226", 
+		"label" : "spoilage", 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+	] , 
+	"descendantnb" : 8, 
+	"sublevelnb" : 2
+	}
+	, 
+	{"extid" : "OBT:004196", 
+	"value" : "OBT:004196", 
+	"label" : "mixture transformation origin", 
+	"children" :[
+		
+		{"extid" : "OBT:004221", 
+		"value" : "OBT:004221", 
+		"label" : "non-starter", 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+		, 
+		{"extid" : "OBT:004227", 
+		"value" : "OBT:004227", 
+		"label" : "starter", 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+	] , 
+	"descendantnb" : 2, 
+	"sublevelnb" : 1
+	}
+	, 
+	{"extid" : "OBT:004197", 
+	"value" : "OBT:004197", 
+	"label" : "pathogenic activity", 
+	"descendantnb" : 0, 
+	"sublevelnb" : 0
+	}
+	, 
+	{"extid" : "OBT:004198", 
+	"value" : "OBT:004198", 
+	"label" : "sensory quality", 
+	"children" :[
+		
+		{"extid" : "OBT:004207", 
+		"value" : "OBT:004207", 
+		"label" : "aroma property", 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+		, 
+		{"extid" : "OBT:004212", 
+		"value" : "OBT:004212", 
+		"label" : "colour property", 
+		"children" :[
+			
+			{"extid" : "OBT:004242", 
+			"value" : "OBT:004242", 
+			"label" : "pigmentation", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+		] , 
+		"descendantnb" : 1, 
+		"sublevelnb" : 1
+		}
+		, 
+		{"extid" : "OBT:004213", 
+		"value" : "OBT:004213", 
+		"label" : "flavour property", 
+		"children" :[
+			
+			{"extid" : "OBT:004249", 
+			"value" : "OBT:004249", 
+			"label" : "trigeminal sensation", 
+			"children" :[
+				
+				{"extid" : "OBT:004252", 
+				"value" : "OBT:004252", 
+				"label" : "astringent sensation", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:004253", 
+				"value" : "OBT:004253", 
+				"label" : "hot sensation", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:004254", 
+				"value" : "OBT:004254", 
+				"label" : "metallic sensation", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:004255", 
+				"value" : "OBT:004255", 
+				"label" : "pungent sensation", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 4, 
+			"sublevelnb" : 1
+			}
+		] , 
+		"descendantnb" : 5, 
+		"sublevelnb" : 2
+		}
+		, 
+		{"extid" : "OBT:004225", 
+		"value" : "OBT:004225", 
+		"label" : "smell property", 
+		"children" :[
+			
+			{"extid" : "OBT:004240", 
+			"value" : "OBT:004240", 
+			"label" : "odour", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:004241", 
+			"value" : "OBT:004241", 
+			"label" : "off-odours", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+		] , 
+		"descendantnb" : 2, 
+		"sublevelnb" : 1
+		}
+		, 
+		{"extid" : "OBT:004228", 
+		"value" : "OBT:004228", 
+		"label" : "taste property", 
+		"children" :[
+			
+			{"extid" : "OBT:004231", 
+			"value" : "OBT:004231", 
+			"label" : "bitter property", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:004244", 
+			"value" : "OBT:004244", 
+			"label" : "salty property", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:004245", 
+			"value" : "OBT:004245", 
+			"label" : "sour property", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:004247", 
+			"value" : "OBT:004247", 
+			"label" : "sweet property", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:004250", 
+			"value" : "OBT:004250", 
+			"label" : "umami property", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+		] , 
+		"descendantnb" : 5, 
+		"sublevelnb" : 1
+		}
+		, 
+		{"extid" : "OBT:004229", 
+		"value" : "OBT:004229", 
+		"label" : "texture property", 
+		"children" :[
+			
+			{"extid" : "OBT:004237", 
+			"value" : "OBT:004237", 
+			"label" : "granular property", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:004238", 
+			"value" : "OBT:004238", 
+			"label" : "hydrophobicity property", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:004243", 
+			"value" : "OBT:004243", 
+			"label" : "ropiness property", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:004246", 
+			"value" : "OBT:004246", 
+			"label" : "stretchability property", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:004251", 
+			"value" : "OBT:004251", 
+			"label" : "viscosity property", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+		] , 
+		"descendantnb" : 5, 
+		"sublevelnb" : 1
+		}
+	] , 
+	"descendantnb" : 24, 
+	"sublevelnb" : 3
+	}
+] , 
+"descendantnb" : 66, 
+"sublevelnb" : 4
+}]
+

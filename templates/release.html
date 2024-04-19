@@ -1,0 +1,445 @@
+<!--
+# Copyright 2022 Sandra Dérozier (INRAE)
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+#    Unless required by applicable law or agreed to in writing, software
+#    distributed under the License is distributed on an "AS IS" BASIS,
+#    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#    See the License for the specific language governing permissions and
+#    limitations under the License.
+-->
+
+{% extends 'main2' %}
+{% block content %}
+<section>
+
+  <script type=text/javascript>
+    $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+  </script>
+
+  <div style="margin:80px 0;"></div>
+
+  <div style="margin-left: 5%;margin-right: 5%;">
+    <h2><span style="color: #21517A;">Release Notes</span></h2><br/>
+
+    <p><h4 class="text-info">Current release</h4></p>
+
+    <div class="card" style="border-color: #21517A;">
+      <div class="card-header text-center" style="background-color: #21517A; border-color: #21517A; color: #fff;">
+        Omnicrobe 1.2 (<i>current release</i>)
+      </div>
+      <div class="card-body">
+        <p align='justify'>
+          <h5 class="text-info">Information about the data</h5>
+          <ul>
+            <li>Ontologies used: <a href="http://agroportal.lirmm.fr/ontologies/ONTOBIOTOPE" target="_blank">OntoBiotope</a> version 2022-04-28 & <a href="https://forgemia.inra.fr/omnicrobe/extended-microorganisms-taxonomy" target="_blank">Taxonomy</a> version 2023-02-24.</li>
+          </ul>
+          <div style="margin-left: 15%;margin-right: 15%;">
+          <table class="table table-sm table-striped">
+            <caption class="text-center">Versions and number of relationships per source</caption>
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th class="text-right" scope="col">PubMed</th>
+                <th class="text-right" scope="col">GenBank</th>
+                <th class="text-right" scope="col">DSMZ</th>
+                <th class="text-right" scope="col">CIRM-BIA</th>
+                <th class="text-right" scope="col">CIRM-CFBP</th>
+                <th class="text-right" scope="col">CIRM-Levures</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Version</th>
+                <td class="text-right">2023-03-27</td>
+                <td class="text-right">2023-03-27</td>
+                <td class="text-right">2023-03-27</td>
+                <td class="text-right">2023-02-09</td>
+                <td class="text-right">2023-03-16</td>
+                <td class="text-right">2022-10-14</td>
+              </tr>
+              <tr>
+                <th scope="row">Taxa - Habitat relations</th>
+                <td class="text-right">764,796</td>
+                <td class="text-right">268,781</td>
+                <td class="text-right">51,176</td>
+                <td class="text-right">682</td>
+                <td class="text-right">1,223</td>
+                <td class="text-right">942</td>
+              </tr>
+              <tr>
+                <th scope="row">Taxa - Phenotype relations</th>
+                <td class="text-right">53,377</td>
+                <td class="text-right">-</td>
+                <td class="text-right">-</td>
+                <td class="text-right">-</td>
+                <td class="text-right">-</td>
+                <td class="text-right">-</td>
+              </tr>
+              <tr>
+                <th scope="row">Taxa - Use relations</th>
+                <td class="text-right">18,145</td>
+                <td class="text-right">-</td>
+                <td class="text-right">-</td>
+                <td class="text-right">-</td>
+                <td class="text-right">-</td>
+                <td class="text-right">-</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+
+          <h5 class="text-info">New features and improvements in this release</h5>
+          <ul>
+            <li>improved extraction quality</li>
+            <li>fixed bugs</li>
+            <li>updated taxonomy</li>
+          </ul>
+          <!-- <h5 class="text-info">Fixed in this release</h5>
+          <ul>
+            <li>...</li>
+          </ul> -->
+          <!--h5 class="text-info">Source code</h5>
+          <ul>
+            <li>Text-mining workflow: GitHub repository (<a class="text-info" target="_blank" href="https://creativecommons.org/licenses/by/2.0/deed.en">CC-BY license</a>).</li>
+            <li>Web interface: GitHub repository (<a class="text-info" target="_blank" href="https://creativecommons.org/licenses/by/2.0/deed.en">CC-BY license</a>).</li>
+          </ul-->
+        </p>
+      </div>
+      <div class="card-footer text-center" style="background-color: #21517A; border-color: #21517A; color: #fff;">
+        6 April 2023
+      </div>
+    </div>
+    <br/>
+    <p><h4 class="text-info">Previous releases</h4></p>
+
+    <div class="card" style="border-color: #21517A;">
+      <div class="card-header text-center" style="background-color: #21517A; border-color: #21517A; color: #fff;">
+        Omnicrobe 1.1
+      </div>
+      <div class="card-body">
+        <p align='justify'>
+          <h5 class="text-info">Information about the data</h5>
+          <ul>
+            <li>Ontologies used: <a href="http://agroportal.lirmm.fr/ontologies/ONTOBIOTOPE" target="_blank">OntoBiotope</a> version 2022-04-28 & <a href="https://forgemia.inra.fr/omnicrobe/extended-microorganisms-taxonomy" target="_blank">Taxonomy</a> version 2022-10-21.</li>
+          </ul>
+          <div style="margin-left: 15%;margin-right: 15%;">
+          <table class="table table-sm table-striped">
+            <caption class="text-center">Versions and number of relationships per source</caption>
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th class="text-right" scope="col">PubMed</th>
+                <th class="text-right" scope="col">GenBank</th>
+                <th class="text-right" scope="col">DSMZ</th>
+                <th class="text-right" scope="col">CIRM-BIA</th>
+                <th class="text-right" scope="col">CIRM-CFBP</th>
+                <th class="text-right" scope="col">CIRM-Levures</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Version</th>
+                <td class="text-right">2022-10-07</td>
+                <td class="text-right">2022-10-26</td>
+                <td class="text-right">2022-10-26</td>
+                <td class="text-right">2022-09-30</td>
+                <td class="text-right">2022-10-07</td>
+                <td class="text-right">2022-10-14</td>
+              </tr>
+              <tr>
+                <th scope="row">Taxa - Habitat relations</th>
+                <td class="text-right">731,066</td>
+                <td class="text-right">266,417</td>
+                <td class="text-right">50,499</td>
+                <td class="text-right">669</td>
+                <td class="text-right">1,337</td>
+                <td class="text-right">941</td>
+              </tr>
+              <tr>
+                <th scope="row">Taxa - Phenotype relations</th>
+                <td class="text-right">51,216</td>
+                <td class="text-right">-</td>
+                <td class="text-right">-</td>
+                <td class="text-right">-</td>
+                <td class="text-right">-</td>
+                <td class="text-right">-</td>
+              </tr>
+              <tr>
+                <th scope="row">Taxa - Use relations</th>
+                <td class="text-right">17,225</td>
+                <td class="text-right">-</td>
+                <td class="text-right">-</td>
+                <td class="text-right">-</td>
+                <td class="text-right">-</td>
+                <td class="text-right">-</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+
+          <h5 class="text-info">New features and improvements in this release</h5>
+          <ul>
+            <li>improved extraction quality</li>
+            <li>fixed bugs</li>
+            <li>updated taxonomy</li>
+          </ul>
+        </p>
+      </div>
+      <div class="card-footer text-center" style="background-color: #21517A; border-color: #21517A; color: #fff;">
+        7 November 2022
+      </div>
+    </div>
+    <br/>
+    <div class="card" style="border-color: #21517A;">
+      <div class="card-header text-center" style="background-color: #21517A; border-color: #21517A; color: #fff;">
+        Omnicrobe 1.0
+      </div>
+      <div class="card-body">
+        <p align='justify'>
+          <h5 class="text-info">Information about the data</h5>
+          <ul>
+            <li>Ontologies used: <a href="http://agroportal.lirmm.fr/ontologies/ONTOBIOTOPE" target="_blank">OntoBiotope</a> version 2022-04-22 & <a href="https://forgemia.inra.fr/omnicrobe/extended-microorganisms-taxonomy" target="_blank">Taxonomy</a> version 2022-04-13.</li>
+          </ul>
+          <div style="margin-left: 15%;margin-right: 15%;">
+          <table class="table table-sm table-striped">
+            <caption class="text-center">Versions and number of relationships per source</caption>
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th class="text-right" scope="col">PubMed</th>
+                <th class="text-right" scope="col">GenBank</th>
+                <th class="text-right" scope="col">DSMZ</th>
+                <th class="text-right" scope="col">CIRM-BIA</th>
+                <th class="text-right" scope="col">CIRM-CFBP</th>
+                <th class="text-right" scope="col">CIRM-Levures</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Version</th>
+                <td class="text-right">2022-04-10</td>
+                <td class="text-right">2022-04-22</td>
+                <td class="text-right">2018-01-26</td>
+                <td class="text-right">2021-03-07</td>
+                <td class="text-right">2022-03-08</td>
+                <td class="text-right">2021-08-23</td>
+              </tr>
+              <tr>
+                <th scope="row">Taxa - Habitat relations</th>
+                <td class="text-right">721,244</td>
+                <td class="text-right">259,745</td>
+                <td class="text-right">35,696</td>
+                <td class="text-right">604</td>
+                <td class="text-right">1,109</td>
+                <td class="text-right">943</td>
+              </tr>
+              <tr>
+                <th scope="row">Taxa - Phenotype relations</th>
+                <td class="text-right">50,410</td>
+                <td class="text-right">-</td>
+                <td class="text-right">-</td>
+                <td class="text-right">-</td>
+                <td class="text-right">-</td>
+                <td class="text-right">-</td>
+              </tr>
+              <tr>
+                <th scope="row">Taxa - Use relations</th>
+                <td class="text-right">16,007</td>
+                <td class="text-right">-</td>
+                <td class="text-right">-</td>
+                <td class="text-right">-</td>
+                <td class="text-right">-</td>
+                <td class="text-right">-</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+
+          <h5 class="text-info">New features and improvements in this release</h5>
+          <ul>
+            <li>improved extraction quality</li>
+            <li>fixed bugs</li>
+            <li>updated taxonomy</li>
+            <li>updated OntoBiotope</li>
+          </ul>
+          <!-- <h5 class="text-info">Fixed in this release</h5>
+          <ul>
+            <li>...</li>
+          </ul> -->
+          <!--h5 class="text-info">Source code</h5>
+          <ul>
+            <li>Text-mining workflow: GitHub repository (<a class="text-info" target="_blank" href="https://creativecommons.org/licenses/by/2.0/deed.en">CC-BY license</a>).</li>
+            <li>Web interface: GitHub repository (<a class="text-info" target="_blank" href="https://creativecommons.org/licenses/by/2.0/deed.en">CC-BY license</a>).</li>
+          </ul-->
+        </p>
+      </div>
+      <div class="card-footer text-center" style="background-color: #21517A; border-color: #21517A; color: #fff;">
+        13 May 2022
+      </div>
+    </div>
+    <br/>
+    <div class="card" style="border-color: #21517A;">
+      <div class="card-header text-center" style="background-color: #21517A; border-color: #21517A; color: #fff;">
+        Omnicrobe 0.2
+      </div>
+      <div class="card-body">
+        <p align='justify'>
+          <h5 class="text-info">Information about the data</h5>
+          <ul>
+            <li>Ontologies used: <a href="http://agroportal.lirmm.fr/ontologies/ONTOBIOTOPE" target="_blank">OntoBiotope</a> version 2021-10-22 & <a href="https://forgemia.inra.fr/omnicrobe/extended-microorganisms-taxonomy" target="_blank">Taxonomy</a> version 2021-10-21.</li>
+          </ul>
+          <div style="margin-left: 15%;margin-right: 15%;">
+          <table class="table table-sm table-striped">
+            <caption class="text-center">Versions and number of relationships per source</caption>
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th class="text-right" scope="col">PubMed</th>
+                <th class="text-right" scope="col">GenBank</th>
+                <th class="text-right" scope="col">DSMZ</th>
+                <th class="text-right" scope="col">CIRM-BIA</th>
+                <th class="text-right" scope="col">CIRM-CFBP</th>
+                <th class="text-right" scope="col">CIRM-Levures</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Version</th>
+                <td class="text-right">2021-08-11</td>
+                <td class="text-right">2021-09-20</td>
+                <td class="text-right">2018-01-26</td>
+                <td class="text-right">2021-07-20</td>
+                <td class="text-right">2020-09-22</td>
+                <td class="text-right">2021-08-23</td>
+              </tr>
+              <tr>
+                <th scope="row">Taxa - Habitat relations</th>
+                <td class="text-right">683,016</td>
+                <td class="text-right">255,855</td>
+                <td class="text-right">15,865</td>
+                <td class="text-right">580</td>
+                <td class="text-right">897</td>
+                <td class="text-right">966</td>
+              </tr>
+              <tr>
+                <th scope="row">Taxa - Phenotype relations</th>
+                <td class="text-right">53,996</td>
+                <td class="text-right">-</td>
+                <td class="text-right">-</td>
+                <td class="text-right">-</td>
+                <td class="text-right">-</td>
+                <td class="text-right">-</td>
+              </tr>
+              <tr>
+                <th scope="row">Taxa - Use relations</th>
+                <td class="text-right">14,620</td>
+                <td class="text-right">-</td>
+                <td class="text-right">-</td>
+                <td class="text-right">-</td>
+                <td class="text-right">-</td>
+                <td class="text-right">-</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+
+          <h5 class="text-info">New features and improvements in this release</h5>
+          <ul>
+            <li>Uses the <a href="https://forgemia.inra.fr/omnicrobe/extended-microorganisms-taxonomy" target="_blank">Extended microorganisms taxonomy</a></li>
+            <li>Several fixes on ambiguous habitat detection</li>
+            <li>Improved detection of strain names and strain numbers</li>
+          </ul>
+        </p>
+      </div>
+      <div class="card-footer text-center" style="background-color: #21517A; border-color: #21517A; color: #fff;">
+        24 november 2021
+      </div>
+    </div>
+    <br/>
+    <div class="card" style="border-color: #21517A;">
+      <div class="card-header text-center" style="background-color: #21517A; border-color: #21517A; color: #fff;">
+        Omnicrobe 0.1
+      </div>
+      <div class="card-body">
+        <p align='justify'>
+          <h5 class="text-info">Information about the data</h5>
+          <ul>
+            <li>Ontologies used: <a href="http://agroportal.lirmm.fr/ontologies/ONTOBIOTOPE" target="_blank">OntoBiotope</a> version 2021-09-17 & <a href="https://forgemia.inra.fr/omnicrobe/extended-microorganisms-taxonomy" target="_blank">Taxonomy</a> version 2021-08-17.</li>
+          </ul>
+          <div style="margin-left: 15%;margin-right: 15%;">
+            <table class="table table-sm table-striped">
+              <caption class="text-center">Versions and number of relationships per source</caption>
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th class="text-right" scope="col">PubMed</th>
+                  <th class="text-right" scope="col">GenBank</th>
+                  <th class="text-right" scope="col">DSMZ</th>
+                  <th class="text-right" scope="col">CIRM-BIA</th>
+                  <th class="text-right" scope="col">CIRM-CFBP</th>
+                  <th class="text-right" scope="col">CIRM-Levures</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Version</th>
+                  <td class="text-right">2021-08-11</td>
+                  <td class="text-right">2021-09-20</td>
+                  <td class="text-right">2018-01-26</td>
+                  <td class="text-right">2021-07-20</td>
+                  <td class="text-right">2020-09-22</td>
+                  <td class="text-right">2021-08-23</td>
+                </tr>
+                <tr>
+                  <th scope="row">Taxa - Habitat relations</th>
+                  <td class="text-right">681,806</td>
+                  <td class="text-right">256,081</td>
+                  <td class="text-right">35,799</td>
+                  <td class="text-right">510</td>
+                  <td class="text-right">184</td>
+                  <td class="text-right">964</td>
+                </tr>
+                <tr>
+                  <th scope="row">Taxa - Phenotype relations</th>
+                  <td class="text-right">53,156</td>
+                  <td class="text-right">-</td>
+                  <td class="text-right">-</td>
+                  <td class="text-right">-</td>
+                  <td class="text-right">-</td>
+                  <td class="text-right">-</td>
+                </tr>
+                <tr>
+                  <th scope="row">Taxa - Use relations</th>
+                  <td class="text-right">14,381</td>
+                  <td class="text-right">-</td>
+                  <td class="text-right">-</td>
+                  <td class="text-right">-</td>
+                  <td class="text-right">-</td>
+                  <td class="text-right">-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h5 class="text-info">New features and improvements in this release</h5>
+          <ul>
+            <li>Adding CIRM-CFBP data</li>
+          </ul>
+        </p>
+      </div>
+      <div class="card-footer text-center" style="background-color: #21517A; border-color: #21517A; color: #fff;">
+        22 september 2021
+      </div>
+    </div>
+  </div>
+
+  <div style="margin:80px 0;"></div>
+
+</section>
+{% endblock %}

@@ -1,0 +1,77 @@
+<!--
+# Copyright 2022 Sandra Dérozier (INRAE)
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+#    Unless required by applicable law or agreed to in writing, software
+#    distributed under the License is distributed on an "AS IS" BASIS,
+#    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#    See the License for the specific language governing permissions and
+#    limitations under the License.
+-->
+
+{% extends 'main2' %}
+{% block content %}
+<section>
+
+  <script type=text/javascript>
+    $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+  </script>
+
+  <div style="margin:80px 0;"></div>
+
+  <div style="margin-left: 5%;margin-right: 5%;">
+    <h2><span style="color: #21517A;">Omnicrobe API</span></h2><br/>
+  </div>
+
+  <div style="margin-top: 0px; margin-left: 20px; margin-right: 20px;">
+    <div class="row">
+      <div class="col-sm-4 d-flex">
+        <div class="card" style="background-color: #21517A; border-color: #21517A; color: #fff;">
+          <div class="card-body">
+            <center><img align="center" src="{{ url_for('static', filename='img/textmining.png') }}" width="80" height="80"/></br></br>
+            <h5 class="card-title">Description<br/></h5>
+            API to access data in Omnicrobe, a reference database of microorganism biodiversity.<br/><br/>More information about <a class='acolor' href='index'>Omnicrobe</a> is available <a class='acolor' href='about'>here</a>.</center>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 d-flex">
+        <div class="card" style="background-color: #21517A; border-color: #21517A; color: #fff;">
+          <div class="card-body">
+            <center><img align="center" src="{{ url_for('static', filename='img/CurrentVersion.png') }}" width="80" height="80"/></br></br>
+            <h5 class="card-title">Documentation<br/></h5>
+            API documentation is available at <a class='acolor' href='api-doc'>http://omnicrobe.migale.inrae.fr/api-doc</a> using the <a class='acolor' target="_blank" href='https://www.openapis.org/'>OpenAPI Specification</a> and <a class='acolor' target="_blank" href='https://swagger.io/'>Swagger</a>.</center>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 d-flex">
+        <div class="card" style="background-color: #21517A; border-color: #21517A; color: #fff;">
+          <div class="card-body">
+            <center><img align="center" src="{{ url_for('static', filename='img/database.png') }}" width="80" height="80"/></br></br>
+            <h5 class="card-title">Download a large, custom set of records<br/></h5>
+            If you want to download a large, custom set of records, you can use this <a class="acolor" target="_blank" href="{{ url_for('static', filename='files/omnicrobe.py') }}">computer program</a>.</center>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- </div> -->
+
+    <br/>
+
+    <div class="alert alert-info" role="alert">
+      <h7 style="color: #17a2b8;">Citing Omnicrobe</h7>
+      <hr/>
+      <p style="font-size:0.9rem;" align="justify">The Omnicrobe database and the associated data are free of use, available under the <a class="text-info" target="_blank" href="https://creativecommons.org/licenses/by/2.0/deed.en">CC-BY license</a>. If you share or adapt it, you must give appropriate credit i.e. provide a link to the license, indicate if changes were made and cite the paper:<br/><br/>Dérozier S, Bossy R, Deléger L, Ba M, Chaix E, et al. (2023) Omnicrobe, an open-access database of microbial habitats and phenotypes using a comprehensive text mining and data fusion approach. PLOS ONE 18(1): e0272473. <a target="_blank" href="https://doi.org/10.1371/journal.pone.0272473">https://doi.org/10.1371/journal.pone.0272473</a>.</p>
+      <!-- <p style="font-size:0.9rem;" align="justify">The Omnicrobe database and the associated data are free of use, available under the <a class="text-info" target="_blank" href="https://creativecommons.org/licenses/by/2.0/deed.en">CC-BY license</a>. If you share or adapt it, you must give appropriate credit: provide a link to the license, indicate if changes were made and cite the paper:<br/><br/>
+        Falentin, H., Chaix, E., Dérozier, S., Weber, M., Buchin, S., Dridi, B., Deutsch, S.-M., Valence-Bertel, F., Casaregola, S., Renault, P., Champomier-Vergès, M.-C., Thierry, A., Zagorec, M., Irlinger, F., Delbes, C., Aubin, S., Bessières, P., Loux, V., Bossy, R., Dibie, J., Sicard, D., Nédellec, C. (2017, October). Florilege: a database gathering microbial phenotypes of food interest. <i>In 4th International Conference on Microbial Diversity 2017</i>, Bari, ITA (2017-10-24 - 2017-10-26).<p> -->
+    </div>
+  </div>
+
+  <div style="margin:80px 0;"></div>
+
+</section>
+{% endblock %}

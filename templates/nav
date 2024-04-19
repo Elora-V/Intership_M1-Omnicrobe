@@ -1,0 +1,64 @@
+<!--
+# Copyright 2022 Sandra Dérozier (INRAE)
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+#    Unless required by applicable law or agreed to in writing, software
+#    distributed under the License is distributed on an "AS IS" BASIS,
+#    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#    See the License for the specific language governing permissions and
+#    limitations under the License.
+-->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top">
+
+  <a class="navbar-brand" href="index" id="main"><img src="{{ url_for('static', filename='img/logo_Omnicrobe_blanc_small.png') }}" />&nbsp;&nbsp;Omnicrobe</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Search
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="searchByTaxon" id="searchByTaxon">Taxon lives in Habitat</a>
+          <a class="dropdown-item" href="searchByHabitat" id="searchByHabitat">Habitat contains Taxon</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="searchByTaxonForPhenotype" id="searchByTaxonForPhenotype">Taxon exhibits Phenotype</a>
+          <a class="dropdown-item" href="searchByPhenotype" id="searchByPhenotype">Phenotype is exhibited by Taxon</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="searchByTaxonForUse" id="searchByTaxonForUse">Taxon studied for Use</a>
+          <a class="dropdown-item" href="searchByUse" id="searchByUse">Use involves Taxon</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="advancedSearch" id="advancedSearch">Advanced search</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link" href="api" id="navbarDropdown" role="button" aria-haspopup="true">
+          Web services
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          About
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="about">About</a>
+          <a class="dropdown-item" href="release">Release Notes</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="help">Help</a>
+          <!--a class="dropdown-item" href="demo">Website usage documentation</a-->
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="contact" id="contact">Contact</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>

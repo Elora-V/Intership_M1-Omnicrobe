@@ -1,0 +1,43 @@
+<!--
+# Copyright 2022 Sandra Dérozier (INRAE)
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+#    Unless required by applicable law or agreed to in writing, software
+#    distributed under the License is distributed on an "AS IS" BASIS,
+#    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#    See the License for the specific language governing permissions and
+#    limitations under the License.
+-->
+
+<div style="margin-left: 5%; margin-right: 5%;" align="center">
+  <ul class="nav nav-pills flex-column flex-sm-row" id="pills-tab" role="tablist">
+    <li class="nav-item" role="presentation" id="searchByTaxon">
+      <a class="flex-sm-fill text-sm-center nav-link" aria-current="page" href="searchByTaxon">Taxon lives in Habitat</a>
+    </li>
+    <li>&nbsp;</li>
+    <li class="nav-item" role="presentation" id="searchByHabitat">
+      <a class="flex-sm-fill text-sm-center nav-link" aria-current="page" href="searchByHabitat">Habitat contains Taxon</a>
+    </li>
+    <li>&nbsp;</li>
+    <li class="nav-item" role="presentation" id="searchByTaxonForPhenotype">
+      <a class="flex-sm-fill text-sm-center nav-link" aria-current="page" href="searchByTaxonForPhenotype">Taxon exhibits Phenotype</a>
+    </li>
+    <li>&nbsp;</li>
+    <li class="nav-item" role="presentation" id="searchByPhenotype">
+      <a class="flex-sm-fill text-sm-center nav-link" aria-current="page" href="searchByPhenotype">Phenotype is exhibited by Taxon</a>
+    </li>
+    <li>&nbsp;</li>
+    <li class="nav-item" role="presentation" id="searchByTaxonForUse">
+      <a class="flex-sm-fill text-sm-center nav-link" aria-current="page" href="searchByTaxonForUse">Taxon studied for Use</a>
+    </li>
+    <li>&nbsp;</li>
+    <li class="nav-item" role="presentation" id="searchByUse">
+      <a class="flex-sm-fill text-sm-center nav-link" aria-current="page" href="searchByUse">Use involves Taxon</a>
+    </li>
+  </ul>
+</div>

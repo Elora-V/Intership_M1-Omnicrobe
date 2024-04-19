@@ -1,0 +1,195 @@
+<!--
+# Copyright 2022 Sandra Dérozier (INRAE)
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+#    Unless required by applicable law or agreed to in writing, software
+#    distributed under the License is distributed on an "AS IS" BASIS,
+#    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#    See the License for the specific language governing permissions and
+#    limitations under the License.
+-->
+
+{% extends 'main' %}
+{% block content %}
+<section>
+
+  <script type=text/javascript>
+    $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+  </script>
+
+  <script>
+    var use     = JSON.parse('{{ use | tojson | safe }}');
+    var taxon   = JSON.parse('{{ taxon | tojson | safe }}');
+    var qps     = JSON.parse('{{ qps | tojson | safe }}');
+    var version = JSON.parse('{{ version | tojson | safe }}');
+    var alvisir = JSON.parse('{{ alvisir | tojson | safe }}');
+    var score = JSON.parse('{{ score | tojson | safe }}');
+  </script>
+
+  <link href="{{ url_for('static', filename='css/simpleTree.css') }}" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/selectize.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/selectize.boostrap3.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/additional.css') }}" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.1/js/standalone/selectize.js"></script>
+  <script src="{{ url_for('static', filename='js/lib/simpleTree.js') }}"></script>
+  <script type="module" src="{{ url_for('static', filename='js/searchByUse.js') }}"></script>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='js/lib/recogito-js-1.8.2/recogito.min.css') }}">
+<script src="{{ url_for('static', filename='js/lib/recogito-js-1.8.2/recogito.min.js') }}"></script>
+  
+
+  <div style="margin:30px 0;"></div>
+
+  <div style="margin-left: 5%;margin-right: 5%;">
+    <h3><span style="color: #21517A;">Use involves Taxon</span></h3>
+
+    <div style="margin-left: 2%;margin-right: 2%;">
+      <div class="d-flex justify-content-center text-info">
+        <div id="spinner_use_taxon" class="spinner-border" role="status" style="display: none;">
+          <span class="sr-only">Loading...</span>
+        </div>
+        <div id="spinner_use_taxon2" style="display: none;"><strong>&nbsp;&nbsp;Loading...</strong></div>
+      </div>
+      <div style="margin:40px 0;"></div>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <div class="input-group">
+            <label class="button-select input-group-text" for="relationTaxonByUse">Search relations by use</label>
+            <select class="form-select" id="search_use"></select>
+            <button id="filter_use_taxon" type="button" class="button-select-filter btn btn-info" data-toggle="collapse" data-target="#demo" disabled>Filter selection</button>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <div class="p-2">
+            <img width="3%" src="{{ url_for('static', filename='img/treeTest.png') }}" data-toggle="modal" data-target="#treeModalUse" style="cursor: pointer;"><a class="link-info link-cur" data-toggle="modal" data-target="#treeModalUse">OntoBiotope navigation</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="demo" class="collapse" style="margin-top: 1%;" align="center">
+      <table align="center">
+        <tr>
+
+          <td id="filter_col4" data-column="3">&nbsp;&nbsp;&nbsp;Filter by Taxon&nbsp;</td>
+          <td id="filter_col4_input" data-column="3" align="center">
+            <input type="text" class="column_filter" id="taxon_ut">
+          </td>
+
+          <td id="filter_col7" data-column="6">&nbsp;&nbsp;&nbsp;Reliability &ge; &nbsp;</td>
+          <td id="filter_col7_input" data-column="6" align="center">
+            <input type="number" step="0.05" min="0" max="1" class="column_filter_short" id="score_ut">
+          </td>
+
+          <td id="filter_col5" data-column="4">&nbsp;&nbsp;&nbsp;QPS only&nbsp;</td>
+          <td id="filter_col5_input" data-column="4">
+            <input type="checkbox" name="qps_ut" id="qps_ut" value="yes">
+          </td>
+
+        </tr>
+
+      </table>
+      <small id="help" class="form-text text-muted"><b>Note:</b> to filter by use, you can use ";" for "or" (example: "acidophile;adherent" for use).</small>
+    </div>
+    <div id="hide" style="display:none">
+      <br/>
+      <table id="results_use_taxon" class="display responsive nowrap collapsed" style="width:100%"> <!--width="100%" visibility="none"-->
+        <thead>
+          <tr>
+            <th>Source text</th>
+            <th>OntoBiotope class</th>
+            <th>Relation type</th>
+            <th>Scientific name of taxon</th>
+            <th>QPS</th>
+            <th>Source</th>
+            <th>Reliability</th>
+            <th>Occurrence in text (use)</th>
+            <th>Occurrence in text (taxon)</th>
+            <th>Full source text</th>
+            <th>ID OntoBiotope</th>
+            <th>OntoBiotope hierarchical path</th>
+            <th>TaxonID</th>
+            <th>Taxonomy hierarchical path</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+  </div>
+
+  <div style="margin:80px 0;"></div>
+
+  <!-- Tree navigation (modal) -->
+  <div class="modal fade" id="treeModalUse" tabindex="-1" aria-labelledby="treeModalUseLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-info" id="treeModalUseLabel">OntoBiotope navigation</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="input-group">
+            <label style="background-color: #21517A; border-color: #21517A; color: #fff;" class="input-group-text" for="searchtreeuse">Search OntoBiotope class</label>
+            <input type="search" class="form-control" id="searchtreeuse">
+          </div>
+          <div id="usetree"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div id="abstractModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered custom-modal-size" role="document">
+      <div class="modal-content">
+                
+                <div style="height: 20px;"></div>
+
+                <div style="margin-left: 5%;margin-right: 5%;">
+
+                      <div>
+                      <button type="button" class="close" style="position: absolute; right: 20px;" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3><span style="color: #21517A;" id="titlePage">Abstract</span></h3>
+                      </div>
+
+                      <div style="height: 30px;"></div>
+
+                      <div class="blockTxt">
+                        <div style="height: 20px;"></div>
+                        <div style="text-align: center;">
+                          <span id="colorLegend" class=" taxon">Taxon</span>
+                          <span class="horizontal_space"></span>
+                          <span id="colorLegend" class=" habitat">Habitat</span>
+                          <span class="horizontal_space"></span>
+                          <span id="colorLegend" class=" phenotype">Phenotype</span>
+                          <span class="horizontal_space"></span>
+                          <span id="colorLegend" class=" use">Use</span>
+                        </div> 
+                    
+                            <div style="height: 20px;"></div>
+                            <h4 style="color: #21517A;" id="title_abstract">Title</h4><br/>
+                            <p class="text-justify " id="abstract">Content ...</p> 
+                  </div>
+
+                  <div style="height: 50px;"></div>
+      </div>
+    </div>
+  </div>
+
+</section>
+{% endblock %}

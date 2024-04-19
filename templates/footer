@@ -1,0 +1,33 @@
+<!--
+# Copyright 2022 Sandra Dérozier (INRAE)
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+#    Unless required by applicable law or agreed to in writing, software
+#    distributed under the License is distributed on an "AS IS" BASIS,
+#    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#    See the License for the specific language governing permissions and
+#    limitations under the License.
+-->
+
+<nav id="navbar_footer" class="navbar bottom navbar-dark bg-info">
+
+  <table width="100%" border=0>
+    <tr>
+        <td width="25%"><a target="_blank"href="http://maiage.inrae.fr"><img align="left" src="{{ url_for('static', filename='img/logo_maiage_blanc.png') }}" height="30px"/></a></td>
+        <td width="50%"><div align="center" style="font-size: small;color: white;" class='color'>Copyright © 2023 <a class='color' style="color: white;" target="_blank"href="http://inrae.fr">INRAE</a> - <a class='color' style="color: white;" target="_blank"href="http://maiage.inrae.fr">MaIAGE</a><br/><a class='color' style="color: white;" href="mailto:omnicrobe@inrae.fr">omnicrobe@inrae.fr</a></div></td>
+        <td width="25%"><a target="_blank"href="http://inrae.fr"><img align="right" src="{{ url_for('static', filename='img/logo-inrae-blanc.png') }}" height="30px"/></a></td>
+    </tr>
+  </table>
+
+  <script>
+    if ( location.pathname.includes('viewer') == false ) {
+      $('#navbar_footer').attr("class", "navbar navbar-dark bg-info fixed-bottom");
+    }
+  </script>
+
+</nav>

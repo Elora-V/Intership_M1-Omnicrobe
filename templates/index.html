@@ -1,0 +1,115 @@
+<!--
+# Copyright 2022 Sandra Dérozier (INRAE)
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+#    Unless required by applicable law or agreed to in writing, software
+#    distributed under the License is distributed on an "AS IS" BASIS,
+#    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#    See the License for the specific language governing permissions and
+#    limitations under the License.
+-->
+
+{% extends 'main2' %}
+{% block content %}
+<section>
+
+  <script type=text/javascript>
+    $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+  </script>
+
+  <div style="margin:80px 0;"></div>
+
+  <div class="row no-gutters bg-light position-relative align-items-center">
+    <div class="col-md-9 mb-md-0 p-md-4 align-middle">
+        <h4 style="color: #21517A;">Omnicrobe is a database of habitats, phenotypes and uses</h4><br/>
+        <p class="text-justify ">The Omnicrobe database gathers comprehensive information on habitats, phenotypes and usages of microorganisms as automatically extracted from text sources (PubMed, GenBank, DSMZ, CIRM-BIA, CIRM-CFBP, CIRM-Levures). The search offers you access to the information and their sources. <a class="text-info" href='about'>More information.</a>
+        </p>
+    </div>
+    <div class="col-md-3 position-relative p-4 pl-md-0">
+        <center><img src="{{ url_for('static', filename='img/logo_Omnicrobe_3_resize.png') }}" alt="Omnicrobe"></center>
+    </div>
+  </div>
+
+  <div style="margin-top: 15px; margin-left: 20px; margin-right: 20px;">
+
+    <div class="row">
+      <div class="col-sm-2 d-flex">
+        <div class="card" style="background-color: #21517A; border-color: #21517A; color: #fff;">
+          <div class="card-body">
+            <center><img align="center" src="{{ url_for('static', filename='img/bacteria.png') }}" width="80" height="80"/></br></br>
+            <h6 class="card-title">Where does a microbe live?<br/><br/><br/><br/></h6>
+            <a href="searchByTaxon" style="background-color: #fff; border-color: #fff; color: black;" class="btn btn-sm btn-fix">Search Taxon lives in Habitat</a></center>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2 d-flex">
+        <div class="card" style="background-color: #21517A; border-color: #21517A; color: #fff;">
+          <div class="card-body">
+            <center><img align="center" src="{{ url_for('static', filename='img/apple.png') }}" width="80" height="80"/></br></br>
+            <h6 class="card-title">Which microbes can be found in a given habitat?<br/><br/><br/></h6>
+            <a href="searchByHabitat" style="background-color: #fff; border-color: #fff; color: black;" class="btn btn-sm btn-fix">Search Habitat contains Taxon</a></center>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2 d-flex">
+        <div class="card" style="background-color: #21517A; border-color: #21517A; color: #fff;">
+          <div class="card-body">
+            <center><img align="center" src="{{ url_for('static', filename='img/bacteria.png') }}" width="80" height="80"/></br></br>
+            <h6 class="card-title">What are the phenotypes of a given microbe?<br/><br/><br/></h6>
+            <a href="searchByTaxonForPhenotype" style="background-color: #fff; border-color: #fff; color: black;" class="btn btn-sm btn-fix">Search Taxon exhibits Phenotype</a></center>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2 d-flex">
+        <div class="card" style="background-color: #21517A; border-color: #21517A; color: #fff;">
+          <div class="card-body">
+            <center><img align="center" src="{{ url_for('static', filename='img/life-stage.png') }}" width="80" height="80"/></br></br>
+            <h6 class="card-title">Which microbes have this phenotype?<br/><br/><br/></h6>
+            <a href="searchByPhenotype" style="background-color: #fff; border-color: #fff; color: black;" class="btn btn-sm btn-fix">Search Phenotype is exhibited by Taxon</a></center>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2 d-flex">
+        <div class="card" style="background-color: #21517A; border-color: #21517A; color: #fff;">
+          <div class="card-body">
+            <center><img align="center" src="{{ url_for('static', filename='img/bacteria.png') }}" width="80" height="80"/></br></br>
+            <h6 class="card-title">For which use is this microbe studied?<br/><br/><br/></h6>
+            <a href="searchByTaxonForUse" style="background-color: #fff; border-color: #fff; color: black;" class="btn btn-sm btn-fix">Search Taxon studied for Use</a></center>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2 d-flex">
+        <div class="card" style="background-color: #21517A; border-color: #21517A; color: #fff;">
+          <div class="card-body">
+            <center><img align="center" src="{{ url_for('static', filename='img/medicine.png') }}" width="80" height="80"/></br></br>
+            <h6 class="card-title">Which microbe is involved in this use?<br/><br/><br/></h6>
+            <a href="searchByUse" style="background-color: #fff; border-color: #fff; color: black;" class="btn btn-sm btn-fix">Search Use involves Taxon</a></center>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br/>
+
+    <h5 style="color: #21517A;">Web services</h5>
+    <hr/>
+    Using the <a href="api">API</a> is recommended for the export of large set of data.
+    <br/><br/>
+    <div class="alert alert-info" role="alert">
+      <h7 style="color: #17a2b8;">Citing Omnicrobe</h7>
+      <hr/>
+      <p style="font-size:0.9rem;" align="justify">The Omnicrobe database and the associated data are free of use, available under the <a class="text-info" target="_blank" href="https://creativecommons.org/licenses/by/2.0/deed.en">CC-BY license</a>. If you share or adapt it, you must give appropriate credit i.e. provide a link to the license, indicate if changes were made and cite the paper: <br/><br/>Dérozier S, Bossy R, Deléger L, Ba M, Chaix E, et al. (2023) Omnicrobe, an open-access database of microbial habitats and phenotypes using a comprehensive text mining and data fusion approach. PLOS ONE 18(1): e0272473. <a target="_blank" href="https://doi.org/10.1371/journal.pone.0272473">https://doi.org/10.1371/journal.pone.0272473</a>.</p>
+      <!--p style="font-size:0.9rem;" align="justify">The Omnicrobe database and the associated data are free of use, available under the <a class="text-info" target="_blank" href="https://creativecommons.org/licenses/by/2.0/deed.en">CC-BY license</a>. If you share or adapt it, you must give appropriate credit: provide a link to the license, indicate if changes were made and cite the paper:<br/><br/>
+      Falentin, H., Chaix, E., Dérozier, S., Weber, M., Buchin, S., Dridi, B., Deutsch, S.-M., Valence-Bertel, F., Casaregola, S., Renault, P., Champomier-Vergès, M.-C., Thierry, A., Zagorec, M., Irlinger, F., Delbes, C., Aubin, S., Bessières, P., Loux, V., Bossy, R., Dibie, J., Sicard, D., Nédellec, C. (2017, October). Florilege: a database gathering microbial phenotypes of food interest. <i>In 4th International Conference on Microbial Diversity 2017</i>, Bari, ITA (2017-10-24 - 2017-10-26).</p-->
+    </div>
+  </div>
+
+  <div style="margin:80px 0;"></div>
+
+</section>
+{% endblock %}

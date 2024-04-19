@@ -1,0 +1,104 @@
+/*
+# Copyright 2022 Sandra Dérozier (INRAE)
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+#    Unless required by applicable law or agreed to in writing, software
+#    distributed under the License is distributed on an "AS IS" BASIS,
+#    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#    See the License for the specific language governing permissions and
+#    limitations under the License.
+*/
+
+.button-select {
+  background-color: #21517A;
+  border-color: #21517A;
+  color: #fff;
+  height: 34px;
+}
+
+.button-select-filter {
+  height: 34px;
+  align-items: center;
+  display: flex;
+}
+
+.button-select-filter-NoHeight {
+
+  align-items: center;
+  display: flex;
+}
+
+/* Mimic .fa */
+.glyphicon {
+  display: inline-block !important;
+  font: normal normal normal 14px/1 FontAwesome !important;
+  font-size: 14px !important;
+  font-size: inherit !important;
+  text-rendering: auto !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+/* Mimic .fa-check-square-o */
+.glyphicon-check:before {
+  content: '\f046';
+}
+
+/* Mimic .fa-plus */
+.glyphicon-plus:before {
+  content: '\f067';
+}
+
+/* Mimic .fa-plus-circle */
+.glyphicon-plus-sign:before {
+  content: '\f055';
+}
+
+/* Mimic .fa-random */
+.glyphicon-random:before {
+  content: '\f074';
+}
+
+/* Mimic .fa-times */
+.glyphicon-remove:before {
+  content: '\f00d';
+}
+
+/* Mimic .fa-sort */
+.glyphicon-sort:before {
+  content: '\f0dc';
+}
+
+/* Mimic .fa-square-o */
+.glyphicon-unchecked:before {
+  content: '\f096';
+}
+
+/* Mimic .fa-warning */
+.glyphicon-warning-sign:before {
+  content: '\f071';
+}
+
+/* My custom CSS (Feel free to ignore) */
+.query-builder .rules-group-container {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 10px;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  border-radius: 14px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+  width: 100%;
+}
+
+/* Not needed when using Font-Awesome 4.7.. but you may need it with v5 (not tested yet) */
+
+/*.pull-right {
+  float:right;
+}*/

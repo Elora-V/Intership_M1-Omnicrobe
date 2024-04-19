@@ -1,0 +1,4749 @@
+[{"extid" : "OBT:000002", 
+"value" : "OBT:000002", 
+"label" : "microbial phenotype",
+"expanded" : true,
+"children" :[
+	
+	{"extid" : "OBT:000015", 
+	"value" : "OBT:000015", 
+	"label" : "phenotype wrt adhesion", 
+	"children" :[
+		
+		{"extid" : "OBT:000029", 
+		"value" : "OBT:000029", 
+		"label" : "adherent", 
+		"children" :[
+			
+			{"extid" : "OBT:000417", 
+			"value" : "OBT:000417", 
+			"label" : "sessile", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+		] , 
+		"descendantnb" : 1, 
+		"sublevelnb" : 1
+		}
+		, 
+		{"extid" : "OBT:000139", 
+		"value" : "OBT:000139", 
+		"label" : "planktonic", 
+		"syns" : ["free floating"], 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+		, 
+		{"extid" : "OBT:001005", 
+		"value" : "OBT:001005", 
+		"label" : "biofilm phenotype", 
+		"children" :[
+			
+			{"extid" : "OBT:001444", 
+			"value" : "OBT:001444", 
+			"label" : "biofilm forming", 
+			"children" :[
+				
+				{"extid" : "OBT:002035", 
+				"value" : "OBT:002035", 
+				"label" : "flor", 
+				"syns" : ["flor forming"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 1, 
+			"sublevelnb" : 1
+			}
+			, 
+			{"extid" : "OBT:001664", 
+			"value" : "OBT:001664", 
+			"label" : "non-biofilm forming", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+		] , 
+		"descendantnb" : 3, 
+		"sublevelnb" : 2
+		}
+	] , 
+	"descendantnb" : 7, 
+	"sublevelnb" : 3
+	}
+	, 
+	{"extid" : "OBT:000016", 
+	"value" : "OBT:000016", 
+	"label" : "phenotype wrt community behaviour", 
+	"children" :[
+		
+		{"extid" : "OBT:000057", 
+		"value" : "OBT:000057", 
+		"label" : "bloom forming", 
+		"syns" : ["bloom-forming"], 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+		, 
+		{"extid" : "OBT:000065", 
+		"value" : "OBT:000065", 
+		"label" : "conjugation phenotype", 
+		"children" :[
+			
+			{"extid" : "OBT:000243", 
+			"value" : "OBT:000243", 
+			"label" : "conjugating", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:000456", 
+			"value" : "OBT:000456", 
+			"label" : "transconjugating", 
+			"syns" : ["transconjugant"], 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+		] , 
+		"descendantnb" : 2, 
+		"sublevelnb" : 1
+		}
+		, 
+		{"extid" : "OBT:000104", 
+		"value" : "OBT:000104", 
+		"label" : "lichen forming", 
+		"syns" : ["lichen-forming"], 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+		, 
+		{"extid" : "OBT:000142", 
+		"value" : "OBT:000142", 
+		"label" : "presence of nanotube", 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+		, 
+		{"extid" : "OBT:000143", 
+		"value" : "OBT:000143", 
+		"label" : "presence of quorum sensing", 
+		"syns" : ["quorum sensing"], 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+		, 
+		{"extid" : "OBT:000147", 
+		"value" : "OBT:000147", 
+		"label" : "sexual mating", 
+		"children" :[
+			
+			{"extid" : "OBT:000172", 
+			"value" : "OBT:000172", 
+			"label" : "MATa", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:000173", 
+			"value" : "OBT:000173", 
+			"label" : "MATalpha", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:000305", 
+			"value" : "OBT:000305", 
+			"label" : "heterothallic", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:000310", 
+			"value" : "OBT:000310", 
+			"label" : "homothallic", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+		] , 
+		"descendantnb" : 4, 
+		"sublevelnb" : 1
+		}
+		, 
+		{"extid" : "OBT:001005", 
+		"value" : "OBT:001005", 
+		"label" : "biofilm phenotype", 
+		"children" :[
+			
+			{"extid" : "OBT:001444", 
+			"value" : "OBT:001444", 
+			"label" : "biofilm forming", 
+			"children" :[
+				
+				{"extid" : "OBT:002035", 
+				"value" : "OBT:002035", 
+				"label" : "flor", 
+				"syns" : ["flor forming"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 1, 
+			"sublevelnb" : 1
+			}
+			, 
+			{"extid" : "OBT:001664", 
+			"value" : "OBT:001664", 
+			"label" : "non-biofilm forming", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+		] , 
+		"descendantnb" : 3, 
+		"sublevelnb" : 2
+		}
+	] , 
+	"descendantnb" : 16, 
+	"sublevelnb" : 3
+	}
+	, 
+	{"extid" : "OBT:000017", 
+	"value" : "OBT:000017", 
+	"label" : "phenotype wrt environment", 
+	"children" :[
+		
+		{"extid" : "OBT:000042", 
+		"value" : "OBT:000042", 
+		"label" : "antimicrobial activity", 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+		, 
+		{"extid" : "OBT:000070", 
+		"value" : "OBT:000070", 
+		"label" : "endolithic", 
+		"syns" : ["endolith"], 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+		, 
+		{"extid" : "OBT:000072", 
+		"value" : "OBT:000072", 
+		"label" : "endopelic", 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+		, 
+		{"extid" : "OBT:000075", 
+		"value" : "OBT:000075", 
+		"label" : "endopsammic", 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+		, 
+		{"extid" : "OBT:000080", 
+		"value" : "OBT:000080", 
+		"label" : "epilythic", 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+		, 
+		{"extid" : "OBT:000082", 
+		"value" : "OBT:000082", 
+		"label" : "epipelic", 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+		, 
+		{"extid" : "OBT:000084", 
+		"value" : "OBT:000084", 
+		"label" : "epipsammic", 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+		, 
+		{"extid" : "OBT:000086", 
+		"value" : "OBT:000086", 
+		"label" : "epixylic", 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+		, 
+		{"extid" : "OBT:000132", 
+		"value" : "OBT:000132", 
+		"label" : "phenotype wrt microbial-host interaction", 
+		"children" :[
+			
+			{"extid" : "OBT:000195", 
+			"value" : "OBT:000195", 
+			"label" : "animal hosted", 
+			"children" :[
+				
+				{"extid" : "OBT:000618", 
+				"value" : "OBT:000618", 
+				"label" : "endozootic", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:000620", 
+				"value" : "OBT:000620", 
+				"label" : "epizootic", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:000827", 
+				"value" : "OBT:000827", 
+				"label" : "probiotic", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002668", 
+				"value" : "OBT:002668", 
+				"label" : "animal commensal", 
+				"children" :[
+					
+					{"extid" : "OBT:003125", 
+					"value" : "OBT:003125", 
+					"label" : "animal symbiont", 
+					"children" :[
+						
+						{"extid" : "OBT:003182", 
+						"value" : "OBT:003182", 
+						"label" : "animal facultative symbiont", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:003183", 
+						"value" : "OBT:003183", 
+						"label" : "animal obligate symbiont", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+					] , 
+					"descendantnb" : 2, 
+					"sublevelnb" : 1
+					}
+				] , 
+				"descendantnb" : 3, 
+				"sublevelnb" : 2
+				}
+				, 
+				{"extid" : "OBT:002669", 
+				"value" : "OBT:002669", 
+				"label" : "animal pathogen", 
+				"children" :[
+					
+					{"extid" : "OBT:002806", 
+					"value" : "OBT:002806", 
+					"label" : "human pathogen", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:002809", 
+					"value" : "OBT:002809", 
+					"label" : "insect pathogen", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+				] , 
+				"descendantnb" : 2, 
+				"sublevelnb" : 1
+				}
+				, 
+				{"extid" : "OBT:002764", 
+				"value" : "OBT:002764", 
+				"label" : "animal opportunist", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 11, 
+			"sublevelnb" : 3
+			}
+			, 
+			{"extid" : "OBT:000239", 
+			"value" : "OBT:000239", 
+			"label" : "commensal", 
+			"children" :[
+				
+				{"extid" : "OBT:002668", 
+				"value" : "OBT:002668", 
+				"label" : "animal commensal", 
+				"children" :[
+					
+					{"extid" : "OBT:003125", 
+					"value" : "OBT:003125", 
+					"label" : "animal symbiont", 
+					"children" :[
+						
+						{"extid" : "OBT:003182", 
+						"value" : "OBT:003182", 
+						"label" : "animal facultative symbiont", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:003183", 
+						"value" : "OBT:003183", 
+						"label" : "animal obligate symbiont", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+					] , 
+					"descendantnb" : 2, 
+					"sublevelnb" : 1
+					}
+				] , 
+				"descendantnb" : 3, 
+				"sublevelnb" : 2
+				}
+				, 
+				{"extid" : "OBT:002733", 
+				"value" : "OBT:002733", 
+				"label" : "plant commensal", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 5, 
+			"sublevelnb" : 3
+			}
+			, 
+			{"extid" : "OBT:000288", 
+			"value" : "OBT:000288", 
+			"label" : "free-living", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:000372", 
+			"value" : "OBT:000372", 
+			"label" : "parasite", 
+			"children" :[
+				
+				{"extid" : "OBT:000517", 
+				"value" : "OBT:000517", 
+				"label" : "biotrophic", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:000609", 
+				"value" : "OBT:000609", 
+				"label" : "ectoparasite", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:000616", 
+				"value" : "OBT:000616", 
+				"label" : "endoparasite", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:000762", 
+				"value" : "OBT:000762", 
+				"label" : "necrotrophic", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:000771", 
+				"value" : "OBT:000771", 
+				"label" : "obligate parasite", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 5, 
+			"sublevelnb" : 1
+			}
+			, 
+			{"extid" : "OBT:000375", 
+			"value" : "OBT:000375", 
+			"label" : "pathogen", 
+			"syns" : ["infectious agent", "virulence phenotype"], 
+			"children" :[
+				
+				{"extid" : "OBT:000776", 
+				"value" : "OBT:000776", 
+				"label" : "opportunistic pathogen", 
+				"syns" : ["opportunist"], 
+				"children" :[
+					
+					{"extid" : "OBT:002764", 
+					"value" : "OBT:002764", 
+					"label" : "animal opportunist", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+				] , 
+				"descendantnb" : 1, 
+				"sublevelnb" : 1
+				}
+				, 
+				{"extid" : "OBT:002669", 
+				"value" : "OBT:002669", 
+				"label" : "animal pathogen", 
+				"children" :[
+					
+					{"extid" : "OBT:002806", 
+					"value" : "OBT:002806", 
+					"label" : "human pathogen", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:002809", 
+					"value" : "OBT:002809", 
+					"label" : "insect pathogen", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+				] , 
+				"descendantnb" : 2, 
+				"sublevelnb" : 1
+				}
+				, 
+				{"extid" : "OBT:002732", 
+				"value" : "OBT:002732", 
+				"label" : "phytopathogen", 
+				"syns" : ["plant pathogen"], 
+				"children" :[
+					
+					{"extid" : "OBT:002765", 
+					"value" : "OBT:002765", 
+					"label" : "antagonist", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:002827", 
+					"value" : "OBT:002827", 
+					"label" : "obligate phytopathogen", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+				] , 
+				"descendantnb" : 2, 
+				"sublevelnb" : 1
+				}
+			] , 
+			"descendantnb" : 8, 
+			"sublevelnb" : 2
+			}
+			, 
+			{"extid" : "OBT:000394", 
+			"value" : "OBT:000394", 
+			"label" : "plant hosted", 
+			"children" :[
+				
+				{"extid" : "OBT:000617", 
+				"value" : "OBT:000617", 
+				"label" : "endophyte", 
+				"syns" : ["endophytic "], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:000732", 
+				"value" : "OBT:000732", 
+				"label" : "metaphytic", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:000798", 
+				"value" : "OBT:000798", 
+				"label" : "periphytic", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:000813", 
+				"value" : "OBT:000813", 
+				"label" : "plant opportunist", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002732", 
+				"value" : "OBT:002732", 
+				"label" : "phytopathogen", 
+				"syns" : ["plant pathogen"], 
+				"children" :[
+					
+					{"extid" : "OBT:002765", 
+					"value" : "OBT:002765", 
+					"label" : "antagonist", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:002827", 
+					"value" : "OBT:002827", 
+					"label" : "obligate phytopathogen", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+				] , 
+				"descendantnb" : 2, 
+				"sublevelnb" : 1
+				}
+				, 
+				{"extid" : "OBT:002733", 
+				"value" : "OBT:002733", 
+				"label" : "plant commensal", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002734", 
+				"value" : "OBT:002734", 
+				"label" : "plant symbiont", 
+				"syns" : ["phytosymbiont"], 
+				"children" :[
+					
+					{"extid" : "OBT:002833", 
+					"value" : "OBT:002833", 
+					"label" : "plant facultative symbiont", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:002835", 
+					"value" : "OBT:002835", 
+					"label" : "plant obligate symbiont", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+				] , 
+				"descendantnb" : 2, 
+				"sublevelnb" : 1
+				}
+			] , 
+			"descendantnb" : 11, 
+			"sublevelnb" : 2
+			}
+			, 
+			{"extid" : "OBT:000441", 
+			"value" : "OBT:000441", 
+			"label" : "symbiont", 
+			"children" :[
+				
+				{"extid" : "OBT:002734", 
+				"value" : "OBT:002734", 
+				"label" : "plant symbiont", 
+				"syns" : ["phytosymbiont"], 
+				"children" :[
+					
+					{"extid" : "OBT:002833", 
+					"value" : "OBT:002833", 
+					"label" : "plant facultative symbiont", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:002835", 
+					"value" : "OBT:002835", 
+					"label" : "plant obligate symbiont", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+				] , 
+				"descendantnb" : 2, 
+				"sublevelnb" : 1
+				}
+				, 
+				{"extid" : "OBT:003125", 
+				"value" : "OBT:003125", 
+				"label" : "animal symbiont", 
+				"children" :[
+					
+					{"extid" : "OBT:003182", 
+					"value" : "OBT:003182", 
+					"label" : "animal facultative symbiont", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:003183", 
+					"value" : "OBT:003183", 
+					"label" : "animal obligate symbiont", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+				] , 
+				"descendantnb" : 2, 
+				"sublevelnb" : 1
+				}
+			] , 
+			"descendantnb" : 6, 
+			"sublevelnb" : 2
+			}
+		] , 
+		"descendantnb" : 53, 
+		"sublevelnb" : 4
+		}
+		, 
+		{"extid" : "OBT:000164", 
+		"value" : "OBT:000164", 
+		"label" : "ubiquitous", 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+	] , 
+	"descendantnb" : 63, 
+	"sublevelnb" : 5
+	}
+	, 
+	{"extid" : "OBT:000018", 
+	"value" : "OBT:000018", 
+	"label" : "phenotype wrt growth", 
+	"children" :[
+		
+		{"extid" : "OBT:000051", 
+		"value" : "OBT:000051", 
+		"label" : "asexual reproduction", 
+		"syns" : ["asexual growth"], 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+		, 
+		{"extid" : "OBT:000099", 
+		"value" : "OBT:000099", 
+		"label" : "hyphae growth", 
+		"syns" : ["hyphae"], 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+		, 
+		{"extid" : "OBT:000122", 
+		"value" : "OBT:000122", 
+		"label" : "non-sporulating", 
+		"syns" : ["non spore forming", "non sporulating"], 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+		, 
+		{"extid" : "OBT:000144", 
+		"value" : "OBT:000144", 
+		"label" : "pseudohyphae growth", 
+		"syns" : ["pseudohyphae"], 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+		, 
+		{"extid" : "OBT:000148", 
+		"value" : "OBT:000148", 
+		"label" : "sexual reproduction", 
+		"syns" : ["asci formation", "ascospore formation", "ascus formation", "meiospore formation", "sexual growth"], 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+		, 
+		{"extid" : "OBT:000150", 
+		"value" : "OBT:000150", 
+		"label" : "sporulating", 
+		"syns" : ["endospore forming", "endospore-forming", "spore forming", "spore liberation", "spore-forming"], 
+		"children" :[
+			
+			{"extid" : "OBT:000242", 
+			"value" : "OBT:000242", 
+			"label" : "conidial", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+		] , 
+		"descendantnb" : 1, 
+		"sublevelnb" : 1
+		}
+	] , 
+	"descendantnb" : 7, 
+	"sublevelnb" : 2
+	}
+	, 
+	{"extid" : "OBT:000019", 
+	"value" : "OBT:000019", 
+	"label" : "phenotype wrt metabolic activity", 
+	"children" :[
+		
+		{"extid" : "OBT:000040", 
+		"value" : "OBT:000040", 
+		"label" : "anoxygenic", 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+		, 
+		{"extid" : "OBT:000055", 
+		"value" : "OBT:000055", 
+		"label" : "bioluminescent", 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+		, 
+		{"extid" : "OBT:000060", 
+		"value" : "OBT:000060", 
+		"label" : "catalase activity", 
+		"children" :[
+			
+			{"extid" : "OBT:000221", 
+			"value" : "OBT:000221", 
+			"label" : "catalase negative", 
+			"syns" : ["catalase -"], 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:000222", 
+			"value" : "OBT:000222", 
+			"label" : "catalase positive", 
+			"syns" : ["catalase +"], 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+		] , 
+		"descendantnb" : 2, 
+		"sublevelnb" : 1
+		}
+		, 
+		{"extid" : "OBT:000063", 
+		"value" : "OBT:000063", 
+		"label" : "coagulase activity", 
+		"children" :[
+			
+			{"extid" : "OBT:000235", 
+			"value" : "OBT:000235", 
+			"label" : "coagulase negative", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:000236", 
+			"value" : "OBT:000236", 
+			"label" : "coagulase positive", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+		] , 
+		"descendantnb" : 2, 
+		"sublevelnb" : 1
+		}
+		, 
+		{"extid" : "OBT:000068", 
+		"value" : "OBT:000068", 
+		"label" : "decarboxylase activity", 
+		"children" :[
+			
+			{"extid" : "OBT:000251", 
+			"value" : "OBT:000251", 
+			"label" : "decarboxylase negative", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:000252", 
+			"value" : "OBT:000252", 
+			"label" : "decarboxylase positive", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+		] , 
+		"descendantnb" : 2, 
+		"sublevelnb" : 1
+		}
+		, 
+		{"extid" : "OBT:000107", 
+		"value" : "OBT:000107", 
+		"label" : "lytic", 
+		"children" :[
+			
+			{"extid" : "OBT:000304", 
+			"value" : "OBT:000304", 
+			"label" : "hemolytic", 
+			"syns" : ["haemolytic"], 
+			"children" :[
+				
+				{"extid" : "OBT:000482", 
+				"value" : "OBT:000482", 
+				"label" : "alpha-hemolytic", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:000512", 
+				"value" : "OBT:000512", 
+				"label" : "beta-hemolytic", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 2, 
+			"sublevelnb" : 1
+			}
+			, 
+			{"extid" : "OBT:000396", 
+			"value" : "OBT:000396", 
+			"label" : "pore forming", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+		] , 
+		"descendantnb" : 4, 
+		"sublevelnb" : 2
+		}
+		, 
+		{"extid" : "OBT:000123", 
+		"value" : "OBT:000123", 
+		"label" : "oxidoreductase activity", 
+		"children" :[
+			
+			{"extid" : "OBT:000371", 
+			"value" : "OBT:000371", 
+			"label" : "oxidase activity", 
+			"children" :[
+				
+				{"extid" : "OBT:000784", 
+				"value" : "OBT:000784", 
+				"label" : "oxidase negative", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:000785", 
+				"value" : "OBT:000785", 
+				"label" : "oxidase positive", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 2, 
+			"sublevelnb" : 1
+			}
+		] , 
+		"descendantnb" : 3, 
+		"sublevelnb" : 2
+		}
+	] , 
+	"descendantnb" : 20, 
+	"sublevelnb" : 3
+	}
+	, 
+	{"extid" : "OBT:000020", 
+	"value" : "OBT:000020", 
+	"label" : "phenotype wrt morphology", 
+	"children" :[
+		
+		{"extid" : "OBT:000064", 
+		"value" : "OBT:000064", 
+		"label" : "colony morphology phenotype", 
+		"children" :[
+			
+			{"extid" : "OBT:000380", 
+			"value" : "OBT:000380", 
+			"label" : "phenotype wrt color", 
+			"children" :[
+				
+				{"extid" : "OBT:000809", 
+				"value" : "OBT:000809", 
+				"label" : "pigmented", 
+				"children" :[
+					
+					{"extid" : "OBT:001007", 
+					"value" : "OBT:001007", 
+					"label" : "black pigmented", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:001008", 
+					"value" : "OBT:001008", 
+					"label" : "blue pigmented", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:001019", 
+					"value" : "OBT:001019", 
+					"label" : "brown pigmented", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:001054", 
+					"value" : "OBT:001054", 
+					"label" : "cream pigmented", 
+					"syns" : ["beige pigmented", "creamy white pigmented"], 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:001107", 
+					"value" : "OBT:001107", 
+					"label" : "fluorescent pigmented", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:001131", 
+					"value" : "OBT:001131", 
+					"label" : "golden pigmented", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:001137", 
+					"value" : "OBT:001137", 
+					"label" : "green pigmented", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:001156", 
+					"value" : "OBT:001156", 
+					"label" : "indigo pigmented", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:001197", 
+					"value" : "OBT:001197", 
+					"label" : "maroon pigmented", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:001240", 
+					"value" : "OBT:001240", 
+					"label" : "orange pigmented", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:001255", 
+					"value" : "OBT:001255", 
+					"label" : "pink pigmented", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:001272", 
+					"value" : "OBT:001272", 
+					"label" : "purple pigmented", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:001280", 
+					"value" : "OBT:001280", 
+					"label" : "red pigmented", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:001318", 
+					"value" : "OBT:001318", 
+					"label" : "silver pigmented", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:001372", 
+					"value" : "OBT:001372", 
+					"label" : "violet pigmented", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:001382", 
+					"value" : "OBT:001382", 
+					"label" : "white pigmented", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:001386", 
+					"value" : "OBT:001386", 
+					"label" : "yellow pigmented", 
+					"syns" : ["yellowish"], 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+				] , 
+				"descendantnb" : 17, 
+				"sublevelnb" : 1
+				}
+			] , 
+			"descendantnb" : 18, 
+			"sublevelnb" : 2
+			}
+			, 
+			{"extid" : "OBT:000386", 
+			"value" : "OBT:000386", 
+			"label" : "phenotype wrt shape", 
+			"children" :[
+				
+				{"extid" : "OBT:000513", 
+				"value" : "OBT:000513", 
+				"label" : "big colony", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:000632", 
+				"value" : "OBT:000632", 
+				"label" : "fluffy colony", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:000879", 
+				"value" : "OBT:000879", 
+				"label" : "small colony", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:000880", 
+				"value" : "OBT:000880", 
+				"label" : "smooth colony", 
+				"children" :[
+					
+					{"extid" : "OBT:001288", 
+					"value" : "OBT:001288", 
+					"label" : "ropy colony", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+				] , 
+				"descendantnb" : 1, 
+				"sublevelnb" : 1
+				}
+				, 
+				{"extid" : "OBT:000897", 
+				"value" : "OBT:000897", 
+				"label" : "structured colony", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:003067", 
+				"value" : "OBT:003067", 
+				"label" : "petite positive", 
+				"syns" : ["petite colony", "petite mutant", "petite strain", "petite yeast"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:003614", 
+				"value" : "OBT:003614", 
+				"label" : "cord-shaped", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 8, 
+			"sublevelnb" : 2
+			}
+		] , 
+		"descendantnb" : 28, 
+		"sublevelnb" : 3
+		}
+		, 
+		{"extid" : "OBT:000105", 
+		"value" : "OBT:000105", 
+		"label" : "liquid culture morphology phenotype", 
+		"children" :[
+			
+			{"extid" : "OBT:000286", 
+			"value" : "OBT:000286", 
+			"label" : "flocculent", 
+			"syns" : ["flocculant", "flocculating"], 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:000297", 
+			"value" : "OBT:000297", 
+			"label" : "granular", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+		] , 
+		"descendantnb" : 2, 
+		"sublevelnb" : 1
+		}
+		, 
+		{"extid" : "OBT:000116", 
+		"value" : "OBT:000116", 
+		"label" : "microscopic morphological phenotype", 
+		"children" :[
+			
+			{"extid" : "OBT:000174", 
+			"value" : "OBT:000174", 
+			"label" : "Neisser stain phenotype", 
+			"children" :[
+				
+				{"extid" : "OBT:000472", 
+				"value" : "OBT:000472", 
+				"label" : "Neisser-negative", 
+				"syns" : ["Neisser -"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:000473", 
+				"value" : "OBT:000473", 
+				"label" : "Neisser-positive", 
+				"syns" : ["Neisser +"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 2, 
+			"sublevelnb" : 1
+			}
+			, 
+			{"extid" : "OBT:000228", 
+			"value" : "OBT:000228", 
+			"label" : "cellular shape phenotype", 
+			"children" :[
+				
+				{"extid" : "OBT:000563", 
+				"value" : "OBT:000563", 
+				"label" : "coccobacillus", 
+				"syns" : ["oval-shaped", "ovoid-shaped"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:000614", 
+				"value" : "OBT:000614", 
+				"label" : "encapsulated", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:000628", 
+				"value" : "OBT:000628", 
+				"label" : "filament-shaped", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:000817", 
+				"value" : "OBT:000817", 
+				"label" : "pleomorphic", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:000848", 
+				"value" : "OBT:000848", 
+				"label" : "rod-shaped", 
+				"syns" : ["bacilliform"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:000850", 
+				"value" : "OBT:000850", 
+				"label" : "round-shaped", 
+				"syns" : ["coccus", "sphere-shaped"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:000888", 
+				"value" : "OBT:000888", 
+				"label" : "spiral-shaped", 
+				"syns" : ["helical"], 
+				"children" :[
+					
+					{"extid" : "OBT:001043", 
+					"value" : "OBT:001043", 
+					"label" : "comma-shaped", 
+					"syns" : ["comma shaped", "vibrio-shaped"], 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:001329", 
+					"value" : "OBT:001329", 
+					"label" : "spirillum", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:001330", 
+					"value" : "OBT:001330", 
+					"label" : "spirochete", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+				] , 
+				"descendantnb" : 3, 
+				"sublevelnb" : 1
+				}
+				, 
+				{"extid" : "OBT:000891", 
+				"value" : "OBT:000891", 
+				"label" : "square-shaped", 
+				"syns" : ["cube-like-shaped", "cuboidal"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:000892", 
+				"value" : "OBT:000892", 
+				"label" : "stalked", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:000893", 
+				"value" : "OBT:000893", 
+				"label" : "star-shaped", 
+				"syns" : ["rosette-like", "star-like"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 13, 
+			"sublevelnb" : 2
+			}
+			, 
+			{"extid" : "OBT:000296", 
+			"value" : "OBT:000296", 
+			"label" : "gram stain phenotype", 
+			"children" :[
+				
+				{"extid" : "OBT:000648", 
+				"value" : "OBT:000648", 
+				"label" : "gram-negative", 
+				"syns" : ["gram -"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:000649", 
+				"value" : "OBT:000649", 
+				"label" : "gram-positive", 
+				"syns" : ["gram +"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:000650", 
+				"value" : "OBT:000650", 
+				"label" : "gram-variable", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 3, 
+			"sublevelnb" : 1
+			}
+			, 
+			{"extid" : "OBT:000353", 
+			"value" : "OBT:000353", 
+			"label" : "multicellular arrangement phenotype", 
+			"children" :[
+				
+				{"extid" : "OBT:000552", 
+				"value" : "OBT:000552", 
+				"label" : "chained", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:000578", 
+				"value" : "OBT:000578", 
+				"label" : "cuboidal", 
+				"syns" : ["sarcina"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:000629", 
+				"value" : "OBT:000629", 
+				"label" : "filamentous", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:000652", 
+				"value" : "OBT:000652", 
+				"label" : "grape-like clustered", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:000789", 
+				"value" : "OBT:000789", 
+				"label" : "paired", 
+				"syns" : ["diplobacilli", "diplococci"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:000865", 
+				"value" : "OBT:000865", 
+				"label" : "sheathed", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:000872", 
+				"value" : "OBT:000872", 
+				"label" : "singled", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:000914", 
+				"value" : "OBT:000914", 
+				"label" : "tetrad", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:000928", 
+				"value" : "OBT:000928", 
+				"label" : "trichome forming", 
+				"syns" : ["trichome-forming"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 9, 
+			"sublevelnb" : 1
+			}
+		] , 
+		"descendantnb" : 31, 
+		"sublevelnb" : 3
+		}
+	] , 
+	"descendantnb" : 64, 
+	"sublevelnb" : 4
+	}
+	, 
+	{"extid" : "OBT:000021", 
+	"value" : "OBT:000021", 
+	"label" : "phenotype wrt motility", 
+	"children" :[
+		
+		{"extid" : "OBT:000117", 
+		"value" : "OBT:000117", 
+		"label" : "motile", 
+		"children" :[
+			
+			{"extid" : "OBT:000295", 
+			"value" : "OBT:000295", 
+			"label" : "gliding", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:000439", 
+			"value" : "OBT:000439", 
+			"label" : "swarming", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:000440", 
+			"value" : "OBT:000440", 
+			"label" : "swimming", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:000460", 
+			"value" : "OBT:000460", 
+			"label" : "twitching", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+		] , 
+		"descendantnb" : 4, 
+		"sublevelnb" : 1
+		}
+		, 
+		{"extid" : "OBT:000120", 
+		"value" : "OBT:000120", 
+		"label" : "non motile", 
+		"syns" : ["non-motile"], 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+		, 
+		{"extid" : "OBT:000157", 
+		"value" : "OBT:000157", 
+		"label" : "taxis phenotype", 
+		"children" :[
+			
+			{"extid" : "OBT:000182", 
+			"value" : "OBT:000182", 
+			"label" : "aerotactic", 
+			"children" :[
+				
+				{"extid" : "OBT:000763", 
+				"value" : "OBT:000763", 
+				"label" : "negative aerotactic", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:000821", 
+				"value" : "OBT:000821", 
+				"label" : "positive aerotactic", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 2, 
+			"sublevelnb" : 1
+			}
+			, 
+			{"extid" : "OBT:000192", 
+			"value" : "OBT:000192", 
+			"label" : "anemotactic", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:000207", 
+			"value" : "OBT:000207", 
+			"label" : "barotactic", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:000230", 
+			"value" : "OBT:000230", 
+			"label" : "chemotactic", 
+			"children" :[
+				
+				{"extid" : "OBT:000764", 
+				"value" : "OBT:000764", 
+				"label" : "negative chemotactic", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:000822", 
+				"value" : "OBT:000822", 
+				"label" : "positive chemotactic", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 2, 
+			"sublevelnb" : 1
+			}
+			, 
+			{"extid" : "OBT:000262", 
+			"value" : "OBT:000262", 
+			"label" : "durotactic", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:000265", 
+			"value" : "OBT:000265", 
+			"label" : "electrotactic", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:000300", 
+			"value" : "OBT:000300", 
+			"label" : "gravitactic", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:000317", 
+			"value" : "OBT:000317", 
+			"label" : "hydrotactic", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:000335", 
+			"value" : "OBT:000335", 
+			"label" : "magnetotactic", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:000369", 
+			"value" : "OBT:000369", 
+			"label" : "osmotactic", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:000387", 
+			"value" : "OBT:000387", 
+			"label" : "phototactic", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:000409", 
+			"value" : "OBT:000409", 
+			"label" : "rheotactic", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:000452", 
+			"value" : "OBT:000452", 
+			"label" : "thermotactic", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:000454", 
+			"value" : "OBT:000454", 
+			"label" : "thigmotactic", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+		] , 
+		"descendantnb" : 18, 
+		"sublevelnb" : 2
+		}
+	] , 
+	"descendantnb" : 25, 
+	"sublevelnb" : 3
+	}
+	, 
+	{"extid" : "OBT:000022", 
+	"value" : "OBT:000022", 
+	"label" : "phenotype wrt ploidy", 
+	"children" :[
+		
+		{"extid" : "OBT:000036", 
+		"value" : "OBT:000036", 
+		"label" : "alloploid", 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+		, 
+		{"extid" : "OBT:000037", 
+		"value" : "OBT:000037", 
+		"label" : "aneuploid", 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+		, 
+		{"extid" : "OBT:000053", 
+		"value" : "OBT:000053", 
+		"label" : "autoploid", 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+		, 
+		{"extid" : "OBT:000069", 
+		"value" : "OBT:000069", 
+		"label" : "diploid", 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+		, 
+		{"extid" : "OBT:000096", 
+		"value" : "OBT:000096", 
+		"label" : "haploid", 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+		, 
+		{"extid" : "OBT:000159", 
+		"value" : "OBT:000159", 
+		"label" : "tetraploid", 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+		, 
+		{"extid" : "OBT:000163", 
+		"value" : "OBT:000163", 
+		"label" : "triploid", 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+	] , 
+	"descendantnb" : 7, 
+	"sublevelnb" : 1
+	}
+	, 
+	{"extid" : "OBT:000023", 
+	"value" : "OBT:000023", 
+	"label" : "phenotype wrt stress", 
+	"children" :[
+		
+		{"extid" : "OBT:000125", 
+		"value" : "OBT:000125", 
+		"label" : "phenotype wrt disease impact", 
+		"children" :[
+			
+			{"extid" : "OBT:001997", 
+			"value" : "OBT:001997", 
+			"label" : "disease resistant", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:001998", 
+			"value" : "OBT:001998", 
+			"label" : "disease sensitive", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:001999", 
+			"value" : "OBT:001999", 
+			"label" : "disease tolerant", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+		] , 
+		"descendantnb" : 3, 
+		"sublevelnb" : 1
+		}
+		, 
+		{"extid" : "OBT:000131", 
+		"value" : "OBT:000131", 
+		"label" : "phenotype wrt immune system impact", 
+		"children" :[
+			
+			{"extid" : "OBT:002183", 
+			"value" : "OBT:002183", 
+			"label" : "phagocytosis resistant", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+		] , 
+		"descendantnb" : 1, 
+		"sublevelnb" : 1
+		}
+		, 
+		{"extid" : "OBT:000133", 
+		"value" : "OBT:000133", 
+		"label" : "phenotype wrt molecule impact", 
+		"children" :[
+			
+			{"extid" : "OBT:000378", 
+			"value" : "OBT:000378", 
+			"label" : "phenotype wrt antimicrobial impact", 
+			"children" :[
+				
+				{"extid" : "OBT:002337", 
+				"value" : "OBT:002337", 
+				"label" : "antimicrobial resistant", 
+				"children" :[
+					
+					{"extid" : "OBT:002671", 
+					"value" : "OBT:002671", 
+					"label" : "antibacterial resistant", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:002677", 
+					"value" : "OBT:002677", 
+					"label" : "antifungal resistant", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:002680", 
+					"value" : "OBT:002680", 
+					"label" : "antiviral resistant", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:002683", 
+					"value" : "OBT:002683", 
+					"label" : "antiyeast resistant", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+				] , 
+				"descendantnb" : 4, 
+				"sublevelnb" : 1
+				}
+				, 
+				{"extid" : "OBT:002338", 
+				"value" : "OBT:002338", 
+				"label" : "antimicrobial sensitive", 
+				"children" :[
+					
+					{"extid" : "OBT:002672", 
+					"value" : "OBT:002672", 
+					"label" : "antibacterial sensitive", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:002678", 
+					"value" : "OBT:002678", 
+					"label" : "antifungal sensitive", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:002681", 
+					"value" : "OBT:002681", 
+					"label" : "antiviral sensitive", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:002684", 
+					"value" : "OBT:002684", 
+					"label" : "antiyeast sensitive", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+				] , 
+				"descendantnb" : 4, 
+				"sublevelnb" : 1
+				}
+				, 
+				{"extid" : "OBT:002339", 
+				"value" : "OBT:002339", 
+				"label" : "antimicrobial tolerant", 
+				"children" :[
+					
+					{"extid" : "OBT:002673", 
+					"value" : "OBT:002673", 
+					"label" : "antibacterial tolerant", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:002679", 
+					"value" : "OBT:002679", 
+					"label" : "antifungal tolerant", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:002682", 
+					"value" : "OBT:002682", 
+					"label" : "antiviral tolerant", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:002685", 
+					"value" : "OBT:002685", 
+					"label" : "antiyeast tolerant", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+				] , 
+				"descendantnb" : 4, 
+				"sublevelnb" : 1
+				}
+			] , 
+			"descendantnb" : 15, 
+			"sublevelnb" : 2
+			}
+			, 
+			{"extid" : "OBT:000381", 
+			"value" : "OBT:000381", 
+			"label" : "phenotype wrt drug impact", 
+			"children" :[
+				
+				{"extid" : "OBT:000598", 
+				"value" : "OBT:000598", 
+				"label" : "drug resistant", 
+				"children" :[
+					
+					{"extid" : "OBT:002674", 
+					"value" : "OBT:002674", 
+					"label" : "antibiotic resistant", 
+					"children" :[
+						
+						{"extid" : "OBT:002760", 
+						"value" : "OBT:002760", 
+						"label" : "aminoglycosides resistant", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002761", 
+						"value" : "OBT:002761", 
+						"label" : "amoxicillin resistant", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002762", 
+						"value" : "OBT:002762", 
+						"label" : "ampicillin resistant", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002772", 
+						"value" : "OBT:002772", 
+						"label" : "chloramphenicol resistant", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002773", 
+						"value" : "OBT:002773", 
+						"label" : "ciprofloxacin resistant", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002790", 
+						"value" : "OBT:002790", 
+						"label" : "erythromycin resistant", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002792", 
+						"value" : "OBT:002792", 
+						"label" : "ethambutol resistant", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002797", 
+						"value" : "OBT:002797", 
+						"label" : "gentamicin resistant", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002801", 
+						"value" : "OBT:002801", 
+						"label" : "glycopeptide antibiotics resistant", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002811", 
+						"value" : "OBT:002811", 
+						"label" : "isoniazid resistant", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002817", 
+						"value" : "OBT:002817", 
+						"label" : "meticillin resistant", 
+						"syns" : ["methicillin resistant"], 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002820", 
+						"value" : "OBT:002820", 
+						"label" : "moxifloxacin resistant", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002823", 
+						"value" : "OBT:002823", 
+						"label" : "naladixic acid resistant", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002824", 
+						"value" : "OBT:002824", 
+						"label" : "norfloxacin resistant", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002829", 
+						"value" : "OBT:002829", 
+						"label" : "penicillin resistant", 
+						"children" :[
+							
+							{"extid" : "OBT:002920", 
+							"value" : "OBT:002920", 
+							"label" : "oxacillin resistant", 
+							"descendantnb" : 0, 
+							"sublevelnb" : 0
+							}
+						] , 
+						"descendantnb" : 1, 
+						"sublevelnb" : 1
+						}
+						, 
+						{"extid" : "OBT:002839", 
+						"value" : "OBT:002839", 
+						"label" : "pyrazinamide resistant", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002840", 
+						"value" : "OBT:002840", 
+						"label" : "quinolone resistant", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002843", 
+						"value" : "OBT:002843", 
+						"label" : "resistance to amikacin", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002844", 
+						"value" : "OBT:002844", 
+						"label" : "resistance to cotrimoxazole", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002845", 
+						"value" : "OBT:002845", 
+						"label" : "resistance to dalfopristin", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002846", 
+						"value" : "OBT:002846", 
+						"label" : "resistance to imipenem", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002847", 
+						"value" : "OBT:002847", 
+						"label" : "resistance to levofloxacin", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002848", 
+						"value" : "OBT:002848", 
+						"label" : "resistance to quinupristin", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002849", 
+						"value" : "OBT:002849", 
+						"label" : "rifampin resistant", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002857", 
+						"value" : "OBT:002857", 
+						"label" : "spectinomycin-resistant", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002858", 
+						"value" : "OBT:002858", 
+						"label" : "streptomycin resistant", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002861", 
+						"value" : "OBT:002861", 
+						"label" : "sulfamethoxazole resistant", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002867", 
+						"value" : "OBT:002867", 
+						"label" : "teicoplanin resistant", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002869", 
+						"value" : "OBT:002869", 
+						"label" : "tetracycline resistant", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002872", 
+						"value" : "OBT:002872", 
+						"label" : "trimethoprim resistant", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002874", 
+						"value" : "OBT:002874", 
+						"label" : "vancomycin resistant", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+					] , 
+					"descendantnb" : 32, 
+					"sublevelnb" : 2
+					}
+				] , 
+				"descendantnb" : 33, 
+				"sublevelnb" : 3
+				}
+				, 
+				{"extid" : "OBT:000599", 
+				"value" : "OBT:000599", 
+				"label" : "drug sensitive", 
+				"children" :[
+					
+					{"extid" : "OBT:002675", 
+					"value" : "OBT:002675", 
+					"label" : "antibiotic sensitive", 
+					"children" :[
+						
+						{"extid" : "OBT:002763", 
+						"value" : "OBT:002763", 
+						"label" : "ampicillin sensitive", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002774", 
+						"value" : "OBT:002774", 
+						"label" : "ciprofloxacin sensitive", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002798", 
+						"value" : "OBT:002798", 
+						"label" : "gentamicin sensitive", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002818", 
+						"value" : "OBT:002818", 
+						"label" : "meticillin sensitive", 
+						"syns" : ["methicillin sensitive"], 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002821", 
+						"value" : "OBT:002821", 
+						"label" : "moxifloxacin sensitive", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002825", 
+						"value" : "OBT:002825", 
+						"label" : "norfloxacin sensitive", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002830", 
+						"value" : "OBT:002830", 
+						"label" : "penicillin sensitive", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002864", 
+						"value" : "OBT:002864", 
+						"label" : "susceptibility to azithromycin", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002865", 
+						"value" : "OBT:002865", 
+						"label" : "susceptible to dalfopristin", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002866", 
+						"value" : "OBT:002866", 
+						"label" : "susceptible to quinupristin", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002868", 
+						"value" : "OBT:002868", 
+						"label" : "teicoplanin sensitive", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002875", 
+						"value" : "OBT:002875", 
+						"label" : "vancomycin sensitive", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+					] , 
+					"descendantnb" : 12, 
+					"sublevelnb" : 1
+					}
+				] , 
+				"descendantnb" : 13, 
+				"sublevelnb" : 2
+				}
+				, 
+				{"extid" : "OBT:000600", 
+				"value" : "OBT:000600", 
+				"label" : "drug tolerant", 
+				"children" :[
+					
+					{"extid" : "OBT:002676", 
+					"value" : "OBT:002676", 
+					"label" : "antibiotic tolerant", 
+					"children" :[
+						
+						{"extid" : "OBT:002775", 
+						"value" : "OBT:002775", 
+						"label" : "ciprofloxacin tolerant", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002819", 
+						"value" : "OBT:002819", 
+						"label" : "meticillin tolerant", 
+						"syns" : ["methicillin tolerant"], 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002822", 
+						"value" : "OBT:002822", 
+						"label" : "moxifloxacin tolerant", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002826", 
+						"value" : "OBT:002826", 
+						"label" : "norfloxacin tolerant", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002831", 
+						"value" : "OBT:002831", 
+						"label" : "penicillin tolerant", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002876", 
+						"value" : "OBT:002876", 
+						"label" : "vancomycin tolerant", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+					] , 
+					"descendantnb" : 6, 
+					"sublevelnb" : 1
+					}
+				] , 
+				"descendantnb" : 7, 
+				"sublevelnb" : 2
+				}
+			] , 
+			"descendantnb" : 56, 
+			"sublevelnb" : 4
+			}
+			, 
+			{"extid" : "OBT:000384", 
+			"value" : "OBT:000384", 
+			"label" : "phenotype wrt metal concentration impact", 
+			"children" :[
+				
+				{"extid" : "OBT:002521", 
+				"value" : "OBT:002521", 
+				"label" : "metal resistant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002522", 
+				"value" : "OBT:002522", 
+				"label" : "metal sensitive", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002523", 
+				"value" : "OBT:002523", 
+				"label" : "metal tolerant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 3, 
+			"sublevelnb" : 1
+			}
+		] , 
+		"descendantnb" : 77, 
+		"sublevelnb" : 5
+		}
+		, 
+		{"extid" : "OBT:000136", 
+		"value" : "OBT:000136", 
+		"label" : "phenotype wrt radiation impact", 
+		"children" :[
+			
+			{"extid" : "OBT:002212", 
+			"value" : "OBT:002212", 
+			"label" : "radiation resistant", 
+			"children" :[
+				
+				{"extid" : "OBT:002330", 
+				"value" : "OBT:002330", 
+				"label" : "UV radiation resistant", 
+				"syns" : ["ultraviolet resistant", "UV resistant"], 
+				"children" :[
+					
+					{"extid" : "OBT:002659", 
+					"value" : "OBT:002659", 
+					"label" : "UVA radiation resistant", 
+					"syns" : ["UV-A radiation resistant", "UV-A resistant"], 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:002662", 
+					"value" : "OBT:002662", 
+					"label" : "UVB radiation resistant", 
+					"syns" : ["UV-B radiation resistant", "UV-B resistant"], 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:002665", 
+					"value" : "OBT:002665", 
+					"label" : "UVC radiation resistant", 
+					"syns" : ["UV-C radiation resistant", "UV-C resistant"], 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+				] , 
+				"descendantnb" : 3, 
+				"sublevelnb" : 1
+				}
+				, 
+				{"extid" : "OBT:002492", 
+				"value" : "OBT:002492", 
+				"label" : "ionizing radiation resistant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 5, 
+			"sublevelnb" : 2
+			}
+			, 
+			{"extid" : "OBT:002213", 
+			"value" : "OBT:002213", 
+			"label" : "radiation sensitive", 
+			"children" :[
+				
+				{"extid" : "OBT:002331", 
+				"value" : "OBT:002331", 
+				"label" : "UV radiation sensitive", 
+				"syns" : ["ultraviolet sensitive", "UV sensitive"], 
+				"children" :[
+					
+					{"extid" : "OBT:002660", 
+					"value" : "OBT:002660", 
+					"label" : "UVA radiation sensitive", 
+					"syns" : ["UV-A radiation sensitive", "UV-A sensitive"], 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:002663", 
+					"value" : "OBT:002663", 
+					"label" : "UVB radiation sensitive", 
+					"syns" : ["UV-B radiation sensitive", "UV-B sensitive"], 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:002666", 
+					"value" : "OBT:002666", 
+					"label" : "UVC radiation sensitive", 
+					"syns" : ["UV-C radiation sensitive", "UV-C sensitive"], 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+				] , 
+				"descendantnb" : 3, 
+				"sublevelnb" : 1
+				}
+				, 
+				{"extid" : "OBT:002493", 
+				"value" : "OBT:002493", 
+				"label" : "ionizing radiation sensitive", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 5, 
+			"sublevelnb" : 2
+			}
+			, 
+			{"extid" : "OBT:002214", 
+			"value" : "OBT:002214", 
+			"label" : "radiation tolerant", 
+			"children" :[
+				
+				{"extid" : "OBT:002332", 
+				"value" : "OBT:002332", 
+				"label" : "UV radiation tolerant", 
+				"syns" : ["ultraviolet tolerant", "UV tolerant"], 
+				"children" :[
+					
+					{"extid" : "OBT:002661", 
+					"value" : "OBT:002661", 
+					"label" : "UVA radiation tolerant", 
+					"syns" : ["UV-A radiation tolerant", "UV-A tolerant"], 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:002664", 
+					"value" : "OBT:002664", 
+					"label" : "UVB radiation tolerant", 
+					"syns" : ["UV-B radiation tolerant", "UV-B tolerant"], 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:002667", 
+					"value" : "OBT:002667", 
+					"label" : "UVC radiation tolerant", 
+					"syns" : ["UV-C radiation tolerant", "UV-C tolerant"], 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+				] , 
+				"descendantnb" : 3, 
+				"sublevelnb" : 1
+				}
+				, 
+				{"extid" : "OBT:002494", 
+				"value" : "OBT:002494", 
+				"label" : "ionizing radiation tolerant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 5, 
+			"sublevelnb" : 2
+			}
+		] , 
+		"descendantnb" : 18, 
+		"sublevelnb" : 3
+		}
+		, 
+		{"extid" : "OBT:000137", 
+		"value" : "OBT:000137", 
+		"label" : "phenotype wrt relative humidity impact", 
+		"children" :[
+			
+			{"extid" : "OBT:001992", 
+			"value" : "OBT:001992", 
+			"label" : "desiccation resistant", 
+			"syns" : ["dessication resistant"], 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:001993", 
+			"value" : "OBT:001993", 
+			"label" : "desiccation sensitive", 
+			"syns" : ["dessication sensitive"], 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:001994", 
+			"value" : "OBT:001994", 
+			"label" : "desiccation tolerant", 
+			"syns" : ["dessication tolerant"], 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+		] , 
+		"descendantnb" : 3, 
+		"sublevelnb" : 1
+		}
+		, 
+		{"extid" : "OBT:000138", 
+		"value" : "OBT:000138", 
+		"label" : "phenotype wrt temperature impact", 
+		"children" :[
+			
+			{"extid" : "OBT:002289", 
+			"value" : "OBT:002289", 
+			"label" : "thermal sensitive", 
+			"children" :[
+				
+				{"extid" : "OBT:002404", 
+				"value" : "OBT:002404", 
+				"label" : "cold sensitive", 
+				"syns" : ["low temperature sensitive"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002440", 
+				"value" : "OBT:002440", 
+				"label" : "extreme cold sensitive", 
+				"syns" : ["extreme low temperature sensitive"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002442", 
+				"value" : "OBT:002442", 
+				"label" : "extreme heat sensitive", 
+				"syns" : ["extreme high temperature sensitive"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002453", 
+				"value" : "OBT:002453", 
+				"label" : "freeze-thaw sensitive", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002478", 
+				"value" : "OBT:002478", 
+				"label" : "heat sensitive", 
+				"syns" : ["high temperature sensitive"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 5, 
+			"sublevelnb" : 1
+			}
+			, 
+			{"extid" : "OBT:002290", 
+			"value" : "OBT:002290", 
+			"label" : "thermal tolerant", 
+			"children" :[
+				
+				{"extid" : "OBT:002406", 
+				"value" : "OBT:002406", 
+				"label" : "cold tolerant", 
+				"syns" : ["low temperature tolerant"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002441", 
+				"value" : "OBT:002441", 
+				"label" : "extreme cold tolerant", 
+				"syns" : ["extreme low temperature tolerant"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002443", 
+				"value" : "OBT:002443", 
+				"label" : "extreme heat tolerant", 
+				"syns" : ["extreme high temperature tolerant"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002454", 
+				"value" : "OBT:002454", 
+				"label" : "freeze-thaw tolerant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002480", 
+				"value" : "OBT:002480", 
+				"label" : "heat tolerant", 
+				"syns" : ["high temperature tolerant"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 5, 
+			"sublevelnb" : 1
+			}
+			, 
+			{"extid" : "OBT:002945", 
+			"value" : "OBT:002945", 
+			"label" : "thermal resistant", 
+			"children" :[
+				
+				{"extid" : "OBT:002975", 
+				"value" : "OBT:002975", 
+				"label" : "cold resistant", 
+				"syns" : ["low temperature resistant"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002982", 
+				"value" : "OBT:002982", 
+				"label" : "extreme cold resistant", 
+				"syns" : ["extreme low temperature resistant"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002983", 
+				"value" : "OBT:002983", 
+				"label" : "extreme heat resistant", 
+				"syns" : ["extreme high temperature resistant"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002985", 
+				"value" : "OBT:002985", 
+				"label" : "freeze-thaw resistant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002987", 
+				"value" : "OBT:002987", 
+				"label" : "heat resistant", 
+				"syns" : ["high temperature resistant"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 5, 
+			"sublevelnb" : 1
+			}
+		] , 
+		"descendantnb" : 18, 
+		"sublevelnb" : 2
+		}
+		, 
+		{"extid" : "OBT:000152", 
+		"value" : "OBT:000152", 
+		"label" : "stress resistant", 
+		"children" :[
+			
+			{"extid" : "OBT:000211", 
+			"value" : "OBT:000211", 
+			"label" : "bile resistant", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:001992", 
+			"value" : "OBT:001992", 
+			"label" : "desiccation resistant", 
+			"syns" : ["dessication resistant"], 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:001997", 
+			"value" : "OBT:001997", 
+			"label" : "disease resistant", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:002183", 
+			"value" : "OBT:002183", 
+			"label" : "phagocytosis resistant", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:002212", 
+			"value" : "OBT:002212", 
+			"label" : "radiation resistant", 
+			"children" :[
+				
+				{"extid" : "OBT:002330", 
+				"value" : "OBT:002330", 
+				"label" : "UV radiation resistant", 
+				"syns" : ["ultraviolet resistant", "UV resistant"], 
+				"children" :[
+					
+					{"extid" : "OBT:002659", 
+					"value" : "OBT:002659", 
+					"label" : "UVA radiation resistant", 
+					"syns" : ["UV-A radiation resistant", "UV-A resistant"], 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:002662", 
+					"value" : "OBT:002662", 
+					"label" : "UVB radiation resistant", 
+					"syns" : ["UV-B radiation resistant", "UV-B resistant"], 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:002665", 
+					"value" : "OBT:002665", 
+					"label" : "UVC radiation resistant", 
+					"syns" : ["UV-C radiation resistant", "UV-C resistant"], 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+				] , 
+				"descendantnb" : 3, 
+				"sublevelnb" : 1
+				}
+				, 
+				{"extid" : "OBT:002492", 
+				"value" : "OBT:002492", 
+				"label" : "ionizing radiation resistant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 5, 
+			"sublevelnb" : 2
+			}
+			, 
+			{"extid" : "OBT:002337", 
+			"value" : "OBT:002337", 
+			"label" : "antimicrobial resistant", 
+			"children" :[
+				
+				{"extid" : "OBT:002671", 
+				"value" : "OBT:002671", 
+				"label" : "antibacterial resistant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002677", 
+				"value" : "OBT:002677", 
+				"label" : "antifungal resistant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002680", 
+				"value" : "OBT:002680", 
+				"label" : "antiviral resistant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002683", 
+				"value" : "OBT:002683", 
+				"label" : "antiyeast resistant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 4, 
+			"sublevelnb" : 1
+			}
+			, 
+			{"extid" : "OBT:002521", 
+			"value" : "OBT:002521", 
+			"label" : "metal resistant", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:002674", 
+			"value" : "OBT:002674", 
+			"label" : "antibiotic resistant", 
+			"children" :[
+				
+				{"extid" : "OBT:002760", 
+				"value" : "OBT:002760", 
+				"label" : "aminoglycosides resistant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002761", 
+				"value" : "OBT:002761", 
+				"label" : "amoxicillin resistant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002762", 
+				"value" : "OBT:002762", 
+				"label" : "ampicillin resistant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002772", 
+				"value" : "OBT:002772", 
+				"label" : "chloramphenicol resistant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002773", 
+				"value" : "OBT:002773", 
+				"label" : "ciprofloxacin resistant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002790", 
+				"value" : "OBT:002790", 
+				"label" : "erythromycin resistant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002792", 
+				"value" : "OBT:002792", 
+				"label" : "ethambutol resistant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002797", 
+				"value" : "OBT:002797", 
+				"label" : "gentamicin resistant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002801", 
+				"value" : "OBT:002801", 
+				"label" : "glycopeptide antibiotics resistant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002811", 
+				"value" : "OBT:002811", 
+				"label" : "isoniazid resistant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002817", 
+				"value" : "OBT:002817", 
+				"label" : "meticillin resistant", 
+				"syns" : ["methicillin resistant"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002820", 
+				"value" : "OBT:002820", 
+				"label" : "moxifloxacin resistant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002823", 
+				"value" : "OBT:002823", 
+				"label" : "naladixic acid resistant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002824", 
+				"value" : "OBT:002824", 
+				"label" : "norfloxacin resistant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002829", 
+				"value" : "OBT:002829", 
+				"label" : "penicillin resistant", 
+				"children" :[
+					
+					{"extid" : "OBT:002920", 
+					"value" : "OBT:002920", 
+					"label" : "oxacillin resistant", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+				] , 
+				"descendantnb" : 1, 
+				"sublevelnb" : 1
+				}
+				, 
+				{"extid" : "OBT:002839", 
+				"value" : "OBT:002839", 
+				"label" : "pyrazinamide resistant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002840", 
+				"value" : "OBT:002840", 
+				"label" : "quinolone resistant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002843", 
+				"value" : "OBT:002843", 
+				"label" : "resistance to amikacin", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002844", 
+				"value" : "OBT:002844", 
+				"label" : "resistance to cotrimoxazole", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002845", 
+				"value" : "OBT:002845", 
+				"label" : "resistance to dalfopristin", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002846", 
+				"value" : "OBT:002846", 
+				"label" : "resistance to imipenem", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002847", 
+				"value" : "OBT:002847", 
+				"label" : "resistance to levofloxacin", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002848", 
+				"value" : "OBT:002848", 
+				"label" : "resistance to quinupristin", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002849", 
+				"value" : "OBT:002849", 
+				"label" : "rifampin resistant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002857", 
+				"value" : "OBT:002857", 
+				"label" : "spectinomycin-resistant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002858", 
+				"value" : "OBT:002858", 
+				"label" : "streptomycin resistant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002861", 
+				"value" : "OBT:002861", 
+				"label" : "sulfamethoxazole resistant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002867", 
+				"value" : "OBT:002867", 
+				"label" : "teicoplanin resistant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002869", 
+				"value" : "OBT:002869", 
+				"label" : "tetracycline resistant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002872", 
+				"value" : "OBT:002872", 
+				"label" : "trimethoprim resistant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002874", 
+				"value" : "OBT:002874", 
+				"label" : "vancomycin resistant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 32, 
+			"sublevelnb" : 2
+			}
+			, 
+			{"extid" : "OBT:002881", 
+			"value" : "OBT:002881", 
+			"label" : "acido resistant", 
+			"syns" : ["acid resistant", "acidoresistant"], 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:002886", 
+			"value" : "OBT:002886", 
+			"label" : "alkali resistant", 
+			"syns" : ["alkaline resistant"], 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:002945", 
+			"value" : "OBT:002945", 
+			"label" : "thermal resistant", 
+			"children" :[
+				
+				{"extid" : "OBT:002975", 
+				"value" : "OBT:002975", 
+				"label" : "cold resistant", 
+				"syns" : ["low temperature resistant"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002982", 
+				"value" : "OBT:002982", 
+				"label" : "extreme cold resistant", 
+				"syns" : ["extreme low temperature resistant"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002983", 
+				"value" : "OBT:002983", 
+				"label" : "extreme heat resistant", 
+				"syns" : ["extreme high temperature resistant"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002985", 
+				"value" : "OBT:002985", 
+				"label" : "freeze-thaw resistant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002987", 
+				"value" : "OBT:002987", 
+				"label" : "heat resistant", 
+				"syns" : ["high temperature resistant"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 5, 
+			"sublevelnb" : 1
+			}
+		] , 
+		"descendantnb" : 57, 
+		"sublevelnb" : 3
+		}
+		, 
+		{"extid" : "OBT:000153", 
+		"value" : "OBT:000153", 
+		"label" : "stress sensitive", 
+		"children" :[
+			
+			{"extid" : "OBT:001993", 
+			"value" : "OBT:001993", 
+			"label" : "desiccation sensitive", 
+			"syns" : ["dessication sensitive"], 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:001998", 
+			"value" : "OBT:001998", 
+			"label" : "disease sensitive", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:002213", 
+			"value" : "OBT:002213", 
+			"label" : "radiation sensitive", 
+			"children" :[
+				
+				{"extid" : "OBT:002331", 
+				"value" : "OBT:002331", 
+				"label" : "UV radiation sensitive", 
+				"syns" : ["ultraviolet sensitive", "UV sensitive"], 
+				"children" :[
+					
+					{"extid" : "OBT:002660", 
+					"value" : "OBT:002660", 
+					"label" : "UVA radiation sensitive", 
+					"syns" : ["UV-A radiation sensitive", "UV-A sensitive"], 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:002663", 
+					"value" : "OBT:002663", 
+					"label" : "UVB radiation sensitive", 
+					"syns" : ["UV-B radiation sensitive", "UV-B sensitive"], 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:002666", 
+					"value" : "OBT:002666", 
+					"label" : "UVC radiation sensitive", 
+					"syns" : ["UV-C radiation sensitive", "UV-C sensitive"], 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+				] , 
+				"descendantnb" : 3, 
+				"sublevelnb" : 1
+				}
+				, 
+				{"extid" : "OBT:002493", 
+				"value" : "OBT:002493", 
+				"label" : "ionizing radiation sensitive", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 5, 
+			"sublevelnb" : 2
+			}
+			, 
+			{"extid" : "OBT:002289", 
+			"value" : "OBT:002289", 
+			"label" : "thermal sensitive", 
+			"children" :[
+				
+				{"extid" : "OBT:002404", 
+				"value" : "OBT:002404", 
+				"label" : "cold sensitive", 
+				"syns" : ["low temperature sensitive"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002440", 
+				"value" : "OBT:002440", 
+				"label" : "extreme cold sensitive", 
+				"syns" : ["extreme low temperature sensitive"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002442", 
+				"value" : "OBT:002442", 
+				"label" : "extreme heat sensitive", 
+				"syns" : ["extreme high temperature sensitive"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002453", 
+				"value" : "OBT:002453", 
+				"label" : "freeze-thaw sensitive", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002478", 
+				"value" : "OBT:002478", 
+				"label" : "heat sensitive", 
+				"syns" : ["high temperature sensitive"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 5, 
+			"sublevelnb" : 1
+			}
+			, 
+			{"extid" : "OBT:002338", 
+			"value" : "OBT:002338", 
+			"label" : "antimicrobial sensitive", 
+			"children" :[
+				
+				{"extid" : "OBT:002672", 
+				"value" : "OBT:002672", 
+				"label" : "antibacterial sensitive", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002678", 
+				"value" : "OBT:002678", 
+				"label" : "antifungal sensitive", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002681", 
+				"value" : "OBT:002681", 
+				"label" : "antiviral sensitive", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002684", 
+				"value" : "OBT:002684", 
+				"label" : "antiyeast sensitive", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 4, 
+			"sublevelnb" : 1
+			}
+			, 
+			{"extid" : "OBT:002522", 
+			"value" : "OBT:002522", 
+			"label" : "metal sensitive", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:002675", 
+			"value" : "OBT:002675", 
+			"label" : "antibiotic sensitive", 
+			"children" :[
+				
+				{"extid" : "OBT:002763", 
+				"value" : "OBT:002763", 
+				"label" : "ampicillin sensitive", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002774", 
+				"value" : "OBT:002774", 
+				"label" : "ciprofloxacin sensitive", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002798", 
+				"value" : "OBT:002798", 
+				"label" : "gentamicin sensitive", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002818", 
+				"value" : "OBT:002818", 
+				"label" : "meticillin sensitive", 
+				"syns" : ["methicillin sensitive"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002821", 
+				"value" : "OBT:002821", 
+				"label" : "moxifloxacin sensitive", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002825", 
+				"value" : "OBT:002825", 
+				"label" : "norfloxacin sensitive", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002830", 
+				"value" : "OBT:002830", 
+				"label" : "penicillin sensitive", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002864", 
+				"value" : "OBT:002864", 
+				"label" : "susceptibility to azithromycin", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002865", 
+				"value" : "OBT:002865", 
+				"label" : "susceptible to dalfopristin", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002866", 
+				"value" : "OBT:002866", 
+				"label" : "susceptible to quinupristin", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002868", 
+				"value" : "OBT:002868", 
+				"label" : "teicoplanin sensitive", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002875", 
+				"value" : "OBT:002875", 
+				"label" : "vancomycin sensitive", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 12, 
+			"sublevelnb" : 1
+			}
+			, 
+			{"extid" : "OBT:002882", 
+			"value" : "OBT:002882", 
+			"label" : "acido sensitive", 
+			"syns" : ["acid sensitive", "acidosensitive"], 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:002887", 
+			"value" : "OBT:002887", 
+			"label" : "alkali sensitive", 
+			"syns" : ["alkaline sensitive"], 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+		] , 
+		"descendantnb" : 35, 
+		"sublevelnb" : 3
+		}
+		, 
+		{"extid" : "OBT:000154", 
+		"value" : "OBT:000154", 
+		"label" : "stress tolerant", 
+		"children" :[
+			
+			{"extid" : "OBT:001994", 
+			"value" : "OBT:001994", 
+			"label" : "desiccation tolerant", 
+			"syns" : ["dessication tolerant"], 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:001999", 
+			"value" : "OBT:001999", 
+			"label" : "disease tolerant", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:002214", 
+			"value" : "OBT:002214", 
+			"label" : "radiation tolerant", 
+			"children" :[
+				
+				{"extid" : "OBT:002332", 
+				"value" : "OBT:002332", 
+				"label" : "UV radiation tolerant", 
+				"syns" : ["ultraviolet tolerant", "UV tolerant"], 
+				"children" :[
+					
+					{"extid" : "OBT:002661", 
+					"value" : "OBT:002661", 
+					"label" : "UVA radiation tolerant", 
+					"syns" : ["UV-A radiation tolerant", "UV-A tolerant"], 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:002664", 
+					"value" : "OBT:002664", 
+					"label" : "UVB radiation tolerant", 
+					"syns" : ["UV-B radiation tolerant", "UV-B tolerant"], 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:002667", 
+					"value" : "OBT:002667", 
+					"label" : "UVC radiation tolerant", 
+					"syns" : ["UV-C radiation tolerant", "UV-C tolerant"], 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+				] , 
+				"descendantnb" : 3, 
+				"sublevelnb" : 1
+				}
+				, 
+				{"extid" : "OBT:002494", 
+				"value" : "OBT:002494", 
+				"label" : "ionizing radiation tolerant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 5, 
+			"sublevelnb" : 2
+			}
+			, 
+			{"extid" : "OBT:002290", 
+			"value" : "OBT:002290", 
+			"label" : "thermal tolerant", 
+			"children" :[
+				
+				{"extid" : "OBT:002406", 
+				"value" : "OBT:002406", 
+				"label" : "cold tolerant", 
+				"syns" : ["low temperature tolerant"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002441", 
+				"value" : "OBT:002441", 
+				"label" : "extreme cold tolerant", 
+				"syns" : ["extreme low temperature tolerant"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002443", 
+				"value" : "OBT:002443", 
+				"label" : "extreme heat tolerant", 
+				"syns" : ["extreme high temperature tolerant"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002454", 
+				"value" : "OBT:002454", 
+				"label" : "freeze-thaw tolerant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002480", 
+				"value" : "OBT:002480", 
+				"label" : "heat tolerant", 
+				"syns" : ["high temperature tolerant"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 5, 
+			"sublevelnb" : 1
+			}
+			, 
+			{"extid" : "OBT:002339", 
+			"value" : "OBT:002339", 
+			"label" : "antimicrobial tolerant", 
+			"children" :[
+				
+				{"extid" : "OBT:002673", 
+				"value" : "OBT:002673", 
+				"label" : "antibacterial tolerant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002679", 
+				"value" : "OBT:002679", 
+				"label" : "antifungal tolerant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002682", 
+				"value" : "OBT:002682", 
+				"label" : "antiviral tolerant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002685", 
+				"value" : "OBT:002685", 
+				"label" : "antiyeast tolerant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 4, 
+			"sublevelnb" : 1
+			}
+			, 
+			{"extid" : "OBT:002523", 
+			"value" : "OBT:002523", 
+			"label" : "metal tolerant", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:002676", 
+			"value" : "OBT:002676", 
+			"label" : "antibiotic tolerant", 
+			"children" :[
+				
+				{"extid" : "OBT:002775", 
+				"value" : "OBT:002775", 
+				"label" : "ciprofloxacin tolerant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002819", 
+				"value" : "OBT:002819", 
+				"label" : "meticillin tolerant", 
+				"syns" : ["methicillin tolerant"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002822", 
+				"value" : "OBT:002822", 
+				"label" : "moxifloxacin tolerant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002826", 
+				"value" : "OBT:002826", 
+				"label" : "norfloxacin tolerant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002831", 
+				"value" : "OBT:002831", 
+				"label" : "penicillin tolerant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002876", 
+				"value" : "OBT:002876", 
+				"label" : "vancomycin tolerant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 6, 
+			"sublevelnb" : 1
+			}
+			, 
+			{"extid" : "OBT:002883", 
+			"value" : "OBT:002883", 
+			"label" : "acido tolerant", 
+			"syns" : ["acid tolerant", "acidotolerant"], 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:002888", 
+			"value" : "OBT:002888", 
+			"label" : "alkali tolerant", 
+			"syns" : ["alkaline tolerant", "alkalitolerant"], 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+		] , 
+		"descendantnb" : 29, 
+		"sublevelnb" : 3
+		}
+		, 
+		{"extid" : "OBT:001712", 
+		"value" : "OBT:001712", 
+		"label" : "phenotype wrt chemical composition", 
+		"children" :[
+			
+			{"extid" : "OBT:002881", 
+			"value" : "OBT:002881", 
+			"label" : "acido resistant", 
+			"syns" : ["acid resistant", "acidoresistant"], 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:002882", 
+			"value" : "OBT:002882", 
+			"label" : "acido sensitive", 
+			"syns" : ["acid sensitive", "acidosensitive"], 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:002883", 
+			"value" : "OBT:002883", 
+			"label" : "acido tolerant", 
+			"syns" : ["acid tolerant", "acidotolerant"], 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:002886", 
+			"value" : "OBT:002886", 
+			"label" : "alkali resistant", 
+			"syns" : ["alkaline resistant"], 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:002887", 
+			"value" : "OBT:002887", 
+			"label" : "alkali sensitive", 
+			"syns" : ["alkaline sensitive"], 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:002888", 
+			"value" : "OBT:002888", 
+			"label" : "alkali tolerant", 
+			"syns" : ["alkaline tolerant", "alkalitolerant"], 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+		] , 
+		"descendantnb" : 6, 
+		"sublevelnb" : 1
+		}
+	] , 
+	"descendantnb" : 257, 
+	"sublevelnb" : 6
+	}
+	, 
+	{"extid" : "OBT:000024", 
+	"value" : "OBT:000024", 
+	"label" : "phenotype wrt genetic", 
+	"children" :[
+		
+		{"extid" : "OBT:000118", 
+		"value" : "OBT:000118", 
+		"label" : "mutant", 
+		"children" :[
+			
+			{"extid" : "OBT:003067", 
+			"value" : "OBT:003067", 
+			"label" : "petite positive", 
+			"syns" : ["petite colony", "petite mutant", "petite strain", "petite yeast"], 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+		] , 
+		"descendantnb" : 1, 
+		"sublevelnb" : 1
+		}
+		, 
+		{"extid" : "OBT:000169", 
+		"value" : "OBT:000169", 
+		"label" : "wild-type", 
+		"syns" : ["wild type"], 
+		"descendantnb" : 0, 
+		"sublevelnb" : 0
+		}
+	] , 
+	"descendantnb" : 3, 
+	"sublevelnb" : 2
+	}
+	, 
+	{"extid" : "OBT:000025", 
+	"value" : "OBT:000025", 
+	"label" : "physiological phenotype", 
+	"children" :[
+		
+		{"extid" : "OBT:000126", 
+		"value" : "OBT:000126", 
+		"label" : "phenotype wrt energy source", 
+		"children" :[
+			
+			{"extid" : "OBT:000203", 
+			"value" : "OBT:000203", 
+			"label" : "auxotroph", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:000218", 
+			"value" : "OBT:000218", 
+			"label" : "carboxydotroph", 
+			"syns" : ["carboxydotrophic "], 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:000257", 
+			"value" : "OBT:000257", 
+			"label" : "diazotroph", 
+			"children" :[
+				
+				{"extid" : "OBT:000635", 
+				"value" : "OBT:000635", 
+				"label" : "free-living diazotroph", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:000906", 
+				"value" : "OBT:000906", 
+				"label" : "symbiotic diazotroph", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 2, 
+			"sublevelnb" : 1
+			}
+			, 
+			{"extid" : "OBT:000379", 
+			"value" : "OBT:000379", 
+			"label" : "phenotype wrt carbon source", 
+			"children" :[
+				
+				{"extid" : "OBT:000499", 
+				"value" : "OBT:000499", 
+				"label" : "autotroph", 
+				"children" :[
+					
+					{"extid" : "OBT:002922", 
+					"value" : "OBT:002922", 
+					"label" : "photoautotroph", 
+					"syns" : ["photo autotroph "], 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:002924", 
+					"value" : "OBT:002924", 
+					"label" : "photolithoautotroph", 
+					"syns" : ["photo lithoautotroph"], 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:003281", 
+					"value" : "OBT:003281", 
+					"label" : "chemo litho autotroph", 
+					"syns" : ["lithoautotroph "], 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+				] , 
+				"descendantnb" : 3, 
+				"sublevelnb" : 1
+				}
+				, 
+				{"extid" : "OBT:000576", 
+				"value" : "OBT:000576", 
+				"label" : "crabtree negative", 
+				"syns" : ["crabtree-negative"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:000577", 
+				"value" : "OBT:000577", 
+				"label" : "crabtree positive", 
+				"syns" : ["crabtree-positive"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:000665", 
+				"value" : "OBT:000665", 
+				"label" : "heterotroph", 
+				"children" :[
+					
+					{"extid" : "OBT:001105", 
+					"value" : "OBT:001105", 
+					"label" : "fermentative", 
+					"syns" : ["fermentation ability", "fermentation capacity"], 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:002895", 
+					"value" : "OBT:002895", 
+					"label" : "chemoheterotroph", 
+					"syns" : ["chemo heterotroph "], 
+					"children" :[
+						
+						{"extid" : "OBT:003282", 
+						"value" : "OBT:003282", 
+						"label" : "chemoorganoheterotroph", 
+						"syns" : ["chemo hetero organotroph", "chemo organo heterotroph "], 
+						"children" :[
+							
+							{"extid" : "OBT:003326", 
+							"value" : "OBT:003326", 
+							"label" : "saprophytic", 
+							"descendantnb" : 0, 
+							"sublevelnb" : 0
+							}
+						] , 
+						"descendantnb" : 1, 
+						"sublevelnb" : 1
+						}
+						, 
+						{"extid" : "OBT:003445", 
+						"value" : "OBT:003445", 
+						"label" : "chemolithoheterotroph", 
+						"syns" : ["chemo lithoheterotroph "], 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+					] , 
+					"descendantnb" : 3, 
+					"sublevelnb" : 2
+					}
+					, 
+					{"extid" : "OBT:002923", 
+					"value" : "OBT:002923", 
+					"label" : "photoheterotroph", 
+					"syns" : ["photo heterotroph "], 
+					"children" :[
+						
+						{"extid" : "OBT:003299", 
+						"value" : "OBT:003299", 
+						"label" : "photoorganoheterotroph", 
+						"syns" : ["photo organoheterotroph"], 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+					] , 
+					"descendantnb" : 1, 
+					"sublevelnb" : 1
+					}
+				] , 
+				"descendantnb" : 7, 
+				"sublevelnb" : 3
+				}
+				, 
+				{"extid" : "OBT:000733", 
+				"value" : "OBT:000733", 
+				"label" : "methanogenic", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:000734", 
+				"value" : "OBT:000734", 
+				"label" : "methylotroph", 
+				"children" :[
+					
+					{"extid" : "OBT:001204", 
+					"value" : "OBT:001204", 
+					"label" : "methanol oxidizing", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:001205", 
+					"value" : "OBT:001205", 
+					"label" : "methanotroph", 
+					"syns" : ["methane-oxidizing ", "methanophile ", "methanotrophic "], 
+					"children" :[
+						
+						{"extid" : "OBT:001667", 
+						"value" : "OBT:001667", 
+						"label" : "obligate methanotroph", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+					] , 
+					"descendantnb" : 1, 
+					"sublevelnb" : 1
+					}
+				] , 
+				"descendantnb" : 3, 
+				"sublevelnb" : 2
+				}
+				, 
+				{"extid" : "OBT:000744", 
+				"value" : "OBT:000744", 
+				"label" : "mixotroph", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:003067", 
+				"value" : "OBT:003067", 
+				"label" : "petite positive", 
+				"syns" : ["petite colony", "petite mutant", "petite strain", "petite yeast"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 21, 
+			"sublevelnb" : 4
+			}
+			, 
+			{"extid" : "OBT:000383", 
+			"value" : "OBT:000383", 
+			"label" : "phenotype wrt living energy source", 
+			"children" :[
+				
+				{"extid" : "OBT:000555", 
+				"value" : "OBT:000555", 
+				"label" : "chemotroph", 
+				"children" :[
+					
+					{"extid" : "OBT:001098", 
+					"value" : "OBT:001098", 
+					"label" : "facultative chemo lithotroph", 
+					"syns" : ["facultative chemolithotroph "], 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:002895", 
+					"value" : "OBT:002895", 
+					"label" : "chemoheterotroph", 
+					"syns" : ["chemo heterotroph "], 
+					"children" :[
+						
+						{"extid" : "OBT:003282", 
+						"value" : "OBT:003282", 
+						"label" : "chemoorganoheterotroph", 
+						"syns" : ["chemo hetero organotroph", "chemo organo heterotroph "], 
+						"children" :[
+							
+							{"extid" : "OBT:003326", 
+							"value" : "OBT:003326", 
+							"label" : "saprophytic", 
+							"descendantnb" : 0, 
+							"sublevelnb" : 0
+							}
+						] , 
+						"descendantnb" : 1, 
+						"sublevelnb" : 1
+						}
+						, 
+						{"extid" : "OBT:003445", 
+						"value" : "OBT:003445", 
+						"label" : "chemolithoheterotroph", 
+						"syns" : ["chemo lithoheterotroph "], 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+					] , 
+					"descendantnb" : 3, 
+					"sublevelnb" : 2
+					}
+					, 
+					{"extid" : "OBT:002896", 
+					"value" : "OBT:002896", 
+					"label" : "chemolithotroph", 
+					"syns" : ["chemo lithotroph "], 
+					"children" :[
+						
+						{"extid" : "OBT:002955", 
+						"value" : "OBT:002955", 
+						"label" : "ammonia oxidizing", 
+						"children" :[
+							
+							{"extid" : "OBT:003036", 
+							"value" : "OBT:003036", 
+							"label" : "anammox", 
+							"descendantnb" : 0, 
+							"sublevelnb" : 0
+							}
+						] , 
+						"descendantnb" : 1, 
+						"sublevelnb" : 1
+						}
+						, 
+						{"extid" : "OBT:002959", 
+						"value" : "OBT:002959", 
+						"label" : "arsenic oxidizing", 
+						"children" :[
+							
+							{"extid" : "OBT:003038", 
+							"value" : "OBT:003038", 
+							"label" : "arsenite oxidizing", 
+							"descendantnb" : 0, 
+							"sublevelnb" : 0
+							}
+						] , 
+						"descendantnb" : 1, 
+						"sublevelnb" : 1
+						}
+						, 
+						{"extid" : "OBT:002984", 
+						"value" : "OBT:002984", 
+						"label" : "ferrous iron oxidizing", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002991", 
+						"value" : "OBT:002991", 
+						"label" : "hydrogen oxidizing", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:003028", 
+						"value" : "OBT:003028", 
+						"label" : "sulfur oxidizing", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:003281", 
+						"value" : "OBT:003281", 
+						"label" : "chemo litho autotroph", 
+						"syns" : ["lithoautotroph "], 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:003445", 
+						"value" : "OBT:003445", 
+						"label" : "chemolithoheterotroph", 
+						"syns" : ["chemo lithoheterotroph "], 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+					] , 
+					"descendantnb" : 9, 
+					"sublevelnb" : 2
+					}
+				] , 
+				"descendantnb" : 15, 
+				"sublevelnb" : 3
+				}
+				, 
+				{"extid" : "OBT:000804", 
+				"value" : "OBT:000804", 
+				"label" : "photosynthetic", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:000805", 
+				"value" : "OBT:000805", 
+				"label" : "phototroph", 
+				"children" :[
+					
+					{"extid" : "OBT:001035", 
+					"value" : "OBT:001035", 
+					"label" : "chlorophototroph", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:002922", 
+					"value" : "OBT:002922", 
+					"label" : "photoautotroph", 
+					"syns" : ["photo autotroph "], 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:002923", 
+					"value" : "OBT:002923", 
+					"label" : "photoheterotroph", 
+					"syns" : ["photo heterotroph "], 
+					"children" :[
+						
+						{"extid" : "OBT:003299", 
+						"value" : "OBT:003299", 
+						"label" : "photoorganoheterotroph", 
+						"syns" : ["photo organoheterotroph"], 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+					] , 
+					"descendantnb" : 1, 
+					"sublevelnb" : 1
+					}
+					, 
+					{"extid" : "OBT:002924", 
+					"value" : "OBT:002924", 
+					"label" : "photolithoautotroph", 
+					"syns" : ["photo lithoautotroph"], 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+				] , 
+				"descendantnb" : 5, 
+				"sublevelnb" : 2
+				}
+			] , 
+			"descendantnb" : 23, 
+			"sublevelnb" : 4
+			}
+			, 
+			{"extid" : "OBT:000385", 
+			"value" : "OBT:000385", 
+			"label" : "phenotype wrt reducing equivalent source", 
+			"children" :[
+				
+				{"extid" : "OBT:000712", 
+				"value" : "OBT:000712", 
+				"label" : "lithotroph", 
+				"children" :[
+					
+					{"extid" : "OBT:002896", 
+					"value" : "OBT:002896", 
+					"label" : "chemolithotroph", 
+					"syns" : ["chemo lithotroph "], 
+					"children" :[
+						
+						{"extid" : "OBT:002955", 
+						"value" : "OBT:002955", 
+						"label" : "ammonia oxidizing", 
+						"children" :[
+							
+							{"extid" : "OBT:003036", 
+							"value" : "OBT:003036", 
+							"label" : "anammox", 
+							"descendantnb" : 0, 
+							"sublevelnb" : 0
+							}
+						] , 
+						"descendantnb" : 1, 
+						"sublevelnb" : 1
+						}
+						, 
+						{"extid" : "OBT:002959", 
+						"value" : "OBT:002959", 
+						"label" : "arsenic oxidizing", 
+						"children" :[
+							
+							{"extid" : "OBT:003038", 
+							"value" : "OBT:003038", 
+							"label" : "arsenite oxidizing", 
+							"descendantnb" : 0, 
+							"sublevelnb" : 0
+							}
+						] , 
+						"descendantnb" : 1, 
+						"sublevelnb" : 1
+						}
+						, 
+						{"extid" : "OBT:002984", 
+						"value" : "OBT:002984", 
+						"label" : "ferrous iron oxidizing", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:002991", 
+						"value" : "OBT:002991", 
+						"label" : "hydrogen oxidizing", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:003028", 
+						"value" : "OBT:003028", 
+						"label" : "sulfur oxidizing", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:003281", 
+						"value" : "OBT:003281", 
+						"label" : "chemo litho autotroph", 
+						"syns" : ["lithoautotroph "], 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+						, 
+						{"extid" : "OBT:003445", 
+						"value" : "OBT:003445", 
+						"label" : "chemolithoheterotroph", 
+						"syns" : ["chemo lithoheterotroph "], 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+					] , 
+					"descendantnb" : 9, 
+					"sublevelnb" : 2
+					}
+				] , 
+				"descendantnb" : 10, 
+				"sublevelnb" : 3
+				}
+				, 
+				{"extid" : "OBT:000778", 
+				"value" : "OBT:000778", 
+				"label" : "organotroph", 
+				"children" :[
+					
+					{"extid" : "OBT:003282", 
+					"value" : "OBT:003282", 
+					"label" : "chemoorganoheterotroph", 
+					"syns" : ["chemo hetero organotroph", "chemo organo heterotroph "], 
+					"children" :[
+						
+						{"extid" : "OBT:003326", 
+						"value" : "OBT:003326", 
+						"label" : "saprophytic", 
+						"descendantnb" : 0, 
+						"sublevelnb" : 0
+						}
+					] , 
+					"descendantnb" : 1, 
+					"sublevelnb" : 1
+					}
+					, 
+					{"extid" : "OBT:003299", 
+					"value" : "OBT:003299", 
+					"label" : "photoorganoheterotroph", 
+					"syns" : ["photo organoheterotroph"], 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+				] , 
+				"descendantnb" : 3, 
+				"sublevelnb" : 2
+				}
+			] , 
+			"descendantnb" : 15, 
+			"sublevelnb" : 4
+			}
+			, 
+			{"extid" : "OBT:000399", 
+			"value" : "OBT:000399", 
+			"label" : "prototroph", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:000443", 
+			"value" : "OBT:000443", 
+			"label" : "syntrophic", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+		] , 
+		"descendantnb" : 69, 
+		"sublevelnb" : 5
+		}
+		, 
+		{"extid" : "OBT:000127", 
+		"value" : "OBT:000127", 
+		"label" : "phenotype wrt habitat acidity", 
+		"children" :[
+			
+			{"extid" : "OBT:000177", 
+			"value" : "OBT:000177", 
+			"label" : "acidophile", 
+			"syns" : ["acidophilic "], 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:000188", 
+			"value" : "OBT:000188", 
+			"label" : "alkaliphile", 
+			"syns" : ["alkaliphilic ", "alkalophile "], 
+			"children" :[
+				
+				{"extid" : "OBT:000758", 
+				"value" : "OBT:000758", 
+				"label" : "natron-alkaliphilic", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 1, 
+			"sublevelnb" : 1
+			}
+			, 
+			{"extid" : "OBT:000276", 
+			"value" : "OBT:000276", 
+			"label" : "extremely acidophilic", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:000359", 
+			"value" : "OBT:000359", 
+			"label" : "neutralophile", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:001712", 
+			"value" : "OBT:001712", 
+			"label" : "phenotype wrt chemical composition", 
+			"children" :[
+				
+				{"extid" : "OBT:002881", 
+				"value" : "OBT:002881", 
+				"label" : "acido resistant", 
+				"syns" : ["acid resistant", "acidoresistant"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002882", 
+				"value" : "OBT:002882", 
+				"label" : "acido sensitive", 
+				"syns" : ["acid sensitive", "acidosensitive"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002883", 
+				"value" : "OBT:002883", 
+				"label" : "acido tolerant", 
+				"syns" : ["acid tolerant", "acidotolerant"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002886", 
+				"value" : "OBT:002886", 
+				"label" : "alkali resistant", 
+				"syns" : ["alkaline resistant"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002887", 
+				"value" : "OBT:002887", 
+				"label" : "alkali sensitive", 
+				"syns" : ["alkaline sensitive"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002888", 
+				"value" : "OBT:002888", 
+				"label" : "alkali tolerant", 
+				"syns" : ["alkaline tolerant", "alkalitolerant"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 6, 
+			"sublevelnb" : 1
+			}
+		] , 
+		"descendantnb" : 12, 
+		"sublevelnb" : 2
+		}
+		, 
+		{"extid" : "OBT:000128", 
+		"value" : "OBT:000128", 
+		"label" : "phenotype wrt habitat osmolarity", 
+		"children" :[
+			
+			{"extid" : "OBT:000367", 
+			"value" : "OBT:000367", 
+			"label" : "osmophile", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:000368", 
+			"value" : "OBT:000368", 
+			"label" : "osmophobe", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:000370", 
+			"value" : "OBT:000370", 
+			"label" : "osmotolerant", 
+			"children" :[
+				
+				{"extid" : "OBT:002711", 
+				"value" : "OBT:002711", 
+				"label" : "halotolerant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 1, 
+			"sublevelnb" : 1
+			}
+			, 
+			{"extid" : "OBT:000382", 
+			"value" : "OBT:000382", 
+			"label" : "phenotype wrt habitat salinity", 
+			"children" :[
+				
+				{"extid" : "OBT:000656", 
+				"value" : "OBT:000656", 
+				"label" : "halophile", 
+				"children" :[
+					
+					{"extid" : "OBT:001095", 
+					"value" : "OBT:001095", 
+					"label" : "extreme halophile", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:001203", 
+					"value" : "OBT:001203", 
+					"label" : "meso-halophile", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:001214", 
+					"value" : "OBT:001214", 
+					"label" : "moderate halophile", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+					, 
+					{"extid" : "OBT:001233", 
+					"value" : "OBT:001233", 
+					"label" : "obligate halophile", 
+					"descendantnb" : 0, 
+					"sublevelnb" : 0
+					}
+				] , 
+				"descendantnb" : 4, 
+				"sublevelnb" : 1
+				}
+				, 
+				{"extid" : "OBT:000657", 
+				"value" : "OBT:000657", 
+				"label" : "halophobe", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002711", 
+				"value" : "OBT:002711", 
+				"label" : "halotolerant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 7, 
+			"sublevelnb" : 2
+			}
+		] , 
+		"descendantnb" : 12, 
+		"sublevelnb" : 3
+		}
+		, 
+		{"extid" : "OBT:000129", 
+		"value" : "OBT:000129", 
+		"label" : "phenotype wrt habitat oxygen", 
+		"children" :[
+			
+			{"extid" : "OBT:000179", 
+			"value" : "OBT:000179", 
+			"label" : "aerobe", 
+			"children" :[
+				
+				{"extid" : "OBT:000769", 
+				"value" : "OBT:000769", 
+				"label" : "obligate aerobe", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 1, 
+			"sublevelnb" : 1
+			}
+			, 
+			{"extid" : "OBT:000183", 
+			"value" : "OBT:000183", 
+			"label" : "aerotolerant", 
+			"children" :[
+				
+				{"extid" : "OBT:000735", 
+				"value" : "OBT:000735", 
+				"label" : "microaerotolerant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 1, 
+			"sublevelnb" : 1
+			}
+			, 
+			{"extid" : "OBT:000189", 
+			"value" : "OBT:000189", 
+			"label" : "anaerobe", 
+			"children" :[
+				
+				{"extid" : "OBT:000736", 
+				"value" : "OBT:000736", 
+				"label" : "microanaerobe", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:000770", 
+				"value" : "OBT:000770", 
+				"label" : "obligate anaerobe", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 2, 
+			"sublevelnb" : 1
+			}
+			, 
+			{"extid" : "OBT:000278", 
+			"value" : "OBT:000278", 
+			"label" : "facultative aerobe", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:000279", 
+			"value" : "OBT:000279", 
+			"label" : "facultative anaerobe", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:000347", 
+			"value" : "OBT:000347", 
+			"label" : "microaerophile", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+		] , 
+		"descendantnb" : 10, 
+		"sublevelnb" : 2
+		}
+		, 
+		{"extid" : "OBT:000130", 
+		"value" : "OBT:000130", 
+		"label" : "phenotype wrt habitat temperature", 
+		"children" :[
+			
+			{"extid" : "OBT:000248", 
+			"value" : "OBT:000248", 
+			"label" : "cryophile", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:000275", 
+			"value" : "OBT:000275", 
+			"label" : "extreme thermophile", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:000319", 
+			"value" : "OBT:000319", 
+			"label" : "hyperthermophile", 
+			"syns" : ["extreme thermophile"], 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:000343", 
+			"value" : "OBT:000343", 
+			"label" : "mesophile", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:000401", 
+			"value" : "OBT:000401", 
+			"label" : "psychrophile", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:000402", 
+			"value" : "OBT:000402", 
+			"label" : "psychrotrophic", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:000449", 
+			"value" : "OBT:000449", 
+			"label" : "thermophile", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:000453", 
+			"value" : "OBT:000453", 
+			"label" : "thermotolerant", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:002945", 
+			"value" : "OBT:002945", 
+			"label" : "thermal resistant", 
+			"children" :[
+				
+				{"extid" : "OBT:002975", 
+				"value" : "OBT:002975", 
+				"label" : "cold resistant", 
+				"syns" : ["low temperature resistant"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002982", 
+				"value" : "OBT:002982", 
+				"label" : "extreme cold resistant", 
+				"syns" : ["extreme low temperature resistant"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002983", 
+				"value" : "OBT:002983", 
+				"label" : "extreme heat resistant", 
+				"syns" : ["extreme high temperature resistant"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002985", 
+				"value" : "OBT:002985", 
+				"label" : "freeze-thaw resistant", 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+				, 
+				{"extid" : "OBT:002987", 
+				"value" : "OBT:002987", 
+				"label" : "heat resistant", 
+				"syns" : ["high temperature resistant"], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 5, 
+			"sublevelnb" : 1
+			}
+		] , 
+		"descendantnb" : 14, 
+		"sublevelnb" : 2
+		}
+		, 
+		{"extid" : "OBT:000134", 
+		"value" : "OBT:000134", 
+		"label" : "phenotype wrt nutrient abundance", 
+		"children" :[
+			
+			{"extid" : "OBT:000245", 
+			"value" : "OBT:000245", 
+			"label" : "copiotrophic", 
+			"syns" : ["copiotroph "], 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:000361", 
+			"value" : "OBT:000361", 
+			"label" : "oligotrophic", 
+			"syns" : ["oligotroph "], 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+		] , 
+		"descendantnb" : 2, 
+		"sublevelnb" : 1
+		}
+		, 
+		{"extid" : "OBT:000135", 
+		"value" : "OBT:000135", 
+		"label" : "phenotype wrt pressure", 
+		"children" :[
+			
+			{"extid" : "OBT:000390", 
+			"value" : "OBT:000390", 
+			"label" : "piezophile", 
+			"syns" : ["barophile "], 
+			"children" :[
+				
+				{"extid" : "OBT:000772", 
+				"value" : "OBT:000772", 
+				"label" : "obligate piezophile", 
+				"syns" : ["obligate barophile "], 
+				"descendantnb" : 0, 
+				"sublevelnb" : 0
+				}
+			] , 
+			"descendantnb" : 1, 
+			"sublevelnb" : 1
+			}
+			, 
+			{"extid" : "OBT:000391", 
+			"value" : "OBT:000391", 
+			"label" : "piezosensitive", 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+			, 
+			{"extid" : "OBT:000392", 
+			"value" : "OBT:000392", 
+			"label" : "piezotolerant", 
+			"syns" : ["barotolerant "], 
+			"descendantnb" : 0, 
+			"sublevelnb" : 0
+			}
+		] , 
+		"descendantnb" : 4, 
+		"sublevelnb" : 2
+		}
+	] , 
+	"descendantnb" : 130, 
+	"sublevelnb" : 6
+	}
+] , 
+"descendantnb" : 610, 
+"sublevelnb" : 7
+}
+]

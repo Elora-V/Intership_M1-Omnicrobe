@@ -1,0 +1,362 @@
+<!--
+# Copyright 2022 Sandra Dérozier (INRAE)
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+#    Unless required by applicable law or agreed to in writing, software
+#    distributed under the License is distributed on an "AS IS" BASIS,
+#    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#    See the License for the specific language governing permissions and
+#    limitations under the License.
+-->
+
+{% extends 'main2' %}
+{% block content %}
+<section>
+
+  <script type=text/javascript>
+    $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+  </script>
+
+  <div style="margin:80px 0;"></div>
+
+  <div style="margin-left: 5%;margin-right: 5%;">
+    <h2 id="browse"><span style="color: #21517A;">Help</span></h2><br/>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-3 p-3">
+          <nav id="navbar-example3" class="navbar navbar-light" style="background-color: #21517A;">
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link help" href="#browse">Browse Omnicrobe</a>
+              <a class="nav-link help" href="#display-habitat">About habitats</a>
+              <nav class="nav nav-pills "> <!--  flex-column -->
+                <a class="nav-link help ms-3 offset-md-1" href="#display-habitat">Display the habitats for a microorganism</a>
+                <a class="nav-link help ms-3 offset-md-1" href="#filter-habitat">Filter given types of habitats</a>
+                <a class="nav-link help ms-3 offset-md-1" href="#display-taxon-habitat">Display the microorganism</a>
+                <a class="nav-link help ms-3 offset-md-1" href="#filter-taxon-habitat">Filter given microorganisms</a>
+                <a class="nav-link help ms-3 offset-md-1" href="#habitat">I do not know how to name the habitat</a>
+              </nav>
+              <a class="nav-link help" href="#display-phenotype">About phenotypes</a>
+              <nav class="nav nav-pills ">
+                <a class="nav-link help ms-3 offset-md-1" href="#display-phenotype">Display the phenotypes for a microorganism</a>
+                <a class="nav-link help ms-3 offset-md-1" href="#filter-phenotype">Filter given types of phenotypes</a>
+                <a class="nav-link help ms-3 offset-md-1" href="#display-taxon-phenotype">Display the microorganism</a>
+                <a class="nav-link help ms-3 offset-md-1" href="#filter-taxon-phenotype">Filter given microorganisms</a>
+                <a class="nav-link help ms-3 offset-md-1" href="#phenotype">I do not know how to name the phenotype</a>
+              </nav>
+              <a class="nav-link help" href="#display-use">About uses</a>
+              <nav class="nav nav-pills ">
+                <a class="nav-link help ms-3 offset-md-1" href="#display-use">Display the uses for a microorganism</a>
+                <a class="nav-link help ms-3 offset-md-1" href="#filter-use">Filter given types of uses</a>
+                <a class="nav-link help ms-3 offset-md-1" href="#display-taxon-use">Display the microorganism</a>
+                <a class="nav-link help ms-3 offset-md-1" href="#filter-taxon-use">Filter given microorganisms</a>
+                <a class="nav-link help ms-3 offset-md-1" href="#use">I do not know how to name the use</a>
+              </nav>
+              <a class="nav-link help" href="#export">Advanced functionalities</a>
+              <nav class="nav nav-pills ">
+                <a class="nav-link help ms-3 offset-md-1" href="#export">Export the results</a>
+                <a class="nav-link help ms-3 offset-md-1" href="#advanced">Advanced search</a>
+              </nav>
+              <a class="nav-link help" href="#learn-omnicrobe">Learn more</a>
+              <nav class="nav nav-pills ">
+                <a class="nav-link help ms-3 offset-md-1" href="#learn-omnicrobe">On Omnicrobe project</a>
+                <a class="nav-link help ms-3 offset-md-1" href="#learn-data">On Omnicrobe data</a>
+              </nav>
+              <a class="nav-link help" href="#results">Providing a feedback</a>
+            </nav>
+          </nav>
+
+        </div>
+        <div class="col-9 p-3">
+
+          <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" tabindex="0">
+            <h4><span style="color: #17a2b8;">Browse Omnicrobe</span></h4>
+            <p align="justify">All on-line services are available in the navbar menu and on the Omnicrobe main page. The results of the user queries are displayed as tables as below.<br/>
+              <hr/>
+              <img src="{{ url_for('static', filename='img/help_description_table.png') }}" width="100%"/>
+              <hr/>
+
+            <div align="justify"><b><span style="color:#17a2b8;">Description of columns</span></b><br/>The <b>Source text</b> column lists the first two identifiers of the documents where the information is extracted from. A click on a document identifier opens the document as made available by the source provider. A click on the icon of the beginning column displays the whole list of document identifiers in the <b>Full source text</b> column.<br/>
+            The <b>Scientific name of taxon</b> column displays the scientific name of the taxon. A click on the taxon name displays the NCBI taxonomy browser or the DSMZ BacDive description.<br/>
+            The <b>OntoBiotope class</b> column displays the OntoBiotope class name of the habitat, phenotype or use.<br/>
+            The <b>QPS</b> column displays the QPS (Qualified Presumption of Safety) EFSA label. If the value is <b>yes</b>, the microorganism involved in the relation has a QPS EFSA label.<br/>
+            The <b>Column visibility</b> button allows you to select other information of interest to be displayed in the columns of the table such as the <b>TaxonID</b> (taxonomy identifier), the <b>Taxonomy hierarchical path</b>, the <b>ID OntoBiotope</b> (OntoBiotope identifier) and the <b>OntoBiotope hierarchical path</b>.
+            <br/><br/>
+            For the <a href='api'>API</a>, see <a href='api-doc'> API documentation</a>.<br/></div>
+            </p>
+
+            <!-- HABITAT --><hr/>
+            <h3><span style="color: #17a2b8;">About habitats</span></h3>
+            <h4><span style="color: #21517A;">Display the habitats for a microorganism</span></h4>
+            <p align="justify">Select <a href='searchByTaxon'>Taxon lives in Habitat</a> in the <b>Search</b> menu.<br/>
+            Fill the search box <b>Search relations by taxon</b> with the microorganism name. It can be any taxon (e.g. genus, family, including strain).<br/>
+            The search box suggests completions for the name. Select the relevant taxon.<br/>
+      			The list of results includes <b>Document</b> and <b>Taxon</b> (see <a href="#browse">Browse Omnicrobe</a>), and <b>Habitat</b>.<br/>
+            <span id="filter-habitat"/>The <b>OntoBiotope class</b> column displays the OntoBiotope class name of the habitat. A click on the first column displays the whole list of forms it has in the source text in the <b>Occurrence in text (habitat)</b> column.<br/></p>
+
+            <h4><span style="color: #21517A;">Filter given types of habitats among microorganism habitats</span></h4>
+            <p align="justify">Select <a href='searchByTaxon'>Taxon lives in Habitat</a> in the <b>Search</b> menu.<br/>
+            Fill the search box <b>Search relations by taxon</b> with the microorganism name. It can be any taxon (e.g. genus, family, including strain).<br/>
+            The search box suggests completions for the name. Select the relevant taxon.<br/>
+      			Click on The <b>Filter selection</b> button. It displays additional criteria to restrict the results.<br/>
+            Fill the search box <b>Filter by sources</b> with one or more sources separated by "<b>;</b>".<br/>
+            <span id="display-taxon-habitat"/>Fill the search box <b>Filter by habitat</b> with one or more habitat names separated by "<b>;</b>".<br/>
+            Check the <b>QPS</b> checkbox to filter only microorganisms with a QPS EFSA label.<br/></p>
+
+            <h4><span style="color: #21517A;">Display the microorganism living in an habitat</span></h4>
+            <p align="justify">Select <a href='searchByHabitat'>Habitat contains Taxon</a> in the <b>Search</b> menu.<br/>
+            Fill the search box <b>Search relations by habitat</b> with the habitat name. It can be a general or a specific habitat (e.g. 'food', 'cheese brine').<br/>
+            The search box suggests completions for the name. Select the relevant habitat.<br/>
+      			The list of results includes <b>Document</b> and <b>Taxon</b> (see <a href="#browse">Browse Omnicrobe</a>), and <b>Habitat</b>.<br/>
+            <span id="filter-taxon-habitat"/>The <b>OntoBiotope class</b> column displays the OntoBiotope class name of the habitat. A click on the first column displays the whole list of forms it has in the source text in the <b>Occurrence in text (habitat)</b> column.<br/></p>
+
+            <h4><span style="color: #21517A;">Filter given microorganisms among the microorganisms of an habitat</span></h4>
+            <p align="justify">Select <a href='searchByHabitat'>Habitat contains Taxon</a> in the <b>Search</b> menu.<br/>
+            Fill the search box <b>Search relations by habitat</b> with the habitat name. It can be a general or a specific habitat (e.g. 'food', 'cheese brine').<br/>
+            The search box suggests completions for the name. Select the relevant habitat.<br/>
+      			Click on The <b>Filter selection</b> button. It displays additional criteria to restrict the results.<br/>
+            Fill the search box <b>Filter by sources</b> with one or more sources separated by "<b>;</b>".<br/>
+            <span id="habitat"/>Fill the search box <b>Filter by taxon</b> with one or more taxon names separated by "<b>;</b>".<br/>
+            Check the <b>QPS</b> checkbox to filter only microorganisms with a QPS EFSA label.<br/></p>
+
+            <h4><span style="color: #21517A;">I do not know how to name the habitat that I search for</span></h4>
+      			<p align="justify">Select <a href='searchByHabitat'>Habitat contains Taxon</a> in the <b>Search</b> menu.<br/>
+            Click on the <b>OntoBiotope navigation</b> link and search the habitat name in the <b>search class</b> or click on triangle-shaped icons to browse the OntoBiotope ontology. <span id="display-phenotype"/>It opens the habitat classification.<br/>
+      			Click on the habitat name to copy it in the search box and send the query.<br/></p>
+
+            <!-- PHENOTYPE --><hr/>
+            <h3><span style="color: #17a2b8;">About Phenotypes</span></h3>
+            <h4><span style="color: #21517A;">Display the phenotypes of a microorganism</span></h4>
+            <p align="justify">Select <a href='searchByTaxonForPhenotype'>Taxon exhibits Phenotype</a> in the <b>Search</b> menu.<br/>
+            Fill the search box <b>Search relations by taxon</b> with the microorganism name. It can be any taxon (e.g. genus, family, including strain).<br/>
+            The search box suggests completions for the name. Select the relevant taxon.<br/>
+      			The list of results includes <b>Document</b> and <b>Taxon</b> (see <a href="#browse">Browse Omnicrobe</a>), and <b>Phenotype</b>.<br/>
+            <span id="filter-phenotype"/>The <b>OntoBiotope class</b> column displays the OntoBiotope class name of the phenotype. A click on the first column displays the whole list of forms it has in the source text in the <b>Occurrence in text (phenotype)</b> column.<br/></p>
+
+            <h4><span style="color: #21517A;">Filter given types of phenotypes among microorganism phenotypes</span></h4>
+            <p align="justify">Select <a href='searchByTaxonForPhenotype'>Taxon exhibits Phenotype</a> in the <b>Search</b> menu.<br/>
+            Fill the search box <b>Search relations by taxon</b> with the microorganism name. It can be any taxon (e.g. genus, family, including strain).<br/>
+            The search box suggests completions for the name. Select the relevant taxon.<br/>
+      			Click on The <b>Filter selection</b> button. It displays additional criteria to restrict the results.<br/>
+            Fill the search box <b>Filter by sources</b> with one or more sources separated by "<b>;</b>".<br/>
+            <span id="display-taxon-phenotype"/>Fill the search box <b>Filter by phenotype</b> with one or more phenotype names separated by "<b>;</b>".<br/>
+            Check the <b>QPS</b> checkbox to filter only microorganisms with a QPS EFSA label.<br/></p>
+
+            <h4><span style="color: #21517A;">Display the microorganisms that express a given phenotype</span></h4>
+            <p align="justify">Select <a href='searchByPhenotype'>Phenotype is exhibited by Taxon</a> in the <b>Search</b> menu.<br/>
+            Fill the search box <b>Search relations by phenotype</b> with the phenotype name. It can be a general or a specific phenotype (e.g. 'physiological phenotype', 'obligate piezophile').<br/>
+            The search box suggests completions for the name. Select the relevant phenotype.<br/>
+      			The list of results includes <b>Document</b> and <b>Taxon</b> (see <a href="#browse">Browse Omnicrobe</a>), and <b>Phenotype</b>.<br/>
+            <span id="filter-taxon-phenotype"/>The <b>OntoBiotope class</b> column displays the OntoBiotope class name of the phenotype. A click on the first column displays the whole list of forms it has in the source text in the <b>Occurrence in text (phenotype)</b> column.<br/></p>
+
+            <h4><span style="color: #21517A;">Filter given microorganisms among the microorganisms that express a given phenotype</span></h4>
+            <p align="justify">Select <a href='searchByPhenotype'>Phenotype is exhibited by Taxon</a> in the <b>Search</b> menu.<br/>
+            Fill the search box <b>Search relations by phenotype</b> with the phenotype name. It can be a general or a specific phenotype (e.g. 'physiological phenotype', 'obligate piezophile').<br/>
+            The search box suggests completions for the name. Select the relevant phenotype.<br/>
+            Click on The <b>Filter selection</b> button. It displays additional criteria to restrict the results.<br/>
+            Fill the search box <b>Filter by sources</b> with one or more sources separated by "<b>;</b>".<br/>
+            <span id="phenotype"/>Fill the search box <b>Filter by taxon</b> with one or more taxon names separated by "<b>;</b>".<br/>
+            Check the <b>QPS</b> checkbox to filter only microorganisms with a QPS EFSA label.<br/></p>
+
+            <h4><span style="color: #21517A;">I do not know how to name the phenotype that I search for</span></h4>
+            <p align="justify">Select <a href='searchByPhenotype'>Phenotype is exhibited by Taxon</a> in the <b>Search</b> menu.<br/>
+            Click on the <b>OntoBiotope navigation</b> link and search the phenotype name in the <b>search class</b> or click on triangle-shaped icons to browse the OntoBiotope ontology. <span id="display-use"/>It opens the phenotype classification.<br/>
+      			Click on the phenotype name to copy it in the search box and send the query.<br/></p>
+
+            <!-- USE --><hr/>
+            <h3><span style="color: #17a2b8;">About uses</span></h3>
+            <h4><span style="color: #21517A;">Display the uses of a microorganism</span></h4>
+            <p align="justify">Select <a href='searchByTaxonForUse'>Taxon studied for use</a> in the <b>Search</b> menu.<br/>
+            Fill the search box <b>Search relations by taxon</b> with the microorganism name. It can be any taxon (e.g. genus, family, including strain).<br/>
+            The search box suggests completions for the name. Select the relevant taxon.<br/>
+      			The list of results includes <b>Document</b> and <b>Taxon</b> (see <a href="#browse">Browse Omnicrobe</a>), and <b>Use</b>.<br/>
+            <span id="filter-use"/>The <b>OntoBiotope class</b> column displays the OntoBiotope class name of the use. A click on the first column displays the whole list of forms it has in the source text in the source text in the <b>Occurrence in text (use)</b>.<br/></p>
+
+            <h4><span style="color: #21517A;">Filter given types of uses among microorganism uses</span></h4>
+            <p align="justify">Select <a href='searchByTaxonForUse'>Taxon studied for use</a> in the <b>Search</b> menu.<br/>
+            Fill the search box <b>Search relations by taxon</b> with the microorganism name. It can be any taxon (e.g. genus, family, including strain).<br/>
+            The search box suggests completions for the name. Select the relevant taxon.<br/>
+      			Click on The <b>Filter selection</b> button. It displays additional criteria to restrict the results.<br/>
+            Fill the search box <b>Filter by sources</b> with one or more sources separated by "<b>;</b>".<br/>
+            <span id="display-taxon-use"/>Fill the search box <b>Filter by use</b> with one or more use names separated by "<b>;</b>".<br/>
+            Check the <b>QPS</b> checkbox to filter only microorganisms with a QPS EFSA label.<br/></p>
+
+            <h4><span style="color: #21517A;">Display the microorganism given a use</span></h4>
+            <p align="justify">Select <a href='searchByUse'>Use involves Taxon</a> in the <b>Search</b> menu.<br/>
+            Fill the search box <b>Search relations by use</b> with the use name. It can be a general or a specific use (e.g. 'sensory quality', 'viscosity').<br/>
+            The search box suggests completions for the name. Select the relevant use.<br/>
+      			The list of results includes <b>Document</b> and <b>Taxon</b> (see <a href="#browse">Browse Omnicrobe</a>), and <b>Use</b>.<br/>
+            <span id="filter-taxon-use"/>The <b>OntoBiotope class</b> column displays the OntoBiotope class name of the use. A click on the last column displays the whole list of forms it has in the source text in the source text in the <b>Occurrence in text (use)</b>.<br/></p>
+
+            <h4><span style="color: #21517A;">Filter microorganisms among the microorganisms that are studied for a given use</span></h4>
+            <p align="justify">Select <a href='searchByUse'>Use involves Taxon</a> in the <b>Search</b> menu.<br/>
+            Fill the search box <b>Search relations by use</b> with the use name. It can be a general or a specific use (e.g. 'sensory quality', 'viscosity').<br/>
+            The search box suggests completions for the name. Select the relevant use.<br/>
+            Click on The <b>Filter selection</b> button. It displays additional criteria to restrict the results.<br/>
+            Fill the search box <b>Filter by sources</b> with one or more sources separated by "<b>;</b>".<br/>
+            <span id="use"/>Fill the search box <b>Filter by taxon</b> with one or more taxon names separated by "<b>;</b>".<br/>
+            Check the <b>QPS</b> checkbox to filter only microorganisms with a QPS EFSA label.<br/></p>
+
+            <h4><span style="color: #21517A;">I do not know how to name the use that I search for</span></h4>
+            <p align="justify">Select <a href='searchByUse'>Use involves Taxon</a> in the <b>Search</b> menu.<br/>
+            Click on the <b>OntoBiotope navigation</b> link and search the use name in the <b>search class</b> or click on triangle-shaped icons to browse the OntoBiotope ontology. <span id="export"/>It opens the use classification.<br/>
+            Click on the use name to copy it in the search box and send the query.<br/></p>
+
+            <!-- EXPORT --><hr/>
+            <h3><span style="color: #17a2b8;">Advanced functionalities</span></h3>
+            <h4><span style="color: #21517A;">Export the results</span></h4>
+            <p align="justify">Below the table, click on <b>CSV</b> or <b>Excel</b> button.<br/>
+            Select the columns to be exported by clicking on the <b>Column visibility</b> button (unselected columns are white).<br/>
+            <center><img src="{{ url_for('static', filename='img/help_export.png') }}" width="50%"/><span id="advanced"/></center><br/>
+            Using the <a href='api'>API</a> is recommended for the export of large set of data.<br/></p>
+
+            <h4><span style="color: #21517A;">Advanced search</span></h4>
+            <p align="justify">Select <a href="advancedSearch">Advanced search</a> in the <b>Search</b> menu.<br/>
+            Select from the list the type of element to be searched (taxon, habitat, phenotype, use) and fill the search box with the name of the element.<br/>
+            Click on <b>Add rule</b> to add one or more items to the query.<br/>
+            Click on <b>Add group</b> to build groups of items in the query.<br/>
+            Click on <b>AND</b> or <b>OR</b> to select the operator between items in the query.<br/>
+            Click on <b>Apply</b> button to send a query.<br/><br/>
+            <b>Example 1</b><br/>
+            <span align="justify">Search all relations involving the <b>lactococcus</b> taxon and the <b>cheese</b> habitat.</span>
+            <center><img src="{{ url_for('static', filename='img/help_advanced_1.png') }}" width="100%"/></center><br/>
+            <b>Example 2</b><br/>
+            <span align="justify">Search all relations involving the <b>mesophile</b> phenotype or the <b>thermophile</b> phenotype, and the <b>Bacteria</b> taxon.</span>
+            <center><img src="{{ url_for('static', filename='img/help_advanced_2.png') }}"  width="100%"/></center><br/>
+            </p>
+
+            <!-- GENERAL --><hr/>
+            <h3 id="learn-omnicrobe"><span style="color: #17a2b8;">Learn more</span></h3>
+            <h4 id="learn-omnicrobe"><span style="color: #21517A;">On Omnicrobe project</span></h4>
+      			<p align="justify">Click on the <a href='about'>About</a> menu to learn on the text mining process, the Ontobiotope classification, the partners and the publications.<br/></p>
+
+            <h4 id="learn-data"><span style="color: #21517A;">On Omnicrobe data</span></h4>
+      			<p align="justify">The sources are scientific papers, catalogue of biological resource centers and DNA sequence database.<br/>
+      			Click on the <a href='about'>About Omnicrobe</a> tab. The <b>Current version</b> section describes the versions of the data and the volumes.<br/>
+      			The <b>Public data</b> section describes the sources of the data. The <b>Sources</b> section of <b>Terms of use and Copyright</b> describes the licenses for each source.<br/></p>
+
+            <h3 id="results"><span style="color: #17a2b8;">Providing a feedback</span></h3>
+      			<p align="justify">The results are automatically extracted and interpreted by machine learning algorithms of the Alvis platform. Its quality is continuously improving but some errors may remain.<br/>
+      			To request their correction: <a href="mailto:omnicrobe@inrae.fr">omnicrobe@inrae.fr</a>.<br/></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div style="margin:80px 0;"></div>
+
+  <script>
+    function format(d) {
+
+        if ( d == '1' ) {
+          return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">'+
+              '<tr>'+
+                  '<td><b>Full source text</b></td>'+
+                  '<td align="justify"><a href="https://bibliome.migale.inrae.fr/omnicrobe/alvisir/webapi/search?q=%22Lactococcus+lactis%22+lives+in+%7Bhabitat%7D/OBT:000001/OBT:000012/OBT:000113/OBT:000432/OBT:000584/OBT:001030/+%22cheese+starter+culture%22+pmid=10103248" target="_blank">10103248</a>, <a href="https://bibliome.migale.inrae.fr/omnicrobe/alvisir/webapi/search?q=%22Lactococcus+lactis%22+lives+in+%7Bhabitat%7D/OBT:000001/OBT:000012/OBT:000113/OBT:000432/OBT:000584/OBT:001030/+%22cheese+starter+culture%22+pmid=10618201" target="_blank">10618201</a>, <a href="https://bibliome.migale.inrae.fr/omnicrobe/alvisir/webapi/search?q=%22Lactococcus+lactis%22+lives+in+%7Bhabitat%7D/OBT:000001/OBT:000012/OBT:000113/OBT:000432/OBT:000584/OBT:001030/+%22cheese+starter+culture%22+pmid=9835556" target="_blank">9835556</a>, <a href="https://bibliome.migale.inrae.fr/omnicrobe/alvisir/webapi/search?q=%22Lactococcus+lactis%22+lives+in+%7Bhabitat%7D/OBT:000001/OBT:000012/OBT:000113/OBT:000432/OBT:000584/OBT:001030/+%22cheese+starter+culture%22+pmid=15453471" target="_blank">15453471</a>, <a href="https://bibliome.migale.inrae.fr/omnicrobe/alvisir/webapi/search?q=%22Lactococcus+lactis%22+lives+in+%7Bhabitat%7D/OBT:000001/OBT:000012/OBT:000113/OBT:000432/OBT:000584/OBT:001030/+%22cheese+starter+culture%22+pmid=18096924" target="_blank">18096924</a></td>'+
+              '</tr>'+
+              '<tr>'+
+                  '<td><b>Occurrence in text (taxon)</b></td>'+
+                  '<td align="justify">Lactococcus_lactis</td>'+
+              '</tr>'+
+              '<tr>'+
+                  '<td><b>Occurrence in text (habitat)</b></td>'+
+                  '<td align="justify">Cheddar cheese starter culture, starter cheese culture, strain Cheddar cheese starter culture, cheese starter culture, primary cheese starter culture</td>'+
+              '</tr>'+
+          '</table>';
+      }
+      if ( d == '3' ) {
+        return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">'+
+            '<tr>'+
+                '<td><b>Full source text</b></td>'+
+                '<td align="justify"></td>'+
+            '</tr>'+
+            '<tr>'+
+                '<td><b>Occurrence in text (taxon)</b></td>'+
+                '<td align="justify">Lactococcus lactis subsp. lactis</td>'+
+            '</tr>'+
+            '<tr>'+
+                '<td><b>Occurrence in text (habitat)</b></td>'+
+                '<td align="justify">yoghurt lactic starter</td>'+
+            '</tr>'+
+        '</table>';
+      }
+      if ( d == '2' ) {
+        return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">'+
+            '<tr>'+
+                '<td><b>Full source text</b></td>'+
+                '<td align="justify"><a target="_blank" class="doc" href="https://www.ncbi.nlm.nih.gov/nuccore/MT634254">MT634254</a>, <a target="_blank" class="doc" href="https://www.ncbi.nlm.nih.gov/nuccore/MT634253">MT634253</a>, <a target="_blank" class="doc" href="https://www.ncbi.nlm.nih.gov/nuccore/MT626062">MT626062</a>, <a target="_blank" class="doc" href="https://www.ncbi.nlm.nih.gov/nuccore/MZ243210">MZ243210</a></td></td>'+
+            '</tr>'+
+            '<tr>'+
+                '<td><b>Occurrence in text (taxon)</b></td>'+
+                '<td align="justify">Lactococcus lactis subsp. lactis</td>'+
+            '</tr>'+
+            '<tr>'+
+                '<td><b>Occurrence in text (habitat)</b></td>'+
+                '<td align="justify">yogurt</td>'+
+            '</tr>'+
+        '</table>';
+      }
+
+      return '';
+    }
+
+    var thtable = $('#results_ex').DataTable();
+
+    $('#results_ex tbody').on('click', 'td.details-control1', function () {
+        var tr = $(this).closest('tr');
+        var row = thtable.row( tr );
+
+        if ( row.child.isShown() ) {
+            // This row is already open - close it
+            row.child.hide();
+            tr.removeClass('shown');
+        }
+        else {
+            // Open this row
+            row.child(format(1)).show();
+            tr.addClass('shown');
+        }
+    } );
+
+    $('#results_ex tbody').on('click', 'td.details-control2', function () {
+        var tr = $(this).closest('tr');
+        var row = thtable.row( tr );
+
+        if ( row.child.isShown() ) {
+            // This row is already open - close it
+            row.child.hide();
+            tr.removeClass('shown');
+        }
+        else {
+            // Open this row
+            row.child(format(2)).show();
+            tr.addClass('shown');
+        }
+    } );
+
+    $('#results_ex tbody').on('click', 'td.details-control3', function () {
+        var tr = $(this).closest('tr');
+        var row = thtable.row( tr );
+
+        if ( row.child.isShown() ) {
+            // This row is already open - close it
+            row.child.hide();
+            tr.removeClass('shown');
+        }
+        else {
+            // Open this row
+            row.child(format(3)).show();
+            tr.addClass('shown');
+        }
+    } );
+  </script>
+
+</section>
+{% endblock %}

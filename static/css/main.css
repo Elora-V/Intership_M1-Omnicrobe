@@ -1,0 +1,415 @@
+/*
+# Copyright 2022 Sandra Dérozier (INRAE)
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+#    Unless required by applicable law or agreed to in writing, software
+#    distributed under the License is distributed on an "AS IS" BASIS,
+#    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#    See the License for the specific language governing permissions and
+#    limitations under the License.
+*/
+
+.query-builder .rules-list {
+  padding: 0 0 0 25px !important;
+}
+
+a.link-info.link-cur {
+    cursor: pointer;
+}
+
+table.dataTable.dtr-inline.collapsed>tbody>tr>td.dtr-control:before, table.dataTable.dtr-inline.collapsed>tbody>tr>th.dtr-control:before {
+  border: none !important;
+  background-color: #17A2B8 !important;
+}
+
+.form-inline label {
+    display: inline;
+}
+
+[id^='builder_group_'] {
+  background: #F0F7F6 !important;
+  border: 1px solid #17A2B8 !important;
+  padding: 10px;
+  padding-bottom: 6px;
+}
+
+button.btn.btn-xs.btn-danger {
+    border-color: white;
+}
+
+button.btn.btn-xs.btn-success {
+    color: white;
+    background: #17a2b8;
+    border-color: white;
+}
+
+label.btn.btn-xs.btn-primary {
+    color: #A0D9E1;
+    background-color: #F0F7F6;
+    border-color: #17a2b8;
+}
+
+label.btn.btn-xs.btn-primary.active {
+    color: white;
+    background-color: #17A2B8;
+    border-color: #17A2B8;
+}
+
+.card {
+  width: 100%;
+}
+.card-title {
+  height: 70px;
+}
+
+a.btn.btn-sm.btn-fix {
+  height: 50px;
+  background-color: #fff;
+  border-color: #fff;
+  color: black;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.acolor:hover {
+  color: #17a2b8 !important;
+}
+
+@media only screen and (min-width : 1200px) {
+    .container { max-width: 1400px; }
+}
+
+td.details-control {
+    background: url('../img/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+tr.shown td.details-control {
+    background: url('https://www.datatables.net/examples/resources/details_close.png') no-repeat center center;
+}
+
+.selectize-input {
+  width: 350px !important;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+  background-color: #21517A;
+  border-color: #21517A;
+}
+
+div.dt-button-collection {
+  width: auto !important;
+}
+
+div.dt-button-collection button.dt-button:active:not(.disabled),
+div.dt-button-collection button.dt-button.active:not(.disabled),
+div.dt-button-collection div.dt-button:active:not(.disabled),
+div.dt-button-collection div.dt-button.active:not(.disabled),
+div.dt-button-collection a.dt-button:active:not(.disabled),
+div.dt-button-collection a.dt-button.active:not(.disabled) {
+  background: #21517A !important;
+  border: 1px solid #21517A !important;
+  font-weight: bold !important;
+  color: #fff !important;
+}
+
+div.dt-button-collection button.dt-button:not(.disabled),
+div.dt-button-collection button.dt-button:not(.disabled),
+div.dt-button-collection div.dt-button:not(.disabled),
+div.dt-button-collection div.dt-button:not(.disabled),
+div.dt-button-collection a.dt-button:not(.disabled),
+div.dt-button-collection a.dt-button:not(.disabled) {
+  background: #fff !important;
+  border: 1px solid #21517A !important;
+  font-weight: bold !important;
+  color: #21517A !important;
+}
+
+.ui-menu-item .ui-menu-item-wrapper.ui-state-active {
+    background: #17a2b8 !important;
+    border: 1px solid #17a2b8 !important;
+    font-weight: bold !important;
+    color: #ffffff !important;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #ffffff !important;
+    background-color: #17a2b8 !important;
+}
+
+button.dt-button {
+  background-color: #21517A !important;
+  border: 1px solid #21517A !important;
+  color: #fff !important;
+}
+
+span.dt-down-arrow {
+  color: #fff !important;
+}
+
+div.dt-button-collection button.dt-button:active:not(.disabled),
+div.dt-button-collection button.dt-button.active:not(.disabled),
+div.dt-button-collection div.dt-button:active:not(.disabled),
+div.dt-button-collection div.dt-button.active:not(.disabled),
+div.dt-button-collection a.dt-button:active:not(.disabled),
+div.dt-button-collection a.dt-button.active:not(.disabled) {
+  background-color: #21517A !important;
+  color: #fff !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled,
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover,
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
+  background-color: #21517A !important;
+  border: 1px solid #21517A !important;
+  color: #fff !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+  background-color: #17a2b8 !important;
+  background: #17a2b8 !important;
+  border: 1px solid #17a2b8 !important;
+  color: #fff !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  background-color: #17a2b8 !important;
+  background: #17a2b8 !important;
+  border: 1px solid #17a2b8 !important;
+  color: #fff !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  background-color: #21517A !important;
+  border: 1px solid #21517A !important;
+  color: #fff !important;
+}
+
+div.dt-buttons {
+  padding-top: .25em;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  background: #21517A;
+  color: white!important; /*change the hover text color*/
+}
+
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:active {
+  background: #21517A;
+  border: 1px solid #21517A !important;
+  color: white!important;
+}
+
+a {
+  color: #17a2b8;
+}
+
+.nav-link {
+  padding: .2rem 1rem;
+}
+
+a.nav-link {
+  color: white !important;
+}
+
+a.nav-link.help:hover {
+  color: #17a2b8 !important;
+}
+
+a.help {
+  color: #516EB0;
+}
+
+.nav-pills .nav-item {
+  color: #fff;
+  border-radius: 5rem;
+  height: 30px;
+  background-color: #21517A;
+}
+
+.nav-pills .nav-item.active {
+  background-color: #17A2B8;
+}
+
+.module .collapse, .module .collapsing {
+    height: 1.5rem; /*3rem;*/
+}
+.module .collapse {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+.module .collapse:before {
+}
+.module .collapse.show {
+    height: auto;
+}
+.module .collapse.show:before {
+    display: none;
+}
+.module a.collapsed:after {
+    text-align: center;
+    content: url("data:image/svg+xml;charset=UTF-8,<svg width='1em' height='1em' viewBox='0 0 16 16' class='bi bi-chevron-double-down' fill='currentColor' xmlns='http://www.w3.org/2000/svg'> \
+                  <path fill-rule='evenodd' d='M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/> \
+                  <path fill-rule='evenodd' d='M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/> \
+                  </svg>");
+}
+.module a:not(.collapsed ):not(.doc):after {
+    text-align: center;
+    content: url("data:image/svg+xml;charset=UTF-8,<svg width='1em' height='1em' viewBox='0 0 16 16' class='bi bi-chevron-double-up' fill='currentColor' xmlns='http://www.w3.org/2000/svg'> \
+                  <path fill-rule='evenodd' d='M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z'/> \
+                  <path fill-rule='evenodd' d='M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/> \
+                  </svg>");
+}
+
+
+.scoreGlobal {
+  font-weight: bold;
+  text-align: center;
+}
+
+.scoreSmall{
+    font-style: italic;
+    color: #b3bbc3;
+}
+
+.column_filter_short{
+    width: 55px;
+}
+
+
+
+.infobulle { /* the text */
+  position: relative;
+  color: #264b6f;
+  cursor :pointer;
+
+  /*text-decoration-line : underline overline ;
+  text-decoration-style: dotted ;
+  text-decoration-color : #d2d2d2 ;*/
+  /*text-decoration: none;*/
+  /*border-bottom: 2px dotted #d2d2d2;*/
+  /*padding-bottom: 1px;*/
+
+  /*border-width:2px;
+  border-style:dotted;
+  border-color: #dce1e5;
+  border-radius: 7px;
+  padding : 3px;
+  display: inline;*/
+}
+
+.infobulle:hover{ /* the text when mousehover*/
+    color:#14a0b9;
+}
+
+.infobulle:hover::after, /* after : is for additional content => the texte appearing when mousehover */
+.infobulle:focus::after {
+
+  /* content */
+  content: attr(aria-label);  /* on affiche aria-label */
+
+    /* position */
+   position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+
+    /* color and border*/
+   border-width:1px;
+   border-style: solid;
+   border-color: #a1a8b5;
+   border-radius: 7px;
+   background : white;
+   color : #14a0b9;
+   padding : 4px;
+}
+
+.docmodal{
+	color : #14a0b9;
+}
+
+.blockTxt{
+	background: #fbfbfb;
+	padding: 10px 50px 20px;
+	line-height: 2.6;
+}
+
+
+
+.taxon{
+	background-color :rgb(173,202,203,1); // #ADCACB Need in rgb version to change opacity later
+}
+
+.habitat{
+	background-color :rgb(254,227,162,1)  ; //#FEE3A2
+}
+
+.phenotype{
+	background-color : rgb(181,230,147,1) ; // b5e693
+}
+
+.use{
+	background-color : rgb(192,162,255,1) ; //#c0a1ff
+}
+
+/*
+.divLine{ 
+    opacity:0.4;
+}
+.divLine:hover{ 
+    opacity:1;
+}
+
+.lineRelation-after{
+   border-width:1px;
+   border-style: solid;
+   border-color: #a1a8b5;
+   border-radius: 7px;
+   background : white;
+   color : #14a0b9;
+   padding : 4px;
+}
+*/
+
+.horizontal_space{
+	margin-right: 20px;
+}
+
+
+#colorLegend {
+	font-size: 1.2em;	
+	padding : 4px;
+	
+}
+
+.custom-modal-size{
+	max-width: 1500px; 
+  	width: 100%; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,73 @@
+<!--
+# Copyright 2022 Sandra Dérozier (INRAE)
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+#    Unless required by applicable law or agreed to in writing, software
+#    distributed under the License is distributed on an "AS IS" BASIS,
+#    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#    See the License for the specific language governing permissions and
+#    limitations under the License.
+-->
+
+{% extends 'main2' %}
+{% block content %}
+<section>
+
+  <script type=text/javascript>
+    $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+  </script>
+
+  <script>
+    var relation = JSON.parse('{{ id_relation | tojson | safe }}');
+    var source = JSON.parse('{{ id_source | tojson | safe }}');
+  </script>
+
+  <link href="{{ url_for('static', filename='css/simpleTree.css') }}" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/selectize.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/selectize.boostrap3.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/additional.css') }}" />
+
+<link rel="stylesheet" href="{{ url_for('static', filename='js/lib/recogito-js-1.8.2/recogito.min.css') }}">
+<script src="{{ url_for('static', filename='js/lib/recogito-js-1.8.2/recogito.min.js') }}"></script>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="module" src="{{ url_for('static', filename='js/sourceAbstract.js') }}"></script>
+  
+  
+  <div style="height: 200px;"></div>
+
+  <div style="margin-left: 20%;margin-right: 20%;">
+    <h3><span style="color: #21517A;" id="titlePage">Abstract</span></h3>
+
+    <div style="height: 50px;"></div>
+
+    <div class="blockTxt">
+      <div style="height: 30px;"></div>
+      <div style="text-align: center;">
+        <span id="colorLegend" class=" taxon">Taxon</span>
+        <span class="horizontal_space"></span>
+        <span id="colorLegend" class=" habitat">Habitat</span>
+        <span class="horizontal_space"></span>
+        <span id="colorLegend" class=" phenotype">Phenotype</span>
+        <span class="horizontal_space"></span>
+        <span id="colorLegend" class=" use">Use</span>
+      </div> 
+  
+          <div style="height: 30px;"></div>
+          <h4 style="color: #21517A;" id="title_abstract"></h4><br/>
+          <p class="text-justify " id="abstract"></p> 
+    </div>
+
+    <div style="height: 50px;"></div>
+
+
+   
+
+
+</section>
+{% endblock %}

@@ -1,0 +1,167 @@
+<!--
+# Copyright 2022 Sandra Dérozier (INRAE)
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+#    Unless required by applicable law or agreed to in writing, software
+#    distributed under the License is distributed on an "AS IS" BASIS,
+#    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#    See the License for the specific language governing permissions and
+#    limitations under the License.
+-->
+
+{% extends 'main2' %}
+{% block content %}
+<section>
+
+  <script type=text/javascript>
+    $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+  </script>
+
+  <div style="margin:80px 0;"></div>
+
+  <div style="margin-left: 5%;margin-right: 5%;">
+
+    <h2><span style="color: #21517A;">About Omnicrobe</span></h2><br/>
+
+    <IMG ALIGN="LEFT" SRC="{{ url_for('static', filename='img/textmining.png') }}" width="50" height="50"/><div class="text-info" class="text-info" style="padding-top: 10px;"><h4>&nbsp;&nbsp;Context</h4></div>
+  	<p align='justify'>In recent years, developments in molecular technologies have led to an exponential growth of experimental data and publications, many of which are open, yet separately accessible.
+    Therefore, it is now crucial to make available to researchers bioinformatics applications that propose unified access to both data and related scientific articles.
+    With the help of text mining tools, they can rapidly access and process textual data, link them with other data and make the results available for microbiology research and technology.</p>
+
+    <IMG ALIGN="LEFT" SRC="{{ url_for('static', filename='img/database.png') }}" width="50" height="50"/><div class="text-info" class="text-info" style="padding-top: 10px;"><h4>&nbsp;&nbsp;Goal</h4></div>
+    <p align='justify'>The Omnicrobe application aggregates knowledge from the literature with knowledge available in other databases on microbial biodiversity, which makes possible their comparison for further analysis.
+    Key knowledge is the microbial biotopes and microbial phenotypes.</p>
+
+    <img ALIGN="LEFT" SRC="{{ url_for('static', filename='img/ontology.png') }}" width="50" height="50"/><div class="text-info" class="text-info" style="padding-top: 10px;"><h4>&nbsp;&nbsp;Information extraction</h4></div>
+    <p align='justify'>Information extraction tools achieve information content analysis and standardization. They automatically analyze textual descriptions of microorganism biotopes so that biotope descriptions originating from different experiments can be compared at a large scale.
+    Here analysis means not only the extraction of the relevant spans of text, but also the normalization or categorization with reference resources (e.g. taxonomy of organisms, ontology of habitats, ontology of phenotypes, ontology of physico-chemical properties, etc.).
+    Information retrieval is supported by a powerful semantic search engine that enables ontology-based query.</p>
+
+    <h2><span style="color: #21517A;">More on Omnicrobe</span></h2><br/>
+    <img ALIGN="LEFT" SRC="{{ url_for('static', filename='img/PublicData.png') }}" width="50" height="50"/><div class="text-info" class="text-info" style="padding-top: 10px;"><h4>&nbsp;&nbsp;Public data</h4></div>
+    <p align='justify'>The information managed by the Omnicrobe application is publicly accessible online. It offers numerous cross-functional avenues of use in different fields like food security, ecology, or human health. The main source of information in Omnicrobe are scientific references from <a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank">PubMed</a>.
+    Omnicrobe includes an increasing volume of textual and non-textual information from relevant biological databases such as Biological Resource Centers (e.g. <a target="_blank" href='https://www6.inra.fr/cirm/'>INRAE CIRM</a>, <a target="_blank" href='https://bacdive.dsmz.de/'>DSMZ</a>) and major genetic databases (<a target="_blank" href='https://www.ncbi.nlm.nih.gov/genbank/'>GenBank</a>).
+    The available data is the result of an automatic predictive text-mining process. Users must be aware that this information is not curated.</p>
+
+    <img ALIGN="LEFT" SRC="{{ url_for('static', filename='img/textmining.png') }}" width="50" height="50"/><div class="text-info" style="padding-top: 10px;"><h4>&nbsp;&nbsp;Text mining process</h4></div>
+    <p align='justify'>The text-mining process behind Omnicrobe has been set up by INRAE using the <a href="https://github.com/Bibliome/alvisnlp" target="_blank">AlvisNLP</a> environment. It consists in extracting the relevant information, mostly textual, from scientific literature and databases. Words or word groups are identified and assigned a type ("habitat", "phenotype", "use" or "taxon").
+    They are then normalized, meaning they are assigned either a finer category (e.g. cheese as habitat) or an ID that is shared with other public databases (e.g. 1639 is <i>Listeria monocytogenes</i> ID in the NCBI taxonomy).
+    Reference semantic resources such as nomenclatures, ontologies define these IDs or categories. For example, "Irish dairy farms", "dairy cattle farms" or "dairy farms environment" are designated by the same habitat reference class "dairy farm" according to the OntoBiotope ontology.</p>
+
+    <img ALIGN="LEFT" SRC="{{ url_for('static', filename='img/Benefits.png') }}" width="50" height="50"/><div class="text-info" style="padding-top: 10px;"><h4>&nbsp;&nbsp;Who benefits?</h4></div>
+    <p align='justify'>Researchers - Rapid overview of microorganisms and their functionality in their ecosystems, leading to a better ability to understand, control and use them in food processing.
+    <br/>Agro-industrial Technology Institutes - Provide more efficient access to research results and therefore boost innovation.
+    <br/>Agrofood Companies and artisans - Gather information which helps identify food microbes more quickly, thereby increasing food safety and speeding up the development of new products.
+    <br/>Food Safety Agencies -  Better ability to determine which microbe might interfere with food products and the origin of harmful microbes.</p>
+
+    <img ALIGN="LEFT" SRC="{{ url_for('static', filename='img/Citation.png') }}" width="50" height="50"/><div class="text-info" style="padding-top: 10px;"><h4>&nbsp;&nbsp;How to cite Omnicrobe?</h4></div>
+    <!-- <p align = 'justify'>The Omnicrobe database and the associated data are free of use, available under the <a target="_blank" href='https://creativecommons.org/licenses/by/2.0/deed.en'>CC-BY license</a>. If you share or adapt it, you must give appropriate credit</a>: provide a link to the license, indicate if changes were made and cite the paper:
+    <i>Falentin, H., Chaix, E., Dérozier, S., Weber, M., Buchin, S., Dridi, B., Deutsch, S.-M., Valence-Bertel, F., Casaregola, S., Renault, P., Champomier-Vergès, M.-C., Thierry, A., Zagorec, M., Irlinger, F., Delbès, C., Aubin, S., Bessières, P., Loux, V., Bossy, R., Dibie, J., Sicard, D., Nédellec, C. (2017, October). Omnicrobe: a database gathering microbial phenotypes of food interest. </i>In 4th International Conference on Microbial Diversity 2017<i>, Bari, ITA (2017-10-24 - 2017-10-26)</i>.</p> -->
+    <p align="justify">The Omnicrobe database and the associated data are free of use, available under the <a class="text-info" target="_blank" href="https://creativecommons.org/licenses/by/2.0/deed.en">CC-BY license</a>. If you share or adapt it, you must give appropriate credit i.e. provide a link to the license, indicate if changes were made and cite the paper: Dérozier S, Bossy R, Deléger L, Ba M, Chaix E, et al. (2023) Omnicrobe, an open-access database of microbial habitats and phenotypes using a comprehensive text mining and data fusion approach. PLOS ONE 18(1): e0272473. <a target="_blank" href="https://doi.org/10.1371/journal.pone.0272473">https://doi.org/10.1371/journal.pone.0272473</a>.</p>
+
+    <h2><span style="color: #21517A;">About us</span></h2><br/>
+
+    <img ALIGN="LEFT" SRC="{{ url_for('static', filename='img/CoreGroup.png') }}" width="50" height="50"/><div class="text-info" style="padding-top: 10px;"><h4>&nbsp;&nbsp;Core group</h4></div>
+    <div style="margin-left: 5%;margin-right: 5%;">
+      <div class="row">
+        <div class="col"><li>Text-mining team: <a target="_blank" href="https://maiage.inra.fr/fr/bibliome">Bibliome</a> at <a target="_blank" href="http://maiage.jouy.inra.fr/?q=en">MaIAGE</a> (Applied Mathematics and Computer Science, from Genomes to the Environment), INRAE, Université Paris-Saclay</li></div>
+        <div class="w-100"></div>
+        <div class="col"><li>Bioinformatics and Statistics for omics data team: <a target="_blank" href="https://maiage.inra.fr/fr/statinfomics">StatInfOmics</a> at <a target="_blank" href="http://maiage.jouy.inra.fr/?q=en">MaIAGE</a>, INRAE, Université Paris-Saclay</li></div>
+        <div class="w-100"></div>
+        <div class="col"><li>Bioinformatics platform: <a target="_blank" href="https://migale.inra.fr/">Migale</a> at <a target="_blank" href="http://maiage.jouy.inra.fr/?q=en">MaIAGE</a>, INRAE, Université Paris-Saclay</li></div>
+        <div class="w-100"></div>
+        <div class="col"><li>Microbiology team: <a target ="_blank" href ="https://www6.rennes.inra.fr/stlo_eng/RESEARCH/Research-Teams/Microbiology-of-Milk-and-Egg-Sectors">Microbiology of Milk and Egg Sectors</a> at STLO, INRAE, AgroCampus Ouest</li></ul></p></div>
+      </div>
+    </div>
+
+		<img ALIGN="LEFT" SRC="{{ url_for('static', filename='img/Team.png') }}" width="50" height="50"/><div class="text-info" style="padding-top: 10px;"><h4>&nbsp;&nbsp;Participant teams</h4></div>
+    <div style="margin-left: 5%;">
+      <div class="row">
+        <div class="col-4"><li><a href="https://www6.angers-nantes.inrae.fr/bia/" target="_blank">UR BIA</a>, INRAE, Nantes</li></div>
+        <div class="col"><li><a href="https://www6.angers-nantes.inrae.fr/secalim" target="_blank">UMR SECALIM</a>, INRAE, Nantes</li></div>
+        <div class="w-100"></div>
+        <div class="col-4"><li><a href="https://www.inrae.fr/centres/bourgogne-franche-comte" target="_blank">URTAL</a>, INRAE, Poligny</li></div>
+        <div class="col"><li><a href="https://www6.versailles-grignon.inrae.fr/gmpa" target="_blank">UMR GMPA</a>, INRAE, Grignon</li></div>
+        <div class="w-100"></div>
+        <div class="col-4"><li><a href="https://www6.montpellier.inrae.fr/spo/" target="_blank">UMR SPO</a>, INRAE, Montpellier</li></div>
+        <div class="col"><li><a href="https://www6.clermont.inrae.fr/umrf/" target="_blank">LRF</a>, INRAE, Aurillac</li></div>
+        <div class="w-100"></div>
+        <div class="col-4"><li><a href="https://www6.inrae.fr/cirm/Bacteries-d-Interet-Alimentaire" target="_blank">CIRM BIA</a>, INRAE, Rennes</li></div>
+        <div class="col"><li><a href="https://www6.inrae.fr/dipso/" target="_blank">DipSO</a>, INRAE, Université Paris-Saclay, Versailles</li></div>
+        <div class="w-100"></div>
+        <div class="col-4"><li><a href="https://www6.inrae.fr/cirm/Levures" target="_blank">CIRM Levures</a>, INRAE, Grignon</li></div>
+        <div class="col"><li><a href="https://www.micalis.fr/" target="_blank">MICALIS</a>, INRAE, Université Paris-Saclay, Jouy-en Josas</li></ul></p></div>
+      </div>
+    </div>
+
+		<img ALIGN="LEFT" SRC="{{ url_for('static', filename='img/Bibliographie.png') }}" width="50" height="50"/><div class="text-info" style="padding-top: 10px;"><h4>&nbsp;&nbsp;Bibliography</h4></div>
+		<br/><p align="justify"><b><span style="color: #21517A;">Omnicrobe database</span></b><br/>
+
+		<p>&nbsp;&nbsp;&nbsp;<b><span style="color: #516eb0;">Posters</span></b><br/>
+		<ul><li><div align="justify">Dérozier, S., Bossy, R., Deléger, L., Ba, M., Chaix, E., Loux, V., Falentin, H., Nédellec, C. <a target="_blank" href="https://hal.inrae.fr/hal-04061565v1">Omnicrobe, an open-access database of microbial habitats, phenotypes and uses extracted from text</a>. Presented at <i>JOBIM 2022</i>, Rennes (2022-07-05 - 2022-07-08).</div></li>
+    <li><div align="justify">Falentin, H., Harlé, O., Dérozier, S., Deléger, L., Chaix, E., Ba, M., Bossy, R., Loux, V., Nédellec, C. <a target="_blank" href="https://hal.inrae.fr/hal-03694214v1">Omnicrobe : une base de données d’habitats et de phénotypes microbiens</a>. Presented at <i>23ème édition du colloque du Club des Bactéries Lactiques</i>, Rennes (2022-06-08 - 2022-06-10).</div></li>
+    <li><div align="justify">Dérozier, S., Deléger, L., Chaix, E., Mekdad R., Ba, M., Bossy, R., Sicard, D., Loux, V., Falentin, H. &amp; Nédellec, C. <a target="_blank" href="https://hal.inrae.fr/hal-02904156">Florilege: a database gathering microbial habitats, phenotypes and uses</a>. Presented at <i>JOBIM 2020</i>, virtual edition (2020-06-30 - 2020-07-03).</div></li>
+		<li><div align="justify">Chaix, E., Dérozier, S., Deléger, L., Falentin, H., Bohuon, J.B., Ba, M., Bossy, R., Sicard, D., Loux, V. &amp; Nédellec, C. <a target="_blank" href="https://hal.inrae.fr/hal-01827946v1">Florilege: an integrative database using text mining and ontologies</a>. In: <i>Abstract JOBIM 2018 (p. 563)</i>. Presented at JOBIM 2018, Marseille, FRA (2018-07-03 - 2018-07-06).</div></li>
+		<li><div align="justify">Falentin, H., Chaix, E., Dérozier, S., Weber, M., Buchin, S., Dridi, B., Deutsch, S.-M., Valence-Bertel, F., Casaregola, S., Renault, P., Champomier-Vergès, M.-C., Thierry, A., Zagorec, M., Irlinger, F., Delbès, C., Aubin, S., Bessières, P., Loux, V., Bossy, R., Dibie, J., Sicard, D., Nédellec, C. (2017, October). <a target="_blank" href="https://hal-montpellier-supagro.archives-ouvertes.fr/hal-01651302/">Florilege: a database gathering microbial phenotypes of food interest</a>. In <i>4th International Conference on Microbial Diversity 2017</i>, Bari, ITA (2017-10-24 - 2017-10-26).</div></li></ul></p>
+
+		<p align="justify"><b><span style="color: #21517A;">Data production by text-mining and ontologies</span></b><br/>
+
+		<p align="justify">&nbsp;&nbsp;&nbsp;<b><span style="color: #516eb0;">Publications</span></b><br/>
+		<ul><li><div align="justify">Robert Bossy, Louise Deléger, Estelle Chaix, Mouhamadou Ba, Claire Nédellec. <a target="_blank" href='https://www.aclweb.org/anthology/D19-5719/'>Bacteria Biotope at BioNLP Open Shared Tasks 2019</a>, <i>Proceedings of the 5th Workshop on BioNLP Open Shared Tasks joint to EMNLP-IJCNLP 2019</i>, Hong-Kong, nov 2019. DOI: 10.18653/v1/D19-5719.</div></li>
+		<li><div align="justify">Chaix, E., Deléger, L., Bossy, R., Nédellec, C. (2018). <a target="_blank" href="https://www.sciencedirect.com/science/article/pii/S0740002017310638">Text-mining tools for extracting information about microbial biodiversity in food</a>. <i>Food Microbiology</i>, 1-13. , DOI: 10.1016/j.fm.2018.04.011.</div></li>
+		<li><div align="justify">Nédellec, C., Chaix, E., Bossy, R., Deléger, L., Dérozier, S., Bohuon, J.-B., Loux, V. (2018). <a target="_blank" href="https://editions-rnti.fr/?inprocid=1002401">L'ontologie OntoBiotope pour l'étude de la biodiversité microbienne</a>. <i>Actes des Journées Francophones d'Extraction et de Gestion des Connaissances (EGC'2018)</i>, Paris, janvier 2018. pp.353-358.</div></li>
+		<li><div align="justify">Nédellec, C. , Bossy, R., Chaix, E., Deléger, L. (2017). <a target="_blank" href="https://prodinra.inra.fr/record/414573">Text-mining and ontologies: new approaches to knowledge discovery of microbial diversity</a>. In: <i>Proceedings of the 4th International Microbial Diversity Conference (p. 221-227)</i>. Bari, ed. Marco Gobetti. Baris, Pub. Simtra. ISBN 978-88-943010-0-7, arXiv:1805.04107.</div></li></ul></p></p>
+
+		<p align="justify">&nbsp;&nbsp;&nbsp;<b><span style="color: #516eb0;">Report</span></b><br/>
+		<ul><li><div align="justify">Robert Bossy, Claire Nédellec, Julien Jourde, Mouhamadou Ba, Estelle Chaix, Louise Deleger. <a target="_blank" href='https://hal.inrae.fr/hal-02787110/document'>Bacteria biotope annotation guidelines</a>. 2019, 30 p. hal-02787110.</div></li></ul></p>
+
+		<p align="justify"><b><span style="color: #21517A;">Analysis of needs</span></b><br/>
+
+		<p align="justify">&nbsp;&nbsp;&nbsp;<b><span style="color: #516eb0;">Publications</span></b><br/>
+		<ul><li><div align="justify">Chaix, E., Aubin, S., Deléger, L., Nédellec, C. (2017). <a target="_blank" href="http://prodinra.inra.fr/record/405408">Text-mining needs of the food microbiology research community</a>. Presented at <i>2017 EFITA WCCA Congress</i>, Montpellier, FRA (2017-07-02 - 2017-07-06).</div></li>
+		<li><div align="justify">Przybyła, P., Shardlow, M., Aubin, S., Bossy, R., de Castilho, R. E., Piperidis, S., McNaught, J., Ananiadou, S. (2016). <a target="_blank" href="http://prodinra.inra.fr/record/386616">Text mining resources for the life sciences</a>. <i>Database</i>, november (25), 1-30. DOI: 10.1093/database/baw145.</div></li></ul></p>
+
+		<p align="justify"><b><span style="color: #21517A;">Using Omnicrobe for knowledge discovery</span></b><br/>
+
+		<p align="justify">&nbsp;&nbsp;&nbsp;<b><span style="color: #516eb0;">Oral presentation at meetings</span></b><br/>
+		<ul><li><div align="justify">Hélène Falentin. <a target='_blank' href='https://hal.archives-ouvertes.fr/hal-02475152'>Florilège : une base de données de phénotypes microbiens d’intérêt agro-alimentaire</a>. <i>Journées qualiment</i>, 4 february 2020, Paris, France.</div></li>
+		<li><div align="justify">Hélène Falentin, Stéphanie-Marie Deutsch, Valérie Gagnaire, Anne Thierry, Sandra Dérozier, Claire Nédellec. <a target="_blank" href="https://hal.archives-ouvertes.fr/hal-02154623">Bioinformatics tools as a way to select microbial strains for fermented food products</a>, <i>15th Symposium on Bacterial Genetics and Ecology "Ecosystem drivers in a changing planet"</i>, (BAGECO), 27 mai 2019, Lisbonne, Portugal.</div></li>
+		<li><div align="justify">Hélène Falentin, Claire Nédellec, Estelle Chaix, Bedis Dridi, Philippe Bessières, et al.. <a target="_blank" href="https://hal.archives-ouvertes.fr/hal-01607327">Florilege: a database gathering microbial phenotypes of food interest</a>. <i>2017 Scientific MEM days: Journées scientifiques MEM (Métaomiques et écosystèmes microbiens)</i>, Jan 2017, Paris, France.</div></li></ul></p></p>
+
+		<h2><span style="color: #21517A;">Terms of use and Copyright</span></h2><br/>
+
+			<p align='justify'>The access to Omnicrobe is free for academic/non-commercial users. The Omnicrobe webpage can be browsed and all text downloads can be freely copied. The re publication of information is permitted provided that the source is indicated (see the Source column in Omnicrobe interface). The redistribution of data or commercial use from BacDive requires written permission by the Leibniz-Institut DSMZ.</p>
+
+      <img ALIGN="LEFT" SRC="{{ url_for('static', filename='img/PublicData.png') }}" width="50" height="50"/><div class="text-info" style="padding-top: 10px;"><h4>&nbsp;&nbsp;Sources</h4></div>
+      <div style="margin-left: 5%;">
+        <div class="row">
+          <div class="col"><li>PubMed: information is available under CC-BY License. PubMed must be cited as the source.</li></div>
+          <div class="w-100"></div>
+          <div class="col"><li>GenBank: NCBI places no restrictions on the use or distribution of the GenBank data, for more details <a href="https://www.ncbi.nlm.nih.gov/genbank/" target="_blank">see</a>.</li></div>
+          <div class="w-100"></div>
+          <div class="col"><li>BacDive: the use of information is permitted provided BacDive is indicated as the source or with prior approval by the Leibniz-Institut DSMZ. Any redistribution of data or commercial use requires written permission by the Leibniz-Institut DSMZ.</li></div>
+          <div class="w-100"></div>
+          <div class="col"><li>CIRM-BIA: information is available under CC-BY License. CIRM-BIA must be cited as the source.</li></div>
+          <div class="w-100"></div>
+          <div class="col"><li>CIRM-CFBP: information is available under CC-BY License. CIRM-CFBP must be cited as the source.</li></div>
+          <div class="w-100"></div>
+          <div class="col"><li>CIRM-Levures: information is available under CC-BY License. CIRM-Levures must be cited as the source.</li></ul></p></div>
+        </div>
+      </div>
+
+			<img ALIGN="LEFT" SRC="{{ url_for('static', filename='img/private.png') }}" width="50" height="50"/><div class="text-info" style="padding-top: 10px;"><h4>&nbsp;&nbsp;Disclaimer</h4></div>
+			<p align='justify'>The authors of Omnicrobe information have taken any available measure in order for its content to be accurate, consistent and lawful. However, neither the project consortium as a whole nor the individual partners that implicitly or explicitly participated in the creation and publication of this information hold any sort of responsibility that might occur as a result of using its content.</p>
+
+			<img ALIGN="LEFT" SRC="{{ url_for('static', filename='img/check.png') }}" width="50" height="50"/><div class="text-info"><h4>&nbsp;&nbsp;Credits</h4></div>
+			<p align='justify'><a target="_blank" href="https://www.freepik.com/free-photos-vectors/logo">Logo vector created by kreativkolors</a> - <a target="_blank" href="http://www.freepik.com/">www.freepik.com</a></p>
+  </div>
+
+  <div style="margin:80px 0;"></div>
+
+</section>
+{% endblock %}
